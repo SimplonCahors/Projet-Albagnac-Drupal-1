@@ -5,25 +5,19 @@ dependencies: {  }
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
-label: Commercial
-weight: 2
+label: ADV
+weight: 1
 is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access content overview'
-  - 'access files overview'
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'access user profiles'
-  - 'create article content'
-  - 'delete own article content'
-  - 'edit own article content'
+  - 'administer account settings'
+  - 'administer permissions'
+  - 'administer users'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
-  - 'use advanced search'
   - 'use text format basic_html'
-  - 'view all revisions'
-  - 'view article revisions'
-  - 'view own unpublished content'
