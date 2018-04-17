@@ -12,3 +12,5 @@ permissions:
   - 'delete any article content'
   - 'delete article revisions'
   - 'edit any article content'
+  - 'revert all revisions'
+  - 'view all revisions'
