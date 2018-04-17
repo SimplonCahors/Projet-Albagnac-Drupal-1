@@ -1,0 +1,18 @@
+uuid: dba0f610-77ab-4877-9de6-2c08904fdff2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.dso
+id: node.dso.title
+field_name: title
+entity_type: node
+bundle: dso
+label: Nom
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

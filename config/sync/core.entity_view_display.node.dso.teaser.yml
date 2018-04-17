@@ -1,0 +1,29 @@
+uuid: 01e29043-e061-4866-ad4e-11b424554384
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dso.body
+    - node.type.dso
+  module:
+    - text
+    - user
+id: node.dso.teaser
+targetEntityType: node
+bundle: dso
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

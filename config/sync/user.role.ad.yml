@@ -9,8 +9,7 @@ is_admin: false
 permissions:
   - 'access toolbar'
   - 'administer users'
-  - 'delete any article content'
-  - 'delete article revisions'
-  - 'edit any article content'
+  - 'delete any dso content'
+  - 'edit any dso content'
   - 'revert all revisions'
   - 'view all revisions'

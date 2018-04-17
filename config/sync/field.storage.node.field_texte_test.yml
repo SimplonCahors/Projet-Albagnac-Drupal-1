@@ -1,0 +1,27 @@
+uuid: 976e283a-5e6a-455d-844b-8045f682d84c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_texte_test
+field_name: field_texte_test
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '123 abd'
+      label: '123 abd'
+    -
+      value: aezaeza
+      label: aezaeza
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 100
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,27 @@
+uuid: 7f42acc5-5822-4da7-9025-0925091c792a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_liste_test
+field_name: field_liste_test
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: aaaa
+    -
+      value: 1
+      label: zzzz
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 15
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

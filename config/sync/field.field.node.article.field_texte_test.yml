@@ -1,0 +1,21 @@
+uuid: e1b965b5-f4d5-402f-8267-3c16581591ac
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_texte_test
+    - node.type.article
+  module:
+    - options
+id: node.article.field_texte_test
+field_name: field_texte_test
+entity_type: node
+bundle: article
+label: texte_test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
