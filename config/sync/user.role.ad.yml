@@ -5,8 +5,9 @@ dependencies: {  }
 id: ad
 label: 'Administrateur des ventes'
 weight: 3
-is_admin: null
+is_admin: false
 permissions:
+  - 'access toolbar'
   - 'administer users'
   - 'delete any article content'
   - 'delete article revisions'
