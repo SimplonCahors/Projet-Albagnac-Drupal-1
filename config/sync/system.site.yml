@@ -1,0 +1,14 @@
+uuid: 7533187b-a69b-4908-b8b5-0feefa9f8f4d
+name: Albagnac
+mail: emile.troccaz@hotmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
