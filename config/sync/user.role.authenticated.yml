@@ -14,6 +14,8 @@ permissions:
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'access user profiles'
+  - 'administer account settings'
+  - 'administer permissions'
   - 'administer users'
   - 'post comments'
   - 'search content'

@@ -1,0 +1,5 @@
+name: Albagnac
+description: Thème de base du site Albagnac
+core: 8.x
+type: theme
+base theme: classy

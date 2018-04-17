@@ -37,4 +37,5 @@ content:
     weight: 101
     region: content
 hidden:
+  field_bool: true
   langcode: true
