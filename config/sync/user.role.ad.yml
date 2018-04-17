@@ -1,0 +1,13 @@
+uuid: 009dac47-67c9-46d7-b176-d02a5cdab093
+langcode: fr
+status: true
+dependencies: {  }
+id: ad
+label: 'Administrateur des ventes'
+weight: 3
+is_admin: null
+permissions:
+  - 'administer users'
+  - 'delete any article content'
+  - 'delete article revisions'
+  - 'edit any article content'

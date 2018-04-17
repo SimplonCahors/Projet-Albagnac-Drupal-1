@@ -1,0 +1,21 @@
+uuid: 4e376b25-82f3-4369-bb5f-e6fabe6a76a3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bool
+    - node.type.page
+id: node.page.field_bool
+field_name: field_bool
+entity_type: node
+bundle: page
+label: boolean
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

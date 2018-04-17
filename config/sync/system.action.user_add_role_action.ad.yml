@@ -1,0 +1,14 @@
+uuid: d7adbaf2-f8ab-4dd7-9751-e0f39da64ee8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.ad
+  module:
+    - user
+id: user_add_role_action.ad
+label: 'Add the ADV role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ad

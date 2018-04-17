@@ -1,0 +1,14 @@
+uuid: 4768900a-4295-4590-8de4-6e9d40596299
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.ad
+  module:
+    - user
+id: user_remove_role_action.ad
+label: 'Remove the ADV role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ad
