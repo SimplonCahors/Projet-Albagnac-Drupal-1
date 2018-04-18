@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.dso.body
-    - field.field.node.dso.field_texte_1_test
     - node.type.dso
   module:
     - path
@@ -29,14 +28,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_texte_1_test:
-    weight: 122
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   langcode:
     type: language_select
     weight: 2
