@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.dso.body
+    - field.field.node.dso.field_nom_du_commercial
     - node.type.dso
   module:
     - path
@@ -28,6 +29,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_nom_du_commercial:
+    weight: 122
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   langcode:
     type: language_select
     weight: 2
