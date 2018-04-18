@@ -4,10 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.dso.body
-    - field.field.node.dso.field_liste_test
+    - field.field.node.dso.field_boolean_test
     - node.type.dso
   module:
-    - options
     - text
     - user
 id: node.dso.default
@@ -22,15 +21,20 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_liste_test:
-    weight: 102
+  field_boolean_test:
+    weight: 103
     label: above
-    settings: {  }
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
-    type: list_default
+    type: boolean
     region: content
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true
