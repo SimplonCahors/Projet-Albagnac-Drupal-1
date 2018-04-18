@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.dso.body
+    - field.field.node.dso.field_liste_test
     - node.type.dso
   module:
     - path
@@ -28,6 +29,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_liste_test:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   langcode:
     type: language_select
     weight: 2
