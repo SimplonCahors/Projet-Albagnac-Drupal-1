@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.dso.body
-    - field.field.node.dso.field_bool_test
     - node.type.dso
   module:
     - path
@@ -29,13 +28,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_bool_test:
-    weight: 122
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   langcode:
     type: language_select
     weight: 2

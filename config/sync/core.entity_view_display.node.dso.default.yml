@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.dso.body
-    - field.field.node.dso.field_bool_test
     - node.type.dso
   module:
     - text
@@ -20,16 +19,6 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_bool_test:
-    weight: 102
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
     region: content
   links:
     weight: 100
