@@ -4,15 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.dso.body
+    - field.field.node.dso.field_devis_remarques
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_du_commercial
-    - field.field.node.dso.field_placeh
-    - field.field.node.dso.field_placeholder
-    - field.field.node.dso.field_placeholder2
-    - field.field.node.dso.field_placeholder3
-    - field.field.node.dso.field_placeholder4
-    - field.field.node.dso.field_placeholder5
-    - field.field.node.dso.field_remarques
     - node.type.dso
   module:
     - text
@@ -28,6 +22,14 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_devis_remarques:
+    weight: 111
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_nom_client:
     weight: 103

@@ -4,15 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.dso.body
+    - field.field.node.dso.field_devis_remarques
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_du_commercial
-    - field.field.node.dso.field_placeh
-    - field.field.node.dso.field_placeholder
-    - field.field.node.dso.field_placeholder2
-    - field.field.node.dso.field_placeholder3
-    - field.field.node.dso.field_placeholder4
-    - field.field.node.dso.field_placeholder5
-    - field.field.node.dso.field_remarques
     - node.type.dso
   module:
     - field_group
@@ -94,8 +88,7 @@ third_party_settings:
         required_fields: false
       label: 'Informations administratives du demandeur'
     group_informations_commerciales:
-      children:
-        - field_placeholder4
+      children: {  }
       parent_name: group_informations_administrativ
       weight: 22
       format_type: tab
@@ -107,8 +100,7 @@ third_party_settings:
         required_fields: false
       label: Informations_commerciales
     group_emballage_etiquettes:
-      children:
-        - field_placeholder3
+      children: {  }
       parent_name: group_informations_administrativ
       weight: 23
       format_type: tab
@@ -120,8 +112,7 @@ third_party_settings:
         required_fields: false
       label: 'Emballage et étiquettes'
     group_environnement_machine:
-      children:
-        - field_placeh
+      children: {  }
       parent_name: group_informations_administrativ
       weight: 24
       format_type: tab
@@ -133,8 +124,7 @@ third_party_settings:
         required_fields: false
       label: 'Environnement Machine'
     group_materiel_impose_impression:
-      children:
-        - field_placeholder5
+      children: {  }
       parent_name: group_informations_administrativ
       weight: 25
       format_type: tab
@@ -147,7 +137,7 @@ third_party_settings:
       label: 'Matériel Imposé, Impression'
     group_remarques:
       children:
-        - field_remarques
+        - field_devis_remarques
       parent_name: group_informations_administrativ
       weight: 26
       format_type: tab
@@ -159,8 +149,7 @@ third_party_settings:
         required_fields: false
       label: Remarques
     group_etiquettes:
-      children:
-        - field_placeholder
+      children: {  }
       parent_name: group_demande_dev
       weight: 22
       format_type: details
@@ -171,8 +160,7 @@ third_party_settings:
         required_fields: false
       label: Etiquettes
     group_combinaison:
-      children:
-        - field_placeholder2
+      children: {  }
       parent_name: group_demande_dev
       weight: 23
       format_type: details
@@ -202,6 +190,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_devis_remarques:
+    weight: 34
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_nom_client:
     weight: 11
     settings:
