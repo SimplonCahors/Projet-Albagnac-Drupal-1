@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.dso.body
     - field.field.node.dso.field_1_date_creation_fiche
     - field.field.node.dso.field_nom_client
-    - field.field.node.dso.field_nom_du_commercial
     - node.type.dso
   module:
     - field_group
@@ -198,14 +197,6 @@ content:
     region: content
   field_nom_client:
     weight: 13
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_nom_du_commercial:
-    weight: 12
     settings:
       size: 60
       placeholder: ''
