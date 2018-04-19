@@ -1,0 +1,19 @@
+uuid: 9c5ca7e9-f870-4eca-845e-ac1ee72104f1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_placeholder4
+    - node.type.dso
+id: node.dso.field_placeholder4
+field_name: field_placeholder4
+entity_type: node
+bundle: dso
+label: placeholder4
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

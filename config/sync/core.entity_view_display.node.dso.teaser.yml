@@ -26,6 +26,14 @@ content:
     weight: 100
     region: content
 hidden:
+  field_2_date_creation_fiche: true
   field_nom_client: true
   field_nom_du_commercial: true
+  field_placeh: true
+  field_placeholder: true
+  field_placeholder2: true
+  field_placeholder3: true
+  field_placeholder4: true
+  field_placeholder5: true
+  field_remarques: true
   langcode: true
