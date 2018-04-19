@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.dso.body
-    - field.field.node.dso.field_1_date_creation_fiche
     - field.field.node.dso.field_nom_client
     - node.type.dso
   module:
@@ -21,16 +20,6 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_1_date_creation_fiche:
-    weight: 111
-    label: above
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-    third_party_settings: {  }
-    type: timestamp
     region: content
   field_nom_client:
     weight: 103
