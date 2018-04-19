@@ -1,14 +1,15 @@
-uuid: bcb58ae2-f2d1-4fac-bcbf-b330a56d2998
+uuid: 3e20b471-6964-42cb-be2e-9bd68fb2ed17
 langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
     - node.type.dso
   module:
     - node
     - user
-id: test_vue
-label: 'test vue'
+id: test_dso
+label: 'Liste des DSO'
 module: views
 description: ''
 tag: ''
@@ -71,14 +72,11 @@ display:
           grouping: {  }
           row_class: ''
           default_row_class: true
-          uses_fields: false
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          inline: {  }
-          separator: ''
-          hide_empty: false
-          default_field_elements: true
+          relationship: none
+          view_mode: teaser
       fields:
         title:
           id: title
@@ -148,27 +146,31 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-      sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
+      sorts: {  }
+      title: 'Liste des DSO'
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: test-dso
     cache_metadata:
       max-age: -1
       contexts:
