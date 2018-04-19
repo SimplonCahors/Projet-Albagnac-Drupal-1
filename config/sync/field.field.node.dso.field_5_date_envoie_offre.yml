@@ -1,0 +1,21 @@
+uuid: 100839b6-ffb9-49b9-a5ca-6879e44f809c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_5_date_envoie_offre
+    - node.type.dso
+  module:
+    - datetime
+id: node.dso.field_5_date_envoie_offre
+field_name: field_5_date_envoie_offre
+entity_type: node
+bundle: dso
+label: 'Date de l''envoi de l''offre'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,21 @@
+uuid: e943e932-9e8d-4b99-a010-69b551cb6369
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_6_date_livraison_souhaite
+    - node.type.dso
+  module:
+    - datetime
+id: node.dso.field_6_date_livraison_souhaite
+field_name: field_6_date_livraison_souhaite
+entity_type: node
+bundle: dso
+label: 'Date de livraison souhaitée'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

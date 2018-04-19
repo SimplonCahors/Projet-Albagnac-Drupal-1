@@ -1,0 +1,21 @@
+uuid: 89199725-d28b-4c64-b525-b9bc771b406c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_3_date_premiere_c
+    - node.type.dso
+  module:
+    - datetime
+id: node.dso.field_3_date_premiere_c
+field_name: field_3_date_premiere_c
+entity_type: node
+bundle: dso
+label: 'Date de première demande client'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

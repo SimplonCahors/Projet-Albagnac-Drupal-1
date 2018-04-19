@@ -4,10 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.node.dso.body
-    - field.field.node.dso.field_2_date_creation_fiche
+    - field.field.node.dso.field_2_date_creation_fiche_
+    - field.field.node.dso.field_3_date_premiere_c
+    - field.field.node.dso.field_4_reponse_souhaitee
+    - field.field.node.dso.field_5_date_envoie_offre
+    - field.field.node.dso.field_6_date_livraison_souhaite
     - field.field.node.dso.field_nom_client
     - node.type.dso
   module:
+    - datetime
     - field_group
     - text
 third_party_settings:
@@ -74,7 +79,11 @@ third_party_settings:
     group_informations_demandeur:
       children:
         - field_nom_client
-        - field_2_date_creation_fiche
+        - field_2_date_creation_fiche_
+        - field_3_date_premiere_c
+        - field_4_reponse_souhaitee
+        - field_5_date_envoie_offre
+        - field_6_date_livraison_souhaite
       parent_name: group_informations_administrativ
       weight: 21
       format_type: tab
@@ -89,7 +98,7 @@ third_party_settings:
       children:
         - body
       parent_name: group_informations_administrativ
-      weight: 22
+      weight: 23
       format_type: tab
       format_settings:
         id: ''
@@ -101,7 +110,7 @@ third_party_settings:
     group_emballage_etiquettes:
       children: {  }
       parent_name: group_informations_administrativ
-      weight: 23
+      weight: 24
       format_type: tab
       format_settings:
         id: ''
@@ -113,7 +122,7 @@ third_party_settings:
     group_environnement_machine:
       children: {  }
       parent_name: group_informations_administrativ
-      weight: 24
+      weight: 25
       format_type: tab
       format_settings:
         id: ''
@@ -125,7 +134,7 @@ third_party_settings:
     group_materiel_impose_impression:
       children: {  }
       parent_name: group_informations_administrativ
-      weight: 25
+      weight: 26
       format_type: tab
       format_settings:
         id: ''
@@ -137,7 +146,7 @@ third_party_settings:
     group_remarques:
       children: {  }
       parent_name: group_informations_administrativ
-      weight: 26
+      weight: 27
       format_type: tab
       format_settings:
         id: ''
@@ -188,13 +197,35 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_2_date_creation_fiche:
+  field_2_date_creation_fiche_:
     weight: 14
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: datetime_default
+    region: content
+  field_3_date_premiere_c:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_4_reponse_souhaitee:
+    weight: 16
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_5_date_envoie_offre:
+    weight: 17
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_6_date_livraison_souhaite:
+    weight: 34
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
     region: content
   field_nom_client:
     weight: 13
