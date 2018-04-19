@@ -28,4 +28,6 @@ content:
     weight: 101
     region: content
 hidden:
+  field_bool: true
+  field_date: true
   langcode: true
