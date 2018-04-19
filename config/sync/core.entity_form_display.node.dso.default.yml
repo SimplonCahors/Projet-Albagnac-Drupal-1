@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.dso.body
+    - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_du_commercial
     - node.type.dso
   module:
@@ -16,6 +17,7 @@ third_party_settings:
       children:
         - body
         - field_nom_du_commercial
+        - field_nom_client
       parent_name: ''
       weight: 20
       format_type: details
@@ -46,6 +48,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_nom_client:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_nom_du_commercial:
     weight: 10
     settings:

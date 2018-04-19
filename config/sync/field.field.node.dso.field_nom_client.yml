@@ -1,0 +1,19 @@
+uuid: adff7011-aacc-4dbc-8b56-5ca4730183d1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nom_client
+    - node.type.dso
+id: node.dso.field_nom_client
+field_name: field_nom_client
+entity_type: node
+bundle: dso
+label: 'Nom client'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
