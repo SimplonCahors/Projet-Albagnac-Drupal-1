@@ -1,0 +1,19 @@
+uuid: 7bca981d-2238-426e-a602-a30831e88aaa
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_2_date_creation_fiche
+    - node.type.dso
+id: node.dso.field_2_date_creation_fiche
+field_name: field_2_date_creation_fiche
+entity_type: node
+bundle: dso
+label: 'Date création fiche'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
