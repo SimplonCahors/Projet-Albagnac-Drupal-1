@@ -23,8 +23,12 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5.1",
         "drupal/diff": "^1.0@RC",
+        "drupal/entity_print": "2.x",
         "drupal/field_group": "^1.0",
+        "drupal/tcpdf": "1.x-dev",
         "drush/drush": "^9.2",
+        "mikehaertl/phpwkhtmltopdf": "^2.3",
+        "tecnickcom/tcpdf": "^6.2",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
