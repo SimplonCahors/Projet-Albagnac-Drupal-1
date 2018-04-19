@@ -12,4 +12,5 @@ permissions:
   - 'delete any dso content'
   - 'edit any dso content'
   - 'revert all revisions'
+  - 'revert dso revisions'
   - 'view all revisions'

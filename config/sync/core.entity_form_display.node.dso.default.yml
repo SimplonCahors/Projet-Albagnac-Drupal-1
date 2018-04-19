@@ -6,28 +6,182 @@ dependencies:
     - field.field.node.dso.body
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_du_commercial
+    - field.field.node.dso.field_placeh
+    - field.field.node.dso.field_placeholder
+    - field.field.node.dso.field_placeholder2
+    - field.field.node.dso.field_placeholder3
+    - field.field.node.dso.field_placeholder4
+    - field.field.node.dso.field_placeholder5
+    - field.field.node.dso.field_remarques
     - node.type.dso
   module:
     - field_group
-    - path
     - text
 third_party_settings:
   field_group:
     group_details_te:
       children:
-        - body
-        - field_nom_du_commercial
         - field_nom_client
-      parent_name: ''
-      weight: 20
+      parent_name: group_demande_dev
+      weight: 21
       format_type: details
       format_settings:
-        label: details_test
-        required_fields: true
+        label: Emballage
         id: ''
         classes: ''
         open: false
-      label: details_test
+        required_fields: false
+      label: Emballage
+    group_demande_dev:
+      children:
+        - group_informations_administrativ
+        - group_details_te
+        - group_etiquettes
+        - group_combinaison
+      parent_name: ''
+      weight: 4
+      format_type: tabs
+      format_settings:
+        label: tabs_dso
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: tabs_dso
+    group_informations_administrativ:
+      children:
+        - group_onglet1
+        - group_informations_demandeur
+        - group_informations_commerciales
+        - group_emballage_etiquettes
+        - group_environnement_machine
+        - group_materiel_impose_impression
+        - group_remarques
+      parent_name: group_demande_dev
+      weight: 20
+      format_type: details
+      format_settings:
+        label: 'Demande de Devis'
+        open: true
+        id: ''
+        classes: ''
+        required_fields: false
+      label: 'Demande de Devis'
+    group_onglet1:
+      children:
+        - body
+      parent_name: group_informations_administrativ
+      weight: 20
+      format_type: tab
+      format_settings:
+        label: 'Informations du Devis'
+        formatter: closed
+        description: ''
+        id: ''
+        classes: ''
+        required_fields: false
+      label: 'Informations du Devis'
+    group_informations_demandeur:
+      children:
+        - field_nom_du_commercial
+      parent_name: group_informations_administrativ
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: false
+      label: 'Informations administratives du demandeur'
+    group_informations_commerciales:
+      children:
+        - field_placeholder4
+      parent_name: group_informations_administrativ
+      weight: 22
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: false
+      label: Informations_commerciales
+    group_emballage_etiquettes:
+      children:
+        - field_placeholder3
+      parent_name: group_informations_administrativ
+      weight: 23
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: false
+      label: 'Emballage et étiquettes'
+    group_environnement_machine:
+      children:
+        - field_placeh
+      parent_name: group_informations_administrativ
+      weight: 24
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: false
+      label: 'Environnement Machine'
+    group_materiel_impose_impression:
+      children:
+        - field_placeholder5
+      parent_name: group_informations_administrativ
+      weight: 25
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: false
+      label: 'Matériel Imposé, Impression'
+    group_remarques:
+      children:
+        - field_remarques
+      parent_name: group_informations_administrativ
+      weight: 26
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: false
+      label: Remarques
+    group_etiquettes:
+      children:
+        - field_placeholder
+      parent_name: group_demande_dev
+      weight: 22
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: Etiquettes
+    group_combinaison:
+      children:
+        - field_placeholder2
+      parent_name: group_demande_dev
+      weight: 23
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: Combinaison
 id: node.dso.default
 targetEntityType: node
 bundle: dso
@@ -35,7 +189,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 9
+    weight: 22
     settings:
       rows: 9
       summary_rows: 3
@@ -44,7 +198,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -57,45 +211,74 @@ content:
     type: string_textfield
     region: content
   field_nom_du_commercial:
-    weight: 10
+    weight: 22
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
-  langcode:
-    type: language_select
-    weight: 1
-    region: content
+  field_placeh:
+    weight: 30
     settings:
-      include_locked: true
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-  path:
-    type: path
-    weight: 6
+    type: string_textfield
     region: content
-    settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
+  field_placeholder:
+    weight: 28
     settings:
-      display_label: true
-    weight: 4
-    region: content
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_placeholder2:
+    weight: 29
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_placeholder3:
+    weight: 31
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_placeholder4:
+    weight: 32
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_placeholder5:
+    weight: 33
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_remarques:
+    weight: 27
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 5
+    weight: 3
     region: content
     third_party_settings: {  }
   title:
@@ -108,11 +291,15 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
