@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.dso.body
+    - field.field.node.dso.field_2_date_creation_fiche
     - field.field.node.dso.field_nom_client
     - node.type.dso
   module:
@@ -58,9 +59,7 @@ third_party_settings:
         required_fields: false
       label: 'Demande de Devis'
     group_onglet1:
-      children:
-        - field_nom_du_commercial
-        - field_1_date_creation_fiche
+      children: {  }
       parent_name: group_informations_administrativ
       weight: 20
       format_type: tab
@@ -75,6 +74,7 @@ third_party_settings:
     group_informations_demandeur:
       children:
         - field_nom_client
+        - field_2_date_creation_fiche
       parent_name: group_informations_administrativ
       weight: 21
       format_type: tab
@@ -188,6 +188,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_2_date_creation_fiche:
+    weight: 14
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_nom_client:
     weight: 13
     settings:
