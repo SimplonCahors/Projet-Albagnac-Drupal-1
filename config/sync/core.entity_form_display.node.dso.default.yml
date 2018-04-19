@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.dso.body
-    - field.field.node.dso.field_devis_remarques
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_du_commercial
     - node.type.dso
@@ -190,14 +189,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_devis_remarques:
-    weight: 34
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_nom_client:
     weight: 11
     settings:
