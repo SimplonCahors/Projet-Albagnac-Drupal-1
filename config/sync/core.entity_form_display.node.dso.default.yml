@@ -13,8 +13,7 @@ dependencies:
 third_party_settings:
   field_group:
     group_details_te:
-      children:
-        - field_nom_client
+      children: {  }
       parent_name: group_demande_dev
       weight: 21
       format_type: details
@@ -75,7 +74,7 @@ third_party_settings:
       label: 'Informations du Devis'
     group_informations_demandeur:
       children:
-        - field_nom_du_commercial
+        - field_nom_client
       parent_name: group_informations_administrativ
       weight: 21
       format_type: tab
@@ -87,7 +86,8 @@ third_party_settings:
         required_fields: false
       label: 'Informations administratives du demandeur'
     group_informations_commerciales:
-      children: {  }
+      children:
+        - field_nom_du_commercial
       parent_name: group_informations_administrativ
       weight: 22
       format_type: tab
@@ -135,8 +135,7 @@ third_party_settings:
         required_fields: false
       label: 'Matériel Imposé, Impression'
     group_remarques:
-      children:
-        - field_devis_remarques
+      children: {  }
       parent_name: group_informations_administrativ
       weight: 26
       format_type: tab
