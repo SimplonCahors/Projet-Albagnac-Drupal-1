@@ -25,6 +25,7 @@ dependencies:
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_contact_com
     - field.field.node.dso.field_nom_contact_tech
+    - field.field.node.dso.field_nom_du_commercial
     - field.field.node.dso.field_remarques
     - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
@@ -40,7 +41,7 @@ dependencies:
     - user
 third_party_settings:
   entity_print:
-    pdf_label: 'View PDF'
+    pdf_label: 'Télécharger en PDF'
 id: node.dso.default
 targetEntityType: node
 bundle: dso
@@ -54,9 +55,10 @@ content:
   field_10_fax:
     weight: 40
     label: above
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    type: basic_string
+    type: string
     region: content
   field_10_telephone:
     weight: 32
@@ -184,9 +186,10 @@ content:
   field_fax:
     weight: 39
     label: above
-    settings: {  }
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    type: basic_string
+    type: string
     region: content
   field_fonction_contact_com:
     weight: 28
