@@ -1,0 +1,19 @@
+uuid: 703329c5-12f0-4f56-8957-44749591a73d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_descriptif
+    - paragraphs.paragraphs_type.asservissement
+id: paragraph.asservissement.field_descriptif
+field_name: field_descriptif
+entity_type: paragraph
+bundle: asservissement
+label: Descriptif
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

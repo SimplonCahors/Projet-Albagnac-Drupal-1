@@ -1,12 +1,12 @@
-uuid: d95fff66-de73-4139-bce6-058a962d6dc1
+uuid: 330c78fb-11b9-45ae-b64a-8c4083ee8e83
 langcode: fr
 status: true
 dependencies:
   module:
-    - node
-id: node.field_10_fax
-field_name: field_10_fax
-entity_type: node
+    - paragraphs
+id: paragraph.field_communication_avec_machine
+field_name: field_communication_avec_machine
+entity_type: paragraph
 type: string
 settings:
   max_length: 255
