@@ -1,0 +1,21 @@
+uuid: ad35ee76-550f-4661-bd2e-264ab7be32ea
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_besoin
+    - paragraphs.paragraphs_type.besoin
+  module:
+    - options
+id: paragraph.besoin.field_besoin
+field_name: field_besoin
+entity_type: paragraph
+bundle: besoin
+label: Besoin
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

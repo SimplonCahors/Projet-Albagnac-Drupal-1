@@ -1,0 +1,19 @@
+uuid: e2ece564-3b62-4163-98e2-dd13e13b158a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_remarques
+    - paragraphs.paragraphs_type.besoin
+id: paragraph.besoin.field_remarques
+field_name: field_remarques
+entity_type: paragraph
+bundle: besoin
+label: Remarques
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

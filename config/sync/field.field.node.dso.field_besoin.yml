@@ -1,0 +1,37 @@
+uuid: a9557623-2c93-4c32-aee9-bc4b193d1585
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_besoin
+    - node.type.dso
+    - paragraphs.paragraphs_type.besoin
+  module:
+    - entity_reference_revisions
+id: node.dso.field_besoin
+field_name: field_besoin
+entity_type: node
+bundle: dso
+label: Besoin
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      besoin: besoin
+    target_bundles_drag_drop:
+      besoin:
+        enabled: true
+        weight: 4
+      contact_commercial:
+        weight: 5
+        enabled: false
+      contact_technique:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions
