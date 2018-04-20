@@ -119,6 +119,13 @@ third_party_settings:
         - field_9_telephone
         - field_10_fax
         - field_11_pays
+        - field_categorie_
+        - field_secteur_
+        - field_sous_secteur
+        - field_type_client
+        - field_sieret
+        - group_contact_commercial
+        - group_contact_technique
       parent_name: group_informations_administrativ
       weight: 21
       format_type: tab
@@ -133,7 +140,7 @@ third_party_settings:
       children:
         - body
       parent_name: group_informations_administrativ
-      weight: 23
+      weight: 24
       format_type: tab
       format_settings:
         id: ''
@@ -145,7 +152,7 @@ third_party_settings:
     group_emballage_etiquettes:
       children: {  }
       parent_name: group_informations_administrativ
-      weight: 24
+      weight: 25
       format_type: tab
       format_settings:
         id: ''
@@ -157,7 +164,7 @@ third_party_settings:
     group_environnement_machine:
       children: {  }
       parent_name: group_informations_administrativ
-      weight: 25
+      weight: 26
       format_type: tab
       format_settings:
         id: ''
@@ -169,7 +176,7 @@ third_party_settings:
     group_materiel_impose_impression:
       children: {  }
       parent_name: group_informations_administrativ
-      weight: 26
+      weight: 27
       format_type: tab
       format_settings:
         id: ''
@@ -181,7 +188,7 @@ third_party_settings:
     group_remarques:
       children: {  }
       parent_name: group_informations_administrativ
-      weight: 27
+      weight: 28
       format_type: tab
       format_settings:
         id: ''
@@ -212,6 +219,40 @@ third_party_settings:
         open: false
         required_fields: false
       label: Combinaison
+    group_contact_commercial:
+      children:
+        - field_nom_contact_com
+        - field_fonction_contact_com
+        - field_email_contact_com
+        - field_telephone_contact_tech
+        - field_experience_contact_com
+      parent_name: group_informations_demandeur
+      weight: 45
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Contact commercial'
+    group_contact_technique:
+      children:
+        - field_nom_contact_tech
+        - field_fonction_contact_tech
+        - field_email_contact_tech
+        - field_10_telephone
+        - field_experience_contact_tech
+      parent_name: group_informations_demandeur
+      weight: 46
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Contact technique'
 id: node.dso.default
 targetEntityType: node
 bundle: dso
@@ -241,7 +282,7 @@ content:
     type: string_textfield
     region: content
   field_10_telephone:
-    weight: 54
+    weight: 55
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -318,7 +359,7 @@ content:
     type: string_textfield
     region: content
   field_email_contact_com:
-    weight: 56
+    weight: 49
     settings:
       size: 60
       placeholder: ''
@@ -326,7 +367,7 @@ content:
     type: email_default
     region: content
   field_email_contact_tech:
-    weight: 55
+    weight: 54
     settings:
       size: 60
       placeholder: ''
@@ -342,7 +383,7 @@ content:
     type: string_textfield
     region: content
   field_experience_contact_tech:
-    weight: 58
+    weight: 56
     settings:
       size: 60
       placeholder: ''
@@ -462,7 +503,7 @@ content:
     type: string_textfield
     region: content
   field_sieret:
-    weight: 46
+    weight: 44
     settings:
       size: 60
       placeholder: ''
@@ -470,7 +511,7 @@ content:
     type: string_textfield
     region: content
   field_sous_secteur:
-    weight: 43
+    weight: 42
     settings:
       size: 60
       placeholder: ''
@@ -485,14 +526,14 @@ content:
     type: telephone_default
     region: content
   field_telephone_contact_tech:
-    weight: 57
+    weight: 50
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
   field_type_client:
-    weight: 45
+    weight: 43
     settings:
       size: 60
       placeholder: ''
