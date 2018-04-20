@@ -1,0 +1,19 @@
+uuid: 4326c503-aead-4131-9c34-929bf9b60a9a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_contact_tech
+    - node.type.dso
+id: node.dso.field_email_contact_tech
+field_name: field_email_contact_tech
+entity_type: node
+bundle: dso
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

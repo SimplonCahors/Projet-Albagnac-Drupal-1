@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.dso.body
     - field.field.node.dso.field_10_fax
+    - field.field.node.dso.field_10_telephone
     - field.field.node.dso.field_11_pays
     - field.field.node.dso.field_2_date_creation_fiche_
     - field.field.node.dso.field_3_date_premiere_c
@@ -14,7 +15,17 @@ dependencies:
     - field.field.node.dso.field_7_nom_client
     - field.field.node.dso.field_8_adresse_postale
     - field.field.node.dso.field_9_telephone
+    - field.field.node.dso.field_categorie_
+    - field.field.node.dso.field_email_contact_com
+    - field.field.node.dso.field_email_contact_tech
+    - field.field.node.dso.field_experience_contact_com
+    - field.field.node.dso.field_experience_contact_tech
+    - field.field.node.dso.field_fax
+    - field.field.node.dso.field_fonction_contact_com
+    - field.field.node.dso.field_fonction_contact_tech
     - field.field.node.dso.field_nom_client
+    - field.field.node.dso.field_nom_contact_com
+    - field.field.node.dso.field_nom_contact_tech
     - field.field.node.dso.field_placeh
     - field.field.node.dso.field_placeholder
     - field.field.node.dso.field_placeholder2
@@ -22,10 +33,17 @@ dependencies:
     - field.field.node.dso.field_placeholder4
     - field.field.node.dso.field_placeholder5
     - field.field.node.dso.field_remarques
+    - field.field.node.dso.field_secteur_
+    - field.field.node.dso.field_sieret
+    - field.field.node.dso.field_sous_secteur
+    - field.field.node.dso.field_telephone_contact_com
+    - field.field.node.dso.field_telephone_contact_tech
+    - field.field.node.dso.field_type_client
     - node.type.dso
   module:
     - datetime
     - field_group
+    - telephone
     - text
 third_party_settings:
   field_group:
@@ -222,6 +240,13 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_10_telephone:
+    weight: 54
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
   field_11_pays:
     weight: 39
     settings:
@@ -284,8 +309,88 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_categorie_:
+    weight: 40
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_email_contact_com:
+    weight: 56
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_email_contact_tech:
+    weight: 55
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_experience_contact_com:
+    weight: 51
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_experience_contact_tech:
+    weight: 58
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fax:
+    weight: 44
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fonction_contact_com:
+    weight: 48
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fonction_contact_tech:
+    weight: 53
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_nom_client:
     weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_nom_contact_com:
+    weight: 47
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_nom_contact_tech:
+    weight: 52
     settings:
       size: 60
       placeholder: ''
@@ -347,6 +452,52 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
+    region: content
+  field_secteur_:
+    weight: 41
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sieret:
+    weight: 46
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sous_secteur:
+    weight: 43
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_telephone_contact_com:
+    weight: 59
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_telephone_contact_tech:
+    weight: 57
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_type_client:
+    weight: 45
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   status:
     type: boolean_checkbox

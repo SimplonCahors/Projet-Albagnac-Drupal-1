@@ -1,0 +1,19 @@
+uuid: 81d6efef-118e-41c6-9597-4d82ce1fe84c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fonction_contact_tech
+    - node.type.dso
+id: node.dso.field_fonction_contact_tech
+field_name: field_fonction_contact_tech
+entity_type: node
+bundle: dso
+label: Fonction
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
