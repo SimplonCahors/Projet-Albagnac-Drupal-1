@@ -1,17 +1,14 @@
-uuid: d95fff66-de73-4139-bce6-058a962d6dc1
+uuid: 8d427499-6cbd-4edb-bc92-faf5b59a9cf5
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-id: node.field_10_fax
-field_name: field_10_fax
+id: node.field_email_contact_tech
+field_name: field_email_contact_tech
 entity_type: node
-type: string
-settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
+type: email
+settings: {  }
 module: core
 locked: false
 cardinality: 1

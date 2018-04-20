@@ -1,15 +1,15 @@
-uuid: cf199717-b8b6-4b7c-a0cc-c34605101eaa
+uuid: 064de138-efc9-4409-85c7-48262e2c9be9
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_10_fax
+    - field.storage.node.field_nom_contact_com
     - node.type.dso
-id: node.dso.field_10_fax
-field_name: field_10_fax
+id: node.dso.field_nom_contact_com
+field_name: field_nom_contact_com
 entity_type: node
 bundle: dso
-label: Fax
+label: Nom
 description: ''
 required: false
 translatable: false
