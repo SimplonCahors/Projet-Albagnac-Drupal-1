@@ -1,0 +1,21 @@
+uuid: f68f6082-735c-4fc6-96ae-e327b13e16c0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_telephone_tech
+    - paragraphs.paragraphs_type.contact_technique
+  module:
+    - telephone
+id: paragraph.contact_technique.field_telephone_tech
+field_name: field_telephone_tech
+entity_type: paragraph
+bundle: contact_technique
+label: Téléphone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

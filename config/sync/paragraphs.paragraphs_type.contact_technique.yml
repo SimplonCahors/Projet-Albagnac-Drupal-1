@@ -1,0 +1,9 @@
+uuid: 12e8058b-6826-44e3-8830-b8af2e86ba96
+langcode: fr
+status: true
+dependencies: {  }
+id: contact_technique
+label: 'Contact technique'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

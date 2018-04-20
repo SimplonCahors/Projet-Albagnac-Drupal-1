@@ -1,13 +1,13 @@
-uuid: b0e286b8-ab67-4920-8447-a879be1d4b48
+uuid: 62c7f588-89fc-470d-8c0d-795e86f34f79
 langcode: fr
 status: true
 dependencies:
   module:
-    - node
+    - paragraphs
     - telephone
-id: node.field_fax
-field_name: field_fax
-entity_type: node
+id: paragraph.field_telephone
+field_name: field_telephone
+entity_type: paragraph
 type: telephone
 settings: {  }
 module: telephone
