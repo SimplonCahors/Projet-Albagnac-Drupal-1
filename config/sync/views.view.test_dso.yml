@@ -150,7 +150,7 @@ display:
           entity_field: type
           plugin_id: bundle
       sorts: {  }
-      title: 'Liste des DSO'
+      title: 'Mes DSO'
       header: {  }
       footer: {  }
       empty: {  }
