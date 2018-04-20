@@ -1,18 +1,16 @@
-uuid: 3939f4c0-559c-42e2-8086-76aa155b1ba1
+uuid: b0e286b8-ab67-4920-8447-a879be1d4b48
 langcode: fr
 status: true
 dependencies:
   module:
     - node
+    - telephone
 id: node.field_fax
 field_name: field_fax
 entity_type: node
-type: string
-settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+type: telephone
+settings: {  }
+module: telephone
 locked: false
 cardinality: 1
 translatable: true
