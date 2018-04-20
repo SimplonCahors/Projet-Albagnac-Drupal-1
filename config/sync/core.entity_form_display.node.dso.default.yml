@@ -3,7 +3,6 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.dso.body
     - field.field.node.dso.field_10_fax
     - field.field.node.dso.field_10_telephone
     - field.field.node.dso.field_11_pays
@@ -26,12 +25,6 @@ dependencies:
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_contact_com
     - field.field.node.dso.field_nom_contact_tech
-    - field.field.node.dso.field_placeh
-    - field.field.node.dso.field_placeholder
-    - field.field.node.dso.field_placeholder2
-    - field.field.node.dso.field_placeholder3
-    - field.field.node.dso.field_placeholder4
-    - field.field.node.dso.field_placeholder5
     - field.field.node.dso.field_remarques
     - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
@@ -44,7 +37,6 @@ dependencies:
     - datetime
     - field_group
     - telephone
-    - text
 third_party_settings:
   field_group:
     group_details_te:
@@ -116,6 +108,7 @@ third_party_settings:
       children:
         - field_7_nom_client
         - field_8_adresse_postale
+        - field_telephone_contact_com
         - field_9_telephone
         - field_10_fax
         - field_11_pays
@@ -137,8 +130,7 @@ third_party_settings:
         required_fields: false
       label: 'Informations administratives du demandeur'
     group_informations_commerciales:
-      children:
-        - body
+      children: {  }
       parent_name: group_informations_administrativ
       weight: 24
       format_type: tab
@@ -227,7 +219,7 @@ third_party_settings:
         - field_telephone_contact_tech
         - field_experience_contact_com
       parent_name: group_informations_demandeur
-      weight: 45
+      weight: 46
       format_type: tab
       format_settings:
         id: ''
@@ -244,7 +236,7 @@ third_party_settings:
         - field_10_telephone
         - field_experience_contact_tech
       parent_name: group_informations_demandeur
-      weight: 46
+      weight: 47
       format_type: tab
       format_settings:
         id: ''
@@ -258,15 +250,6 @@ targetEntityType: node
 bundle: dso
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 23
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 2
@@ -274,7 +257,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_10_fax:
-    weight: 38
+    weight: 39
     settings:
       size: 60
       placeholder: ''
@@ -289,7 +272,7 @@ content:
     type: telephone_default
     region: content
   field_11_pays:
-    weight: 39
+    weight: 40
     settings:
       size: 60
       placeholder: ''
@@ -343,7 +326,7 @@ content:
     type: string_textfield
     region: content
   field_9_telephone:
-    weight: 37
+    weight: 38
     settings:
       size: 60
       placeholder: ''
@@ -351,7 +334,7 @@ content:
     type: string_textfield
     region: content
   field_categorie_:
-    weight: 40
+    weight: 41
     settings:
       size: 60
       placeholder: ''
@@ -438,54 +421,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_placeh:
-    weight: 30
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_placeholder:
-    weight: 28
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_placeholder2:
-    weight: 29
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_placeholder3:
-    weight: 31
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_placeholder4:
-    weight: 32
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_placeholder5:
-    weight: 33
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_remarques:
     weight: 27
     settings:
@@ -495,22 +430,6 @@ content:
     type: string_textarea
     region: content
   field_secteur_:
-    weight: 41
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_sieret:
-    weight: 44
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_sous_secteur:
     weight: 42
     settings:
       size: 60
@@ -518,8 +437,24 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_sieret:
+    weight: 45
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sous_secteur:
+    weight: 43
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_telephone_contact_com:
-    weight: 59
+    weight: 37
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -533,7 +468,7 @@ content:
     type: telephone_default
     region: content
   field_type_client:
-    weight: 43
+    weight: 44
     settings:
       size: 60
       placeholder: ''

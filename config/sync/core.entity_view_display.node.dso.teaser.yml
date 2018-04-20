@@ -4,24 +4,43 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.dso.body
+    - field.field.node.dso.field_10_fax
+    - field.field.node.dso.field_10_telephone
+    - field.field.node.dso.field_11_pays
+    - field.field.node.dso.field_2_date_creation_fiche_
+    - field.field.node.dso.field_3_date_premiere_c
+    - field.field.node.dso.field_4_reponse_souhaitee
+    - field.field.node.dso.field_5_date_envoie_offre
+    - field.field.node.dso.field_6_date_livraison_souhaite
+    - field.field.node.dso.field_7_nom_client
+    - field.field.node.dso.field_8_adresse_postale
+    - field.field.node.dso.field_9_telephone
+    - field.field.node.dso.field_categorie_
+    - field.field.node.dso.field_email_contact_com
+    - field.field.node.dso.field_email_contact_tech
+    - field.field.node.dso.field_experience_contact_com
+    - field.field.node.dso.field_experience_contact_tech
+    - field.field.node.dso.field_fax
+    - field.field.node.dso.field_fonction_contact_com
+    - field.field.node.dso.field_fonction_contact_tech
+    - field.field.node.dso.field_nom_client
+    - field.field.node.dso.field_nom_contact_com
+    - field.field.node.dso.field_nom_contact_tech
+    - field.field.node.dso.field_remarques
+    - field.field.node.dso.field_secteur_
+    - field.field.node.dso.field_sieret
+    - field.field.node.dso.field_sous_secteur
+    - field.field.node.dso.field_telephone_contact_com
+    - field.field.node.dso.field_telephone_contact_tech
+    - field.field.node.dso.field_type_client
     - node.type.dso
   module:
-    - text
     - user
 id: node.dso.teaser
 targetEntityType: node
 bundle: dso
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     region: content
@@ -53,12 +72,6 @@ hidden:
   field_nom_contact_com: true
   field_nom_contact_tech: true
   field_nom_du_commercial: true
-  field_placeh: true
-  field_placeholder: true
-  field_placeholder2: true
-  field_placeholder3: true
-  field_placeholder4: true
-  field_placeholder5: true
   field_remarques: true
   field_secteur_: true
   field_sieret: true
