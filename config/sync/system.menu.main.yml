@@ -5,6 +5,6 @@ dependencies: {  }
 _core:
   default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
 id: main
-label: 'Navigation principale'
-description: 'Site section links'
+label: Navbar
+description: 'Navbar du site'
 locked: true
