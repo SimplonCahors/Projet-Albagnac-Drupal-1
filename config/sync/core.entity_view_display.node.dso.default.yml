@@ -42,8 +42,13 @@ dependencies:
     - node.type.dso
   module:
     - datetime
+    - entity_print
+    - telephone
     - text
     - user
+third_party_settings:
+  entity_print:
+    pdf_label: 'View PDF'
 id: node.dso.default
 targetEntityType: node
 bundle: dso
@@ -52,12 +57,17 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
+  entity_print_view_pdf:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_10_fax:
-    weight: 123
+    weight: 19
     label: above
     settings:
       link_to_entity: false
@@ -65,14 +75,15 @@ content:
     type: string
     region: content
   field_10_telephone:
-    weight: 139
+    weight: 32
     label: above
-    settings: {  }
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
   field_11_pays:
-    weight: 124
+    weight: 20
     label: above
     settings:
       link_to_entity: false
@@ -80,7 +91,7 @@ content:
     type: string
     region: content
   field_2_date_creation_fiche_:
-    weight: 114
+    weight: 11
     label: above
     settings:
       format_type: medium
@@ -89,7 +100,7 @@ content:
     type: datetime_default
     region: content
   field_3_date_premiere_c:
-    weight: 115
+    weight: 12
     label: above
     settings:
       format_type: medium
@@ -98,7 +109,7 @@ content:
     type: datetime_default
     region: content
   field_4_reponse_souhaitee:
-    weight: 118
+    weight: 14
     label: above
     settings:
       format_type: medium
@@ -107,7 +118,7 @@ content:
     type: datetime_default
     region: content
   field_5_date_envoie_offre:
-    weight: 117
+    weight: 13
     label: above
     settings:
       format_type: medium
@@ -116,7 +127,7 @@ content:
     type: datetime_default
     region: content
   field_6_date_livraison_souhaite:
-    weight: 119
+    weight: 15
     label: above
     settings:
       format_type: medium
@@ -125,7 +136,7 @@ content:
     type: datetime_default
     region: content
   field_7_nom_client:
-    weight: 120
+    weight: 16
     label: above
     settings:
       link_to_entity: false
@@ -133,7 +144,7 @@ content:
     type: string
     region: content
   field_8_adresse_postale:
-    weight: 121
+    weight: 17
     label: above
     settings:
       link_to_entity: false
@@ -141,7 +152,7 @@ content:
     type: string
     region: content
   field_9_telephone:
-    weight: 122
+    weight: 18
     label: above
     settings:
       link_to_entity: false
@@ -149,7 +160,7 @@ content:
     type: string
     region: content
   field_categorie_:
-    weight: 125
+    weight: 21
     label: above
     settings:
       link_to_entity: false
@@ -157,21 +168,21 @@ content:
     type: string
     region: content
   field_email_contact_com:
-    weight: 141
+    weight: 34
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_email_contact_tech:
-    weight: 140
+    weight: 33
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_experience_contact_com:
-    weight: 136
+    weight: 29
     label: above
     settings:
       link_to_entity: false
@@ -179,7 +190,7 @@ content:
     type: string
     region: content
   field_experience_contact_tech:
-    weight: 143
+    weight: 36
     label: above
     settings:
       link_to_entity: false
@@ -187,7 +198,7 @@ content:
     type: string
     region: content
   field_fax:
-    weight: 129
+    weight: 24
     label: above
     settings:
       link_to_entity: false
@@ -195,7 +206,7 @@ content:
     type: string
     region: content
   field_fonction_contact_com:
-    weight: 133
+    weight: 28
     label: above
     settings:
       link_to_entity: false
@@ -203,7 +214,7 @@ content:
     type: string
     region: content
   field_fonction_contact_tech:
-    weight: 138
+    weight: 31
     label: above
     settings:
       link_to_entity: false
@@ -211,7 +222,7 @@ content:
     type: string
     region: content
   field_nom_client:
-    weight: 103
+    weight: 3
     label: above
     settings:
       link_to_entity: false
@@ -219,7 +230,7 @@ content:
     type: string
     region: content
   field_nom_contact_com:
-    weight: 132
+    weight: 27
     label: above
     settings:
       link_to_entity: false
@@ -227,7 +238,7 @@ content:
     type: string
     region: content
   field_nom_contact_tech:
-    weight: 137
+    weight: 30
     label: above
     settings:
       link_to_entity: false
@@ -235,7 +246,7 @@ content:
     type: string
     region: content
   field_placeh:
-    weight: 107
+    weight: 7
     label: above
     settings:
       link_to_entity: false
@@ -243,7 +254,7 @@ content:
     type: string
     region: content
   field_placeholder:
-    weight: 105
+    weight: 5
     label: above
     settings:
       link_to_entity: false
@@ -251,7 +262,7 @@ content:
     type: string
     region: content
   field_placeholder2:
-    weight: 106
+    weight: 6
     label: above
     settings:
       link_to_entity: false
@@ -259,7 +270,7 @@ content:
     type: string
     region: content
   field_placeholder3:
-    weight: 108
+    weight: 8
     label: above
     settings:
       link_to_entity: false
@@ -267,7 +278,7 @@ content:
     type: string
     region: content
   field_placeholder4:
-    weight: 109
+    weight: 9
     label: above
     settings:
       link_to_entity: false
@@ -275,7 +286,7 @@ content:
     type: string
     region: content
   field_placeholder5:
-    weight: 110
+    weight: 10
     label: above
     settings:
       link_to_entity: false
@@ -283,14 +294,14 @@ content:
     type: string
     region: content
   field_remarques:
-    weight: 104
+    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_secteur_:
-    weight: 126
+    weight: 22
     label: above
     settings:
       link_to_entity: false
@@ -298,7 +309,7 @@ content:
     type: string
     region: content
   field_sieret:
-    weight: 131
+    weight: 26
     label: above
     settings:
       link_to_entity: false
@@ -306,7 +317,7 @@ content:
     type: string
     region: content
   field_sous_secteur:
-    weight: 128
+    weight: 23
     label: above
     settings:
       link_to_entity: false
@@ -314,21 +325,23 @@ content:
     type: string
     region: content
   field_telephone_contact_com:
-    weight: 144
+    weight: 37
     label: above
-    settings: {  }
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
   field_telephone_contact_tech:
-    weight: 142
+    weight: 35
     label: above
-    settings: {  }
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
   field_type_client:
-    weight: 130
+    weight: 25
     label: above
     settings:
       link_to_entity: false
@@ -336,12 +349,11 @@ content:
     type: string
     region: content
   links:
-    weight: 100
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   entity_print_view_epub: true
-  entity_print_view_pdf: true
   entity_print_view_word_docx: true
   langcode: true
