@@ -26,12 +26,17 @@ content:
     weight: 100
     region: content
 hidden:
+  field_10_fax: true
+  field_11_pays: true
   field_2_date_creation_fiche: true
   field_2_date_creation_fiche_: true
   field_3_date_premiere_c: true
   field_4_reponse_souhaitee: true
   field_5_date_envoie_offre: true
   field_6_date_livraison_souhaite: true
+  field_7_nom_client: true
+  field_8_adresse_postale: true
+  field_9_telephone: true
   field_nom_client: true
   field_nom_du_commercial: true
   field_placeh: true

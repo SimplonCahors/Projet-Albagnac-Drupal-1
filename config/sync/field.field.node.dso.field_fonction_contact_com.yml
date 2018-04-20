@@ -1,0 +1,19 @@
+uuid: bcc6ff82-97d1-45fd-a042-cbe3399032b6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fonction_contact_com
+    - node.type.dso
+id: node.dso.field_fonction_contact_com
+field_name: field_fonction_contact_com
+entity_type: node
+bundle: dso
+label: Fonction
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

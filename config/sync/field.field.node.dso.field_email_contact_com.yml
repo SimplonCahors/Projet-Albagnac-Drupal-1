@@ -1,0 +1,19 @@
+uuid: 5d2325b5-b162-4bde-8336-7c5ffdb6c2df
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_contact_com
+    - node.type.dso
+id: node.dso.field_email_contact_com
+field_name: field_email_contact_com
+entity_type: node
+bundle: dso
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email
