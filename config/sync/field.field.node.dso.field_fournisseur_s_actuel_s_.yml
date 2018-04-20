@@ -1,0 +1,40 @@
+uuid: a351a492-7a18-46e5-8573-4b4480813fb8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fournisseur_s_actuel_s_
+    - node.type.dso
+    - paragraphs.paragraphs_type.fournisseur_s_actuel_s_
+  module:
+    - entity_reference_revisions
+id: node.dso.field_fournisseur_s_actuel_s_
+field_name: field_fournisseur_s_actuel_s_
+entity_type: node
+bundle: dso
+label: 'Fournisseur(s) actuel(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      fournisseur_s_actuel_s_: fournisseur_s_actuel_s_
+    target_bundles_drag_drop:
+      fournisseur_s_actuel_s_:
+        enabled: true
+        weight: 5
+      besoin:
+        weight: 6
+        enabled: false
+      contact_commercial:
+        weight: 7
+        enabled: false
+      contact_technique:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

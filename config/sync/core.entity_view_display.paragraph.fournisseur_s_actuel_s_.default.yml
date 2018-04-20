@@ -1,0 +1,24 @@
+uuid: abdc062f-7a7a-437a-9ec2-446880e422e3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fournisseur_s_actuel_s_.field_fournisseur_actuel
+    - paragraphs.paragraphs_type.fournisseur_s_actuel_s_
+id: paragraph.fournisseur_s_actuel_s_.default
+targetEntityType: paragraph
+bundle: fournisseur_s_actuel_s_
+mode: default
+content:
+  field_fournisseur_actuel:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

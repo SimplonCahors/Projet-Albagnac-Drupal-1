@@ -1,0 +1,19 @@
+uuid: 6936c61d-e4de-46d8-983f-18229840f9ca
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fournisseur_actuel
+    - paragraphs.paragraphs_type.fournisseur_s_actuel_s_
+id: paragraph.fournisseur_s_actuel_s_.field_fournisseur_actuel
+field_name: field_fournisseur_actuel
+entity_type: paragraph
+bundle: fournisseur_s_actuel_s_
+label: 'Fournisseur(s) actuel(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,42 @@
+uuid: 96e5d67c-de66-48c2-bd4c-4636d0ed6dbd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.concurrent_sur_cette_opportunite.field_nom_concurrent
+    - field.field.paragraph.concurrent_sur_cette_opportunite.field_remarques_concurrent
+    - field.field.paragraph.concurrent_sur_cette_opportunite.field_type
+    - paragraphs.paragraphs_type.concurrent_sur_cette_opportunite
+id: paragraph.concurrent_sur_cette_opportunite.default
+targetEntityType: paragraph
+bundle: concurrent_sur_cette_opportunite
+mode: default
+content:
+  field_nom_concurrent:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_remarques_concurrent:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_type:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
