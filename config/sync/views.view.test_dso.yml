@@ -7,7 +7,6 @@ dependencies:
     - node.type.dso
     - system.menu.main
   module:
-    - entity_print_views
     - node
     - user
 id: test_dso
@@ -150,19 +149,7 @@ display:
           plugin_id: bundle
       sorts: {  }
       title: 'Liste des DSO'
-      header:
-        area_entity_print_views:
-          id: area_entity_print_views
-          table: views
-          field: area_entity_print_views
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          export_type: pdf
-          link_text: 'View PDF'
-          display_id: page_1
-          plugin_id: entity_print_views_link
+      header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -184,7 +171,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: test-dso
+      path: liste
       menu:
         type: normal
         title: 'Test DSO'
