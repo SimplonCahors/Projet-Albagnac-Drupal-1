@@ -1,19 +1,19 @@
-uuid: cf199717-b8b6-4b7c-a0cc-c34605101eaa
+uuid: 4326c503-aead-4131-9c34-929bf9b60a9a
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_10_fax
+    - field.storage.node.field_email_contact_tech
     - node.type.dso
-id: node.dso.field_10_fax
-field_name: field_10_fax
+id: node.dso.field_email_contact_tech
+field_name: field_email_contact_tech
 entity_type: node
 bundle: dso
-label: Fax
+label: Email
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: email

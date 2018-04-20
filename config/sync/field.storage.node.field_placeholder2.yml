@@ -1,11 +1,11 @@
-uuid: d95fff66-de73-4139-bce6-058a962d6dc1
+uuid: 75403ebf-3260-499d-b423-c1d1328c28fa
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-id: node.field_10_fax
-field_name: field_10_fax
+id: node.field_placeholder2
+field_name: field_placeholder2
 entity_type: node
 type: string
 settings:

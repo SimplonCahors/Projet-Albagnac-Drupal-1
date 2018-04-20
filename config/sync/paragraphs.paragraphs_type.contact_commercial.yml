@@ -1,9 +1,0 @@
-uuid: 042a8616-22ae-493d-8ea4-5deed1f1b359
-langcode: fr
-status: true
-dependencies: {  }
-id: contact_commercial
-label: 'Contact commercial'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

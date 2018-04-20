@@ -1,11 +1,11 @@
-uuid: d95fff66-de73-4139-bce6-058a962d6dc1
+uuid: 59723023-dc31-4016-a8b0-bdb30e781184
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-id: node.field_10_fax
-field_name: field_10_fax
+id: node.field_placeholder5
+field_name: field_placeholder5
 entity_type: node
 type: string
 settings:
@@ -14,7 +14,7 @@ settings:
   case_sensitive: false
 module: core
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

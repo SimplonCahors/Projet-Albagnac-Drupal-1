@@ -1,15 +1,15 @@
-uuid: cf199717-b8b6-4b7c-a0cc-c34605101eaa
+uuid: 1af8b540-6a27-4169-91b0-804df1eb019f
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_10_fax
+    - field.storage.node.field_placeholder3
     - node.type.dso
-id: node.dso.field_10_fax
-field_name: field_10_fax
+id: node.dso.field_placeholder3
+field_name: field_placeholder3
 entity_type: node
 bundle: dso
-label: Fax
+label: placeholder3
 description: ''
 required: false
 translatable: false
