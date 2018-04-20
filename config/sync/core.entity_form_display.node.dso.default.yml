@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.dso.field_8_adresse_postale
     - field.field.node.dso.field_9_telephone
     - field.field.node.dso.field_categorie_
+    - field.field.node.dso.field_champ_factice
     - field.field.node.dso.field_email_contact_com
     - field.field.node.dso.field_email_contact_tech
     - field.field.node.dso.field_experience_contact_com
@@ -337,6 +338,14 @@ content:
     region: content
   field_categorie_:
     weight: 41
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_champ_factice:
+    weight: 59
     settings:
       size: 60
       placeholder: ''

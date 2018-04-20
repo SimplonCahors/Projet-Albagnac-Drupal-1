@@ -1,0 +1,19 @@
+uuid: a69193e5-8b96-4b43-9681-9a31b121ca13
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_champ_factice
+    - node.type.dso
+id: node.dso.field_champ_factice
+field_name: field_champ_factice
+entity_type: node
+bundle: dso
+label: 'champ factice'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
