@@ -1,0 +1,21 @@
+uuid: 9df9096b-2b1e-48a0-9c8b-3ca193a0838c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_nom_du_commercial
+field_name: field_nom_du_commercial
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

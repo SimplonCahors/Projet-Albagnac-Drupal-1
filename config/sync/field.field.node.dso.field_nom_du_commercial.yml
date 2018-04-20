@@ -1,21 +1,19 @@
-uuid: 7aba25c4-8b85-43cc-a375-cab1fc927c08
+uuid: f5be2b34-0fe3-49ee-87e6-fe078a8ef178
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_fax
+    - field.storage.node.field_nom_du_commercial
     - node.type.dso
-  module:
-    - telephone
-id: node.dso.field_fax
-field_name: field_fax
+id: node.dso.field_nom_du_commercial
+field_name: field_nom_du_commercial
 entity_type: node
 bundle: dso
-label: Fax
+label: 'Nom du Commercial'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: telephone
+field_type: string

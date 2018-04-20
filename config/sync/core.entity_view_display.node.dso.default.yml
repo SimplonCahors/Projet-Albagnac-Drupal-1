@@ -40,7 +40,7 @@ dependencies:
     - user
 third_party_settings:
   entity_print:
-    pdf_label: 'Télécharger en PDF'
+    pdf_label: 'View PDF'
 id: node.dso.default
 targetEntityType: node
 bundle: dso
@@ -52,12 +52,11 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_10_fax:
-    weight: 19
+    weight: 40
     label: above
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    type: string
+    type: basic_string
     region: content
   field_10_telephone:
     weight: 32
@@ -183,12 +182,11 @@ content:
     type: string
     region: content
   field_fax:
-    weight: 24
+    weight: 39
     label: above
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    type: string
+    type: basic_string
     region: content
   field_fonction_contact_com:
     weight: 28
@@ -224,6 +222,14 @@ content:
     region: content
   field_nom_contact_tech:
     weight: 30
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_nom_du_commercial:
+    weight: 38
     label: above
     settings:
       link_to_entity: false
