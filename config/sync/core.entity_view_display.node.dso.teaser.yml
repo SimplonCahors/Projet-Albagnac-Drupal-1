@@ -56,6 +56,7 @@ hidden:
   field_categorie_: true
   field_champ_factice: true
   field_contact_commercial: true
+  field_contact_technique: true
   field_email_contact_com: true
   field_fax: true
   field_fonction_contact_tech: true
