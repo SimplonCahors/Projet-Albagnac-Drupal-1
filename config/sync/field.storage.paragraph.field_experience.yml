@@ -1,12 +1,12 @@
-uuid: c24a0c91-9dfd-4f19-8000-89b805c52060
+uuid: 732637e2-e688-4f8a-996f-7a24e4380452
 langcode: fr
 status: true
 dependencies:
   module:
-    - node
-id: node.field_9_telephone
-field_name: field_9_telephone
-entity_type: node
+    - paragraphs
+id: paragraph.field_experience
+field_name: field_experience
+entity_type: paragraph
 type: string
 settings:
   max_length: 255

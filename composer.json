@@ -25,6 +25,7 @@
         "drupal/diff": "^1.0@RC",
         "drupal/entity_print": "2.x",
         "drupal/field_group": "^1.0",
+        "drupal/paragraphs": "^1.2",
         "drupal/tcpdf": "1.x-dev",
         "drush/drush": "^9.2",
         "mikehaertl/phpwkhtmltopdf": "^2.3",

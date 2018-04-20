@@ -1,12 +1,12 @@
-uuid: 8d427499-6cbd-4edb-bc92-faf5b59a9cf5
+uuid: 9c2d4548-6195-43d1-9e3c-c0d86b97b8ea
 langcode: fr
 status: true
 dependencies:
   module:
-    - node
-id: node.field_email_contact_tech
-field_name: field_email_contact_tech
-entity_type: node
+    - paragraphs
+id: paragraph.field_email
+field_name: field_email
+entity_type: paragraph
 type: email
 settings: {  }
 module: core

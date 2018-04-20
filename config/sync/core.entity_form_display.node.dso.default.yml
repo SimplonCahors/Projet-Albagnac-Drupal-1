@@ -13,11 +13,9 @@ dependencies:
     - field.field.node.dso.field_6_date_livraison_souhaite
     - field.field.node.dso.field_7_nom_client
     - field.field.node.dso.field_8_adresse_postale
-    - field.field.node.dso.field_9_telephone
     - field.field.node.dso.field_categorie_
-    - field.field.node.dso.field_champ_factice
+    - field.field.node.dso.field_contact_commercial
     - field.field.node.dso.field_email_contact_com
-    - field.field.node.dso.field_email_contact_tech
     - field.field.node.dso.field_experience_contact_com
     - field.field.node.dso.field_experience_contact_tech
     - field.field.node.dso.field_fax
@@ -38,6 +36,7 @@ dependencies:
   module:
     - datetime
     - field_group
+    - paragraphs
     - telephone
 third_party_settings:
   field_group:
@@ -60,7 +59,7 @@ third_party_settings:
         - group_etiquettes
         - group_combinaison
       parent_name: ''
-      weight: 4
+      weight: 3
       format_type: tabs
       format_settings:
         label: tabs_dso
@@ -73,6 +72,7 @@ third_party_settings:
         - title
         - group_onglet1
         - group_informations_demandeur
+        - field_contact_commercial
         - group_informations_commerciales
         - group_emballage_etiquettes
         - group_environnement_machine
@@ -113,7 +113,6 @@ third_party_settings:
         - field_7_nom_client
         - field_8_adresse_postale
         - field_telephone_contact_com
-        - field_9_telephone
         - field_10_fax
         - field_11_pays
         - field_categorie_
@@ -121,8 +120,6 @@ third_party_settings:
         - field_sous_secteur
         - field_type_client
         - field_sieret
-        - group_contact_commercial
-        - group_contact_technique
       parent_name: group_informations_administrativ
       weight: 2
       format_type: tab
@@ -215,40 +212,6 @@ third_party_settings:
         open: false
         required_fields: false
       label: Combinaison
-    group_contact_commercial:
-      children:
-        - field_nom_contact_com
-        - field_fonction_contact_com
-        - field_email_contact_com
-        - field_telephone_contact_tech
-        - field_experience_contact_com
-      parent_name: group_informations_demandeur
-      weight: 46
-      format_type: tab
-      format_settings:
-        id: ''
-        classes: ''
-        formatter: closed
-        description: ''
-        required_fields: true
-      label: 'Contact commercial'
-    group_contact_technique:
-      children:
-        - field_nom_contact_tech
-        - field_fonction_contact_tech
-        - field_email_contact_tech
-        - field_10_telephone
-        - field_experience_contact_tech
-      parent_name: group_informations_demandeur
-      weight: 47
-      format_type: tab
-      format_settings:
-        id: ''
-        classes: ''
-        formatter: closed
-        description: ''
-        required_fields: true
-      label: 'Contact technique'
 id: node.dso.default
 targetEntityType: node
 bundle: dso
@@ -256,26 +219,26 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
   field_10_fax:
-    weight: 58
+    weight: 38
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
   field_10_telephone:
-    weight: 55
+    weight: 14
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
   field_11_pays:
-    weight: 40
+    weight: 39
     settings:
       size: 60
       placeholder: ''
@@ -328,40 +291,28 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_9_telephone:
-    weight: 38
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_categorie_:
-    weight: 41
+    weight: 40
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_champ_factice:
-    weight: 59
+  field_contact_commercial:
+    type: entity_reference_paragraphs
+    weight: 3
     settings:
-      size: 60
-      placeholder: ''
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: contact_commercial
     third_party_settings: {  }
-    type: string_textfield
     region: content
   field_email_contact_com:
-    weight: 49
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: email_default
-    region: content
-  field_email_contact_tech:
-    weight: 54
+    weight: 8
     settings:
       size: 60
       placeholder: ''
@@ -369,7 +320,7 @@ content:
     type: email_default
     region: content
   field_experience_contact_com:
-    weight: 52
+    weight: 10
     settings:
       size: 60
       placeholder: ''
@@ -377,7 +328,7 @@ content:
     type: string_textfield
     region: content
   field_experience_contact_tech:
-    weight: 56
+    weight: 15
     settings:
       size: 60
       placeholder: ''
@@ -385,14 +336,14 @@ content:
     type: string_textfield
     region: content
   field_fax:
-    weight: 57
+    weight: 16
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
   field_fonction_contact_com:
-    weight: 48
+    weight: 7
     settings:
       size: 60
       placeholder: ''
@@ -400,7 +351,7 @@ content:
     type: string_textfield
     region: content
   field_fonction_contact_tech:
-    weight: 53
+    weight: 12
     settings:
       size: 60
       placeholder: ''
@@ -416,7 +367,7 @@ content:
     type: string_textfield
     region: content
   field_nom_contact_com:
-    weight: 47
+    weight: 6
     settings:
       size: 60
       placeholder: ''
@@ -424,7 +375,7 @@ content:
     type: string_textfield
     region: content
   field_nom_contact_tech:
-    weight: 52
+    weight: 11
     settings:
       size: 60
       placeholder: ''
@@ -448,7 +399,7 @@ content:
     type: string_textarea
     region: content
   field_secteur_:
-    weight: 42
+    weight: 41
     settings:
       size: 60
       placeholder: ''
@@ -456,7 +407,7 @@ content:
     type: string_textfield
     region: content
   field_sieret:
-    weight: 45
+    weight: 44
     settings:
       size: 60
       placeholder: ''
@@ -464,7 +415,7 @@ content:
     type: string_textfield
     region: content
   field_sous_secteur:
-    weight: 43
+    weight: 42
     settings:
       size: 60
       placeholder: ''
@@ -472,21 +423,21 @@ content:
     type: string_textfield
     region: content
   field_telephone_contact_com:
-    weight: 14
+    weight: 37
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
   field_telephone_contact_tech:
-    weight: 50
+    weight: 9
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
   field_type_client:
-    weight: 44
+    weight: 43
     settings:
       size: 60
       placeholder: ''
@@ -497,7 +448,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 3
+    weight: 2
     region: content
     third_party_settings: {  }
   title:
@@ -510,7 +461,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 0
     settings:
       match_operator: CONTAINS
       size: 60

@@ -14,10 +14,9 @@ dependencies:
     - field.field.node.dso.field_6_date_livraison_souhaite
     - field.field.node.dso.field_7_nom_client
     - field.field.node.dso.field_8_adresse_postale
-    - field.field.node.dso.field_9_telephone
     - field.field.node.dso.field_categorie_
+    - field.field.node.dso.field_contact_commercial
     - field.field.node.dso.field_email_contact_com
-    - field.field.node.dso.field_email_contact_tech
     - field.field.node.dso.field_experience_contact_com
     - field.field.node.dso.field_experience_contact_tech
     - field.field.node.dso.field_fax
@@ -26,6 +25,7 @@ dependencies:
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_contact_com
     - field.field.node.dso.field_nom_contact_tech
+    - field.field.node.dso.field_nom_du_commercial
     - field.field.node.dso.field_remarques
     - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
@@ -59,10 +59,10 @@ hidden:
   field_6_date_livraison_souhaite: true
   field_7_nom_client: true
   field_8_adresse_postale: true
-  field_9_telephone: true
   field_categorie_: true
+  field_champ_factice: true
+  field_contact_commercial: true
   field_email_contact_com: true
-  field_email_contact_tech: true
   field_experience_contact_com: true
   field_experience_contact_tech: true
   field_fax: true

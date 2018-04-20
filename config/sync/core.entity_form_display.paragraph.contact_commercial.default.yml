@@ -1,0 +1,61 @@
+uuid: e64562b9-4039-4f91-a4b1-37441a1bbf7f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_commercial.field_email
+    - field.field.paragraph.contact_commercial.field_experience
+    - field.field.paragraph.contact_commercial.field_fonction
+    - field.field.paragraph.contact_commercial.field_nom
+    - field.field.paragraph.contact_commercial.field_telephone
+    - paragraphs.paragraphs_type.contact_commercial
+  module:
+    - telephone
+id: paragraph.contact_commercial.default
+targetEntityType: paragraph
+bundle: contact_commercial
+mode: default
+content:
+  field_email:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_experience:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fonction:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_nom:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_telephone:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
