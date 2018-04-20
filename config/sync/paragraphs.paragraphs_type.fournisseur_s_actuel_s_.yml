@@ -1,0 +1,9 @@
+uuid: 393a3957-06d2-41b1-9082-49d193142dbd
+langcode: fr
+status: true
+dependencies: {  }
+id: fournisseur_s_actuel_s_
+label: 'Fournisseur(s) actuel(s)'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

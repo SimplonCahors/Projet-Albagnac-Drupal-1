@@ -1,0 +1,43 @@
+uuid: 31f2dda5-810c-4b9e-9325-2d94edb5eb81
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_concurrent_sur_cette_oppor
+    - node.type.dso
+    - paragraphs.paragraphs_type.concurrent_sur_cette_opportunite
+  module:
+    - entity_reference_revisions
+id: node.dso.field_concurrent_sur_cette_oppor
+field_name: field_concurrent_sur_cette_oppor
+entity_type: node
+bundle: dso
+label: 'Concurrent sur cette opportunité'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      concurrent_sur_cette_opportunite: concurrent_sur_cette_opportunite
+    target_bundles_drag_drop:
+      concurrent_sur_cette_opportunite:
+        enabled: true
+        weight: 6
+      besoin:
+        weight: 7
+        enabled: false
+      contact_commercial:
+        weight: 8
+        enabled: false
+      contact_technique:
+        weight: 9
+        enabled: false
+      fournisseur_s_actuel_s_:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

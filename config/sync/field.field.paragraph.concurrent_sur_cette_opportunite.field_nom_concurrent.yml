@@ -1,0 +1,19 @@
+uuid: d4ed1181-b502-4e7e-b4ab-b44698baeeb3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_nom_concurrent
+    - paragraphs.paragraphs_type.concurrent_sur_cette_opportunite
+id: paragraph.concurrent_sur_cette_opportunite.field_nom_concurrent
+field_name: field_nom_concurrent
+entity_type: paragraph
+bundle: concurrent_sur_cette_opportunite
+label: Nom
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

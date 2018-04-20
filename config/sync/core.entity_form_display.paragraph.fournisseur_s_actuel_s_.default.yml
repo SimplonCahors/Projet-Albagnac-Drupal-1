@@ -1,0 +1,24 @@
+uuid: 2668e304-a0d1-4518-8f59-9598298f0219
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fournisseur_s_actuel_s_.field_fournisseur_actuel
+    - paragraphs.paragraphs_type.fournisseur_s_actuel_s_
+id: paragraph.fournisseur_s_actuel_s_.default
+targetEntityType: paragraph
+bundle: fournisseur_s_actuel_s_
+mode: default
+content:
+  field_fournisseur_actuel:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

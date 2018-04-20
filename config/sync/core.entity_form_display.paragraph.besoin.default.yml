@@ -1,0 +1,31 @@
+uuid: 3f233e1f-e47b-42fd-86f2-6c200faf82ec
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.besoin.field_besoin
+    - field.field.paragraph.besoin.field_remarques
+    - paragraphs.paragraphs_type.besoin
+id: paragraph.besoin.default
+targetEntityType: paragraph
+bundle: besoin
+mode: default
+content:
+  field_besoin:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_remarques:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
