@@ -17,21 +17,15 @@ dependencies:
     - field.field.node.dso.field_categorie_
     - field.field.node.dso.field_contact_commercial
     - field.field.node.dso.field_email_contact_com
-    - field.field.node.dso.field_experience_contact_com
-    - field.field.node.dso.field_experience_contact_tech
     - field.field.node.dso.field_fax
-    - field.field.node.dso.field_fonction_contact_com
     - field.field.node.dso.field_fonction_contact_tech
     - field.field.node.dso.field_nom_client
-    - field.field.node.dso.field_nom_contact_com
     - field.field.node.dso.field_nom_contact_tech
     - field.field.node.dso.field_nom_du_commercial
     - field.field.node.dso.field_remarques
     - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sous_secteur
-    - field.field.node.dso.field_telephone_contact_com
-    - field.field.node.dso.field_telephone_contact_tech
     - field.field.node.dso.field_type_client
     - node.type.dso
   module:
@@ -63,20 +57,14 @@ hidden:
   field_champ_factice: true
   field_contact_commercial: true
   field_email_contact_com: true
-  field_experience_contact_com: true
-  field_experience_contact_tech: true
   field_fax: true
-  field_fonction_contact_com: true
   field_fonction_contact_tech: true
   field_nom_client: true
-  field_nom_contact_com: true
   field_nom_contact_tech: true
   field_nom_du_commercial: true
   field_remarques: true
   field_secteur_: true
   field_sieret: true
   field_sous_secteur: true
-  field_telephone_contact_com: true
-  field_telephone_contact_tech: true
   field_type_client: true
   langcode: true

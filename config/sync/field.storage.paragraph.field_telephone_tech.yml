@@ -1,13 +1,13 @@
-uuid: a2811784-7247-4c5a-a87c-5cf4d16b363f
+uuid: a8a33109-9fc6-4eb4-88ec-2ea1bd6bfc08
 langcode: fr
 status: true
 dependencies:
   module:
-    - node
+    - paragraphs
     - telephone
-id: node.field_telephone_contact_tech
-field_name: field_telephone_contact_tech
-entity_type: node
+id: paragraph.field_telephone_tech
+field_name: field_telephone_tech
+entity_type: paragraph
 type: telephone
 settings: {  }
 module: telephone

@@ -1,0 +1,58 @@
+uuid: c509eddc-1f61-4311-ab4b-27757090b6f4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_technique.field_email_tech
+    - field.field.paragraph.contact_technique.field_experience_tech
+    - field.field.paragraph.contact_technique.field_fonction_tech
+    - field.field.paragraph.contact_technique.field_nom_tech
+    - field.field.paragraph.contact_technique.field_telephone_tech
+    - paragraphs.paragraphs_type.contact_technique
+id: paragraph.contact_technique.default
+targetEntityType: paragraph
+bundle: contact_technique
+mode: default
+content:
+  field_email_tech:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_experience_tech:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_fonction_tech:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_nom_tech:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_telephone_tech:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

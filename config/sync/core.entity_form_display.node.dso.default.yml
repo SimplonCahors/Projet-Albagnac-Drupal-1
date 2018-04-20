@@ -15,22 +15,17 @@ dependencies:
     - field.field.node.dso.field_8_adresse_postale
     - field.field.node.dso.field_categorie_
     - field.field.node.dso.field_contact_commercial
+    - field.field.node.dso.field_contact_technique
     - field.field.node.dso.field_email_contact_com
-    - field.field.node.dso.field_experience_contact_com
-    - field.field.node.dso.field_experience_contact_tech
     - field.field.node.dso.field_fax
-    - field.field.node.dso.field_fonction_contact_com
     - field.field.node.dso.field_fonction_contact_tech
     - field.field.node.dso.field_nom_client
-    - field.field.node.dso.field_nom_contact_com
     - field.field.node.dso.field_nom_contact_tech
     - field.field.node.dso.field_nom_du_commercial
     - field.field.node.dso.field_remarques
     - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sous_secteur
-    - field.field.node.dso.field_telephone_contact_com
-    - field.field.node.dso.field_telephone_contact_tech
     - field.field.node.dso.field_type_client
     - node.type.dso
   module:
@@ -73,6 +68,7 @@ third_party_settings:
         - group_onglet1
         - group_informations_demandeur
         - field_contact_commercial
+        - field_contact_technique
         - group_informations_commerciales
         - group_emballage_etiquettes
         - group_environnement_machine
@@ -112,7 +108,6 @@ third_party_settings:
       children:
         - field_7_nom_client
         - field_8_adresse_postale
-        - field_telephone_contact_com
         - field_10_fax
         - field_11_pays
         - field_categorie_
@@ -133,7 +128,7 @@ third_party_settings:
     group_informations_commerciales:
       children: {  }
       parent_name: group_informations_administrativ
-      weight: 4
+      weight: 5
       format_type: tab
       format_settings:
         id: ''
@@ -145,7 +140,7 @@ third_party_settings:
     group_emballage_etiquettes:
       children: {  }
       parent_name: group_informations_administrativ
-      weight: 5
+      weight: 6
       format_type: tab
       format_settings:
         id: ''
@@ -157,7 +152,7 @@ third_party_settings:
     group_environnement_machine:
       children: {  }
       parent_name: group_informations_administrativ
-      weight: 6
+      weight: 7
       format_type: tab
       format_settings:
         id: ''
@@ -169,7 +164,7 @@ third_party_settings:
     group_materiel_impose_impression:
       children: {  }
       parent_name: group_informations_administrativ
-      weight: 7
+      weight: 8
       format_type: tab
       format_settings:
         id: ''
@@ -181,7 +176,7 @@ third_party_settings:
     group_remarques:
       children: {  }
       parent_name: group_informations_administrativ
-      weight: 8
+      weight: 9
       format_type: tab
       format_settings:
         id: ''
@@ -311,6 +306,18 @@ content:
       default_paragraph_type: contact_commercial
     third_party_settings: {  }
     region: content
+  field_contact_technique:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_email_contact_com:
     weight: 8
     settings:
@@ -319,36 +326,12 @@ content:
     third_party_settings: {  }
     type: email_default
     region: content
-  field_experience_contact_com:
-    weight: 10
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_experience_contact_tech:
-    weight: 15
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_fax:
     weight: 16
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
-    region: content
-  field_fonction_contact_com:
-    weight: 7
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
   field_fonction_contact_tech:
     weight: 12
@@ -360,14 +343,6 @@ content:
     region: content
   field_nom_client:
     weight: 18
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_nom_contact_com:
-    weight: 6
     settings:
       size: 60
       placeholder: ''
@@ -421,20 +396,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_telephone_contact_com:
-    weight: 37
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: telephone_default
-    region: content
-  field_telephone_contact_tech:
-    weight: 9
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: telephone_default
     region: content
   field_type_client:
     weight: 43
