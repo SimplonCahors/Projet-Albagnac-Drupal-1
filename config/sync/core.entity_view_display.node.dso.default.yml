@@ -48,7 +48,7 @@ dependencies:
     - user
 third_party_settings:
   entity_print:
-    pdf_label: 'View PDF'
+    pdf_label: 'Télécharger en PDF'
 id: node.dso.default
 targetEntityType: node
 bundle: dso
