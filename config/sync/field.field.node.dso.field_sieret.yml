@@ -9,7 +9,7 @@ id: node.dso.field_sieret
 field_name: field_sieret
 entity_type: node
 bundle: dso
-label: SIERET
+label: SIRET
 description: ''
 required: false
 translatable: false

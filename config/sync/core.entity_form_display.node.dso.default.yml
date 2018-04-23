@@ -3,7 +3,6 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.dso.body
     - field.field.node.dso.field_10_fax
     - field.field.node.dso.field_10_telephone
     - field.field.node.dso.field_11_pays
@@ -16,7 +15,11 @@ dependencies:
     - field.field.node.dso.field_8_adresse_postale
     - field.field.node.dso.field_9_telephone
     - field.field.node.dso.field_asservissement
+    - field.field.node.dso.field_besoin
     - field.field.node.dso.field_categorie_
+    - field.field.node.dso.field_concurrent_sur_cette_oppor
+    - field.field.node.dso.field_contact_commercial
+    - field.field.node.dso.field_contact_technique
     - field.field.node.dso.field_email_contact_com
     - field.field.node.dso.field_email_contact_tech
     - field.field.node.dso.field_experience_contact_com
@@ -24,14 +27,11 @@ dependencies:
     - field.field.node.dso.field_fax
     - field.field.node.dso.field_fonction_contact_com
     - field.field.node.dso.field_fonction_contact_tech
+    - field.field.node.dso.field_fournisseur_s_actuel_s_
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_contact_com
     - field.field.node.dso.field_nom_contact_tech
-    - field.field.node.dso.field_placeh
-    - field.field.node.dso.field_placeholder2
-    - field.field.node.dso.field_placeholder3
-    - field.field.node.dso.field_placeholder4
-    - field.field.node.dso.field_placeholder5
+    - field.field.node.dso.field_nom_du_commercial
     - field.field.node.dso.field_remarques
     - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
@@ -44,7 +44,6 @@ dependencies:
     - field_group
     - paragraphs
     - telephone
-    - text
 third_party_settings:
   field_group:
     group_details_te:
@@ -259,15 +258,6 @@ targetEntityType: node
 bundle: dso
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 23
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 2
@@ -451,46 +441,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_placeh:
-    weight: 30
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_placeholder2:
-    weight: 29
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_placeholder3:
-    weight: 31
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_placeholder4:
-    weight: 32
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_placeholder5:
-    weight: 33
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_remarques:
     weight: 27
     settings:
@@ -563,8 +513,11 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
+  field_besoin: true
+  field_concurrent_sur_cette_oppor: true
   field_contact_commercial: true
   field_contact_technique: true
+  field_fournisseur_s_actuel_s_: true
   field_nom_du_commercial: true
   langcode: true
   path: true
