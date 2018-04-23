@@ -96,6 +96,7 @@ hidden:
   field_demande_de_cem_electromagn: true
   field_demande_de_certification_e: true
   field_demande_de_fat_suivant_spe: true
+  field_des: true
   field_emballages_etiquettes: true
   field_en_salle: true
   field_energies: true
