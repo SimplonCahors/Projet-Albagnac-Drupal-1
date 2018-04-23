@@ -74,6 +74,7 @@ hidden:
   field_description_emballage: true
   field_email_contact_com: true
   field_email_contact_tech: true
+  field_emballages_etiquettes: true
   field_experience_contact_com: true
   field_experience_contact_tech: true
   field_fax: true
@@ -89,6 +90,7 @@ hidden:
   field_placeholder2: true
   field_placeholder3: true
   field_remarques: true
+  field_secteur: true
   field_secteur_: true
   field_sieret: true
   field_sous_secteur: true
