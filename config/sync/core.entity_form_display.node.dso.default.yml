@@ -275,7 +275,7 @@ content:
     type: string_textfield
     region: content
   field_10_telephone:
-    weight: 55
+    weight: 61
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -350,9 +350,9 @@ content:
       title: Paragraphe
       title_plural: Paragraphs
       edit_mode: open
-      add_mode: dropdown
+      add_mode: select
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: asservissement
     third_party_settings: {  }
     region: content
   field_besoin:
@@ -388,7 +388,7 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
   field_email_contact_com:
-    weight: 49
+    weight: 50
     settings:
       size: 60
       placeholder: ''
@@ -396,7 +396,7 @@ content:
     type: email_default
     region: content
   field_email_contact_tech:
-    weight: 54
+    weight: 60
     settings:
       size: 60
       placeholder: ''
@@ -404,7 +404,7 @@ content:
     type: email_default
     region: content
   field_experience_contact_com:
-    weight: 51
+    weight: 52
     settings:
       size: 60
       placeholder: ''
@@ -412,7 +412,7 @@ content:
     type: string_textfield
     region: content
   field_experience_contact_tech:
-    weight: 56
+    weight: 62
     settings:
       size: 60
       placeholder: ''
@@ -436,7 +436,7 @@ content:
     type: string_textfield
     region: content
   field_fonction_contact_tech:
-    weight: 53
+    weight: 59
     settings:
       size: 60
       placeholder: ''
@@ -472,7 +472,7 @@ content:
     type: string_textfield
     region: content
   field_nom_contact_tech:
-    weight: 52
+    weight: 58
     settings:
       size: 60
       placeholder: ''
@@ -512,7 +512,7 @@ content:
     type: string_textfield
     region: content
   field_telephone_contact_tech:
-    weight: 50
+    weight: 51
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -520,11 +520,9 @@ content:
     region: content
   field_type_client:
     weight: 43
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: options_buttons
     region: content
   status:
     type: boolean_checkbox
@@ -554,6 +552,7 @@ hidden:
   field_contact_commercial: true
   field_contact_technique: true
   field_nom_du_commercial: true
+  field_type_client_test: true
   langcode: true
   path: true
   promote: true

@@ -38,7 +38,6 @@ dependencies:
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sous_secteur
     - field.field.node.dso.field_telephone_contact_tech
-    - field.field.node.dso.field_type_client
     - node.type.dso
   module:
     - user
@@ -94,5 +93,4 @@ hidden:
   field_sous_secteur: true
   field_telephone_contact_com: true
   field_telephone_contact_tech: true
-  field_type_client: true
   langcode: true
