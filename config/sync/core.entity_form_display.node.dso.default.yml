@@ -38,7 +38,6 @@ dependencies:
     - field.field.node.dso.field_installation_chez_le_clien
     - field.field.node.dso.field_langue
     - field.field.node.dso.field_materiels_imposes
-<<<<<<< HEAD
     - field.field.node.dso.field_mise_en_route_de_la_machin
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_contact_com
@@ -47,11 +46,9 @@ dependencies:
     - field.field.node.dso.field_nombre_de_jours
     - field.field.node.dso.field_nombre_de_personnes
     - field.field.node.dso.field_numerique
-=======
     - field.field.node.dso.field_no
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_contact_com
->>>>>>> b0d4c97b6d65f52ec0c5ff2c403c0aa03da0b2fd
     - field.field.node.dso.field_objet
     - field.field.node.dso.field_papier
     - field.field.node.dso.field_plan_de_prevention_pour_in
@@ -61,11 +58,8 @@ dependencies:
     - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sous_secteur
-<<<<<<< HEAD
     - field.field.node.dso.field_sur_machine
     - field.field.node.dso.field_telephone_contact_tech
-=======
->>>>>>> b0d4c97b6d65f52ec0c5ff2c403c0aa03da0b2fd
     - field.field.node.dso.field_type_client
     - node.type.dso
   module:
