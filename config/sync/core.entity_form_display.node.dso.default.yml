@@ -3,7 +3,6 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.dso.field_10_fax
     - field.field.node.dso.field_10_telephone
     - field.field.node.dso.field_11_pays
     - field.field.node.dso.field_2_date_creation_fiche_
@@ -26,14 +25,9 @@ dependencies:
     - field.field.node.dso.field_demande_de_cem_electromagn
     - field.field.node.dso.field_demande_de_fat_suivant_spe
     - field.field.node.dso.field_description_emballage
-    - field.field.node.dso.field_email_contact_com
     - field.field.node.dso.field_emballages_etiquettes
     - field.field.node.dso.field_energies
-    - field.field.node.dso.field_experience_contact_com
-    - field.field.node.dso.field_experience_contact_tech
     - field.field.node.dso.field_fax
-    - field.field.node.dso.field_fonction_contact_com
-    - field.field.node.dso.field_fonction_contact_tech
     - field.field.node.dso.field_fournisseur_s_actuel_s_
     - field.field.node.dso.field_impression
     - field.field.node.dso.field_impression_etiquette
@@ -41,14 +35,12 @@ dependencies:
     - field.field.node.dso.field_no
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_contact_com
-    - field.field.node.dso.field_nom_du_commercial
     - field.field.node.dso.field_objet
     - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_secteur
     - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sous_secteur
-    - field.field.node.dso.field_telephone_contact_tech
     - field.field.node.dso.field_type_client
     - node.type.dso
   module:
@@ -382,14 +374,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_10_fax:
-    weight: 38
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_10_telephone:
     weight: 61
     settings:
@@ -533,14 +517,6 @@ content:
     third_party_settings: {  }
     type: options_buttons
     region: content
-  field_email_contact_com:
-    weight: 50
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: email_default
-    region: content
   field_emballages_etiquettes:
     type: entity_reference_paragraphs
     weight: 63
@@ -565,40 +541,8 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
-  field_experience_contact_com:
-    weight: 52
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_experience_contact_tech:
-    weight: 62
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_fax:
     weight: 44
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_fonction_contact_com:
-    weight: 48
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_fonction_contact_tech:
-    weight: 59
     settings:
       size: 60
       placeholder: ''
@@ -713,13 +657,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_telephone_contact_tech:
-    weight: 51
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: telephone_default
-    region: content
   field_type_client:
     weight: 43
     settings: {  }
@@ -755,7 +692,6 @@ hidden:
   field_contact_technique: true
   field_description_emballage: true
   field_no: true
-  field_nom_du_commercial: true
   field_secteur: true
   field_type_client_test: true
   langcode: true
