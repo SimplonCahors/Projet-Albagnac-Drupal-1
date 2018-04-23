@@ -1,19 +1,21 @@
-uuid: b2b79ad9-a675-48c0-927f-125e8a2aef47
+uuid: 051f0367-d985-4bf7-91f1-5b8b85b68d4b
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_secteur_
+    - field.storage.node.field_categorie
     - node.type.dso
-id: node.dso.field_secteur_
-field_name: field_secteur_
+  module:
+    - options
+id: node.dso.field_categorie
+field_name: field_categorie
 entity_type: node
 bundle: dso
-label: 'Secteur '
+label: Categorie
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: list_string

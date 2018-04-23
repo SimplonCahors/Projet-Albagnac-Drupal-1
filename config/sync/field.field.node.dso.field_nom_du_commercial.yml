@@ -1,14 +1,14 @@
-uuid: ef4f87ed-694a-4c99-a399-adb47bd01b51
+uuid: 51999348-1616-4e62-a6e2-637122f84636
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_no
+    - field.storage.node.field_nom_du_commercial
     - node.type.dso
   module:
     - options
-id: node.dso.field_no
-field_name: field_no
+id: node.dso.field_nom_du_commercial
+field_name: field_nom_du_commercial
 entity_type: node
 bundle: dso
 label: 'Nom du Commercial'

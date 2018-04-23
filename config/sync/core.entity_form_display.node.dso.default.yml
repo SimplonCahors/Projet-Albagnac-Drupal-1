@@ -3,7 +3,6 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.dso.field_10_telephone
     - field.field.node.dso.field_11_pays
     - field.field.node.dso.field_2_date_creation_fiche_
     - field.field.node.dso.field_3_date_premiere_c
@@ -15,8 +14,9 @@ dependencies:
     - field.field.node.dso.field_9_telephone
     - field.field.node.dso.field_a_la_charge_de_
     - field.field.node.dso.field_asservissement
+    - field.field.node.dso.field_autre
     - field.field.node.dso.field_besoin
-    - field.field.node.dso.field_categorie_
+    - field.field.node.dso.field_categorie
     - field.field.node.dso.field_cd
     - field.field.node.dso.field_concurrent_sur_cette_oppor
     - field.field.node.dso.field_contact_commercial
@@ -39,19 +39,16 @@ dependencies:
     - field.field.node.dso.field_langue
     - field.field.node.dso.field_materiels_imposes
     - field.field.node.dso.field_mise_en_route_de_la_machin
-    - field.field.node.dso.field_no
     - field.field.node.dso.field_nom_client
-    - field.field.node.dso.field_nom_contact_com
+    - field.field.node.dso.field_nom_du_commercial
     - field.field.node.dso.field_nombre_de_jours
     - field.field.node.dso.field_nombre_de_personnes
     - field.field.node.dso.field_numerique
-    - field.field.node.dso.field_objet
     - field.field.node.dso.field_papier
     - field.field.node.dso.field_plan_de_prevention_pour_in
     - field.field.node.dso.field_quantite
     - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_secteur
-    - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sous_secteur
     - field.field.node.dso.field_sur_machine
@@ -68,7 +65,7 @@ third_party_settings:
       children:
         - field_des
       parent_name: group_demande_dev
-      weight: 21
+      weight: 23
       format_type: details
       format_settings:
         label: Emballage
@@ -113,6 +110,8 @@ third_party_settings:
       label: 'Demande de Devis'
     group_onglet1:
       children:
+        - field_nom_du_commercial
+        - field_autre
         - field_nom_client
         - field_2_date_creation_fiche_
         - field_3_date_premiere_c
@@ -135,9 +134,10 @@ third_party_settings:
         - field_7_nom_client
         - field_8_adresse_postale
         - field_9_telephone
+        - field_fax
         - field_11_pays
-        - field_categorie_
-        - field_secteur_
+        - field_categorie
+        - field_secteur
         - field_sous_secteur
         - field_type_client
         - field_sieret
@@ -191,7 +191,7 @@ third_party_settings:
         - group_notice
         - group_transport
       parent_name: group_informations_administrativ
-      weight: 25
+      weight: 24
       format_type: tab
       format_settings:
         id: ''
@@ -205,7 +205,7 @@ third_party_settings:
         - field_materiels_imposes
         - group_impression
       parent_name: group_informations_administrativ
-      weight: 26
+      weight: 25
       format_type: tab
       format_settings:
         label: 'Matériels Imposés, Impression'
@@ -232,7 +232,7 @@ third_party_settings:
     group_etiquettes:
       children: {  }
       parent_name: group_demande_dev
-      weight: 23
+      weight: 24
       format_type: details
       format_settings:
         id: ''
@@ -243,7 +243,7 @@ third_party_settings:
     group_combinaison:
       children: {  }
       parent_name: group_demande_dev
-      weight: 24
+      weight: 25
       format_type: details
       format_settings:
         id: ''
@@ -253,9 +253,9 @@ third_party_settings:
       label: Combinaison
     group_contact_commercial:
       children:
-        - field_nom_contact_com
+        - field_contact_commercial
       parent_name: group_informations_demandeur
-      weight: 45
+      weight: 52
       format_type: tab
       format_settings:
         id: ''
@@ -266,9 +266,9 @@ third_party_settings:
       label: 'Contact commercial'
     group_contact_technique:
       children:
-        - field_10_telephone
+        - field_contact_technique
       parent_name: group_informations_demandeur
-      weight: 46
+      weight: 53
       format_type: tab
       format_settings:
         id: ''
@@ -282,7 +282,7 @@ third_party_settings:
         - field_impression_etiquette
         - field_impression
       parent_name: group_materiel_impose_impression
-      weight: 65
+      weight: 71
       format_type: tab
       format_settings:
         id: ''
@@ -295,7 +295,7 @@ third_party_settings:
       children:
         - field_energies
       parent_name: group_environnement_machine
-      weight: 27
+      weight: 28
       format_type: tab
       format_settings:
         id: ''
@@ -311,7 +311,7 @@ third_party_settings:
         - field_mise_en_route_de_la_machin
         - field_demande_de_certification_e
       parent_name: group_environnement_machine
-      weight: 29
+      weight: 30
       format_type: tab
       format_settings:
         id: ''
@@ -327,7 +327,7 @@ third_party_settings:
         - field_nombre_de_jours
         - field_nombre_de_personnes
       parent_name: group_environnement_machine
-      weight: 30
+      weight: 31
       format_type: tab
       format_settings:
         id: ''
@@ -344,7 +344,7 @@ third_party_settings:
         - field_numerique
         - field_langue
       parent_name: group_environnement_machine
-      weight: 31
+      weight: 32
       format_type: tab
       format_settings:
         id: ''
@@ -357,7 +357,7 @@ third_party_settings:
       children:
         - field_a_la_charge_de_
       parent_name: group_environnement_machine
-      weight: 32
+      weight: 33
       format_type: tab
       format_settings:
         id: ''
@@ -374,7 +374,7 @@ third_party_settings:
         - field_demande_de_cem_electromagn
         - field_demande_certification_ext
       parent_name: group_environnement_machine
-      weight: 28
+      weight: 29
       format_type: tab
       format_settings:
         id: ''
@@ -394,15 +394,8 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_10_telephone:
-    weight: 61
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: telephone_default
-    region: content
   field_11_pays:
-    weight: 39
+    weight: 46
     settings:
       size: 60
       placeholder: ''
@@ -410,37 +403,37 @@ content:
     type: string_textfield
     region: content
   field_2_date_creation_fiche_:
-    weight: 14
+    weight: 49
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_3_date_premiere_c:
-    weight: 15
+    weight: 50
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_4_reponse_souhaitee:
-    weight: 16
+    weight: 51
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_5_date_envoie_offre:
-    weight: 17
+    weight: 52
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_6_date_livraison_souhaite:
-    weight: 18
+    weight: 53
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_7_nom_client:
-    weight: 35
+    weight: 42
     settings:
       size: 60
       placeholder: ''
@@ -448,7 +441,7 @@ content:
     type: string_textfield
     region: content
   field_8_adresse_postale:
-    weight: 36
+    weight: 43
     settings:
       size: 60
       placeholder: ''
@@ -456,15 +449,14 @@ content:
     type: string_textfield
     region: content
   field_9_telephone:
-    weight: 37
+    weight: 44
     settings:
-      size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: telephone_default
     region: content
   field_a_la_charge_de_:
-    weight: 85
+    weight: 69
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -481,9 +473,35 @@ content:
       default_paragraph_type: asservissement
     third_party_settings: {  }
     region: content
+  field_autre:
+    type: string_textfield
+    weight: 47
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        42c96a54-82a0-4167-8b85-6de5b6962b0d:
+          dependee: field_nom_du_commercial
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: Autre
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: dso
   field_besoin:
     type: entity_reference_paragraphs
-    weight: 24
+    weight: 5
     region: content
     settings:
       title: Paragraph
@@ -493,26 +511,48 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
-  field_categorie_:
-    weight: 40
-    settings:
-      size: 60
-      placeholder: ''
+  field_categorie:
+    weight: 47
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: options_select
     region: content
   field_cd:
-    weight: 82
+    weight: 72
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_concurrent_sur_cette_oppor:
     type: entity_reference_paragraphs
-    weight: 25
+    weight: 6
     region: content
     settings:
       title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  field_contact_commercial:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: contact_commercial
+    third_party_settings: {  }
+  field_contact_technique:
+    type: entity_reference_paragraphs
+    weight: 7
+    region: content
+    settings:
+      title: Paragraphe
       title_plural: Paragraphs
       edit_mode: open
       add_mode: dropdown
@@ -532,19 +572,19 @@ content:
     type: datetime_default
     region: content
   field_demande_certification_ext:
-    weight: 25
+    weight: 27
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_demande_de_cem_electromagn:
-    weight: 24
+    weight: 26
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_demande_de_certification_e:
-    weight: 75
+    weight: 82
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -557,7 +597,7 @@ content:
     region: content
   field_des:
     type: entity_reference_paragraphs
-    weight: 22
+    weight: 1
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -587,7 +627,7 @@ content:
     region: content
   field_energies:
     type: entity_reference_paragraphs
-    weight: 71
+    weight: 26
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -598,7 +638,7 @@ content:
     third_party_settings: {  }
     region: content
   field_fax:
-    weight: 44
+    weight: 45
     settings:
       size: 60
       placeholder: ''
@@ -607,7 +647,7 @@ content:
     region: content
   field_fournisseur_s_actuel_s_:
     type: entity_reference_paragraphs
-    weight: 26
+    weight: 7
     region: content
     settings:
       title: Paragraph
@@ -619,7 +659,7 @@ content:
     third_party_settings: {  }
   field_impression:
     type: entity_reference_paragraphs
-    weight: 68
+    weight: 70
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -642,20 +682,20 @@ content:
     third_party_settings: {  }
     region: content
   field_installation_chez_le_clien:
-    weight: 72
+    weight: 79
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_langue:
-    weight: 84
+    weight: 74
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_materiels_imposes:
     type: entity_reference_paragraphs
-    weight: 64
+    weight: 70
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -666,21 +706,13 @@ content:
     third_party_settings: {  }
     region: content
   field_mise_en_route_de_la_machin:
-    weight: 74
+    weight: 81
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_nom_client:
-    weight: 13
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_nom_contact_com:
-    weight: 47
+    weight: 48
     settings:
       size: 60
       placeholder: ''
@@ -695,48 +727,46 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_nombre_de_jours:
-    weight: 78
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: number
+  field_nom_du_commercial:
+    type: options_select
+    weight: 45
     region: content
-  field_nombre_de_personnes:
+    settings: {  }
+    third_party_settings: {  }
+  field_nombre_de_jours:
     weight: 79
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
-  field_numerique:
-    weight: 83
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
-  field_objet:
-    weight: 70
+  field_nombre_de_personnes:
+    weight: 80
     settings:
-      size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: number
     region: content
-  field_papier:
-    weight: 80
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
-  field_plan_de_prevention_pour_in:
+  field_numerique:
     weight: 73
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
+  field_papier:
+    weight: 70
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_plan_de_prevention_pour_in:
+    weight: 80
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_quantite:
-    weight: 81
+    weight: 71
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -754,16 +784,14 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
-  field_secteur_:
-    weight: 41
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
+  field_secteur:
+    type: options_select
+    weight: 48
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_sieret:
-    weight: 44
+    weight: 51
     settings:
       size: 60
       placeholder: ''
@@ -771,12 +799,10 @@ content:
     type: string_textfield
     region: content
   field_sous_secteur:
-    weight: 42
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 49
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: options_select
     region: content
   field_sur_machine:
     weight: 76
@@ -792,7 +818,7 @@ content:
     type: telephone_default
     region: content
   field_type_client:
-    weight: 43
+    weight: 50
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -822,10 +848,6 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
-  field_contact_commercial: true
-  field_contact_technique: true
-  field_no: true
-  field_secteur: true
   field_type_client_test: true
   langcode: true
   path: true

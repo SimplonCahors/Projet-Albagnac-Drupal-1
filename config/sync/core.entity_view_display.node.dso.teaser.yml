@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.dso.field_10_telephone
     - field.field.node.dso.field_11_pays
     - field.field.node.dso.field_2_date_creation_fiche_
     - field.field.node.dso.field_3_date_premiere_c
@@ -13,11 +12,11 @@ dependencies:
     - field.field.node.dso.field_6_date_livraison_souhaite
     - field.field.node.dso.field_7_nom_client
     - field.field.node.dso.field_8_adresse_postale
-    - field.field.node.dso.field_9_telephone
     - field.field.node.dso.field_a_la_charge_de_
     - field.field.node.dso.field_asservissement
+    - field.field.node.dso.field_autre
     - field.field.node.dso.field_besoin
-    - field.field.node.dso.field_categorie_
+    - field.field.node.dso.field_categorie
     - field.field.node.dso.field_cd
     - field.field.node.dso.field_concurrent_sur_cette_oppor
     - field.field.node.dso.field_contact_commercial
@@ -28,6 +27,7 @@ dependencies:
     - field.field.node.dso.field_demande_de_cem_electromagn
     - field.field.node.dso.field_demande_de_certification_e
     - field.field.node.dso.field_demande_de_fat_suivant_spe
+    - field.field.node.dso.field_des
     - field.field.node.dso.field_emballages_etiquettes
     - field.field.node.dso.field_en_salle
     - field.field.node.dso.field_energies
@@ -39,19 +39,16 @@ dependencies:
     - field.field.node.dso.field_langue
     - field.field.node.dso.field_materiels_imposes
     - field.field.node.dso.field_mise_en_route_de_la_machin
-    - field.field.node.dso.field_no
     - field.field.node.dso.field_nom_client
-    - field.field.node.dso.field_nom_contact_com
+    - field.field.node.dso.field_nom_du_commercial
     - field.field.node.dso.field_nombre_de_jours
     - field.field.node.dso.field_nombre_de_personnes
     - field.field.node.dso.field_numerique
-    - field.field.node.dso.field_objet
     - field.field.node.dso.field_papier
     - field.field.node.dso.field_plan_de_prevention_pour_in
     - field.field.node.dso.field_quantite
     - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_secteur
-    - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sous_secteur
     - field.field.node.dso.field_sur_machine
@@ -71,7 +68,6 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
-  field_10_telephone: true
   field_11_pays: true
   field_2_date_creation_fiche: true
   field_2_date_creation_fiche_: true
@@ -81,11 +77,11 @@ hidden:
   field_6_date_livraison_souhaite: true
   field_7_nom_client: true
   field_8_adresse_postale: true
-  field_9_telephone: true
   field_a_la_charge_de_: true
   field_asservissement: true
+  field_autre: true
   field_besoin: true
-  field_categorie_: true
+  field_categorie: true
   field_cd: true
   field_concurrent_sur_cette_oppor: true
   field_contact_commercial: true
@@ -96,6 +92,7 @@ hidden:
   field_demande_de_cem_electromagn: true
   field_demande_de_certification_e: true
   field_demande_de_fat_suivant_spe: true
+  field_des: true
   field_emballages_etiquettes: true
   field_en_salle: true
   field_energies: true
@@ -107,13 +104,11 @@ hidden:
   field_langue: true
   field_materiels_imposes: true
   field_mise_en_route_de_la_machin: true
-  field_no: true
   field_nom_client: true
-  field_nom_contact_com: true
+  field_nom_du_commercial: true
   field_nombre_de_jours: true
   field_nombre_de_personnes: true
   field_numerique: true
-  field_objet: true
   field_papier: true
   field_placeh: true
   field_placeholder: true
@@ -123,7 +118,6 @@ hidden:
   field_quantite: true
   field_remarques_contraintes: true
   field_secteur: true
-  field_secteur_: true
   field_sieret: true
   field_sous_secteur: true
   field_sur_machine: true

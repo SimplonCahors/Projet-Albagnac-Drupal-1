@@ -1,28 +1,22 @@
-uuid: 31711beb-de5d-4b56-80e5-7b8e4204c4f8
+uuid: d380d586-8f82-4fa6-a3ba-92c6818748c5
 langcode: fr
 status: true
 dependencies:
   module:
     - node
     - options
-id: node.field_no
-field_name: field_no
+id: node.field_categorie
+field_name: field_categorie
 entity_type: node
 type: list_string
 settings:
   allowed_values:
     -
-      value: 'OBRY W.'
-      label: 'OBRY W.'
+      value: Client
+      label: Client
     -
-      value: 'BLANC P.'
-      label: 'BLANC P.'
-    -
-      value: 'GUERRA C.'
-      label: 'GUERRA C.'
-    -
-      value: 'DECHAPPE P.'
-      label: 'DECHAPPE P.'
+      value: Revendeur
+      label: Revendeur
   allowed_values_function: ''
 module: options
 locked: false
