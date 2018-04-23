@@ -122,10 +122,9 @@ content:
     region: content
   field_produits_pleins_ou_vides:
     weight: 34
-    settings:
-      display_label: true
+    settings: {  }
     third_party_settings: {  }
-    type: boolean_checkbox
+    type: options_buttons
     region: content
   field_ref_client:
     weight: 1
