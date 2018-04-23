@@ -1,0 +1,18 @@
+uuid: 682e95ed-d670-44bd-8626-906b066928eb
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_a_la_charge_de_
+field_name: field_a_la_charge_de_
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 028da49a-2cf5-4bf9-b1d2-c47e3ba055e4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombre_de_personnes
+    - node.type.dso
+id: node.dso.field_nombre_de_personnes
+field_name: field_nombre_de_personnes
+entity_type: node
+bundle: dso
+label: 'Nombre de personnes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,21 @@
+uuid: ccdcd8a5-9aac-4977-a038-19d6812cc20f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_langue
+    - node.type.dso
+  module:
+    - options
+id: node.dso.field_langue
+field_name: field_langue
+entity_type: node
+bundle: dso
+label: Langue
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

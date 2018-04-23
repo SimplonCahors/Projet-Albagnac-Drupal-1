@@ -14,9 +14,11 @@ dependencies:
     - field.field.node.dso.field_7_nom_client
     - field.field.node.dso.field_8_adresse_postale
     - field.field.node.dso.field_9_telephone
+    - field.field.node.dso.field_a_la_charge_de_
     - field.field.node.dso.field_asservissement
     - field.field.node.dso.field_besoin
     - field.field.node.dso.field_categorie_
+    - field.field.node.dso.field_cd
     - field.field.node.dso.field_concurrent_sur_cette_oppor
     - field.field.node.dso.field_contact_commercial
     - field.field.node.dso.field_contact_technique
@@ -24,11 +26,13 @@ dependencies:
     - field.field.node.dso.field_date_desiree_controle
     - field.field.node.dso.field_demande_certification_ext
     - field.field.node.dso.field_demande_de_cem_electromagn
+    - field.field.node.dso.field_demande_de_certification_e
     - field.field.node.dso.field_demande_de_fat_suivant_spe
     - field.field.node.dso.field_description_emballage
     - field.field.node.dso.field_email_contact_com
     - field.field.node.dso.field_email_contact_tech
     - field.field.node.dso.field_emballages_etiquettes
+    - field.field.node.dso.field_en_salle
     - field.field.node.dso.field_energies
     - field.field.node.dso.field_experience_contact_com
     - field.field.node.dso.field_experience_contact_tech
@@ -38,17 +42,27 @@ dependencies:
     - field.field.node.dso.field_fournisseur_s_actuel_s_
     - field.field.node.dso.field_impression
     - field.field.node.dso.field_impression_etiquette
+    - field.field.node.dso.field_installation_chez_le_clien
+    - field.field.node.dso.field_langue
     - field.field.node.dso.field_materiels_imposes
+    - field.field.node.dso.field_mise_en_route_de_la_machin
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_contact_com
     - field.field.node.dso.field_nom_contact_tech
     - field.field.node.dso.field_nom_du_commercial
+    - field.field.node.dso.field_nombre_de_jours
+    - field.field.node.dso.field_nombre_de_personnes
+    - field.field.node.dso.field_numerique
     - field.field.node.dso.field_objet
+    - field.field.node.dso.field_papier
+    - field.field.node.dso.field_plan_de_prevention_pour_in
+    - field.field.node.dso.field_quantite
     - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_secteur
     - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sous_secteur
+    - field.field.node.dso.field_sur_machine
     - field.field.node.dso.field_telephone_contact_tech
     - field.field.node.dso.field_type_client
     - node.type.dso
@@ -308,7 +322,11 @@ third_party_settings:
         required_fields: true
       label: 'Énergies disponibles'
     group_installation_mise_en_route:
-      children: {  }
+      children:
+        - field_installation_chez_le_clien
+        - field_plan_de_prevention_pour_in
+        - field_mise_en_route_de_la_machin
+        - field_demande_de_certification_e
       parent_name: group_environnement_machine
       weight: 29
       format_type: tab
@@ -320,7 +338,11 @@ third_party_settings:
         required_fields: true
       label: 'Installation et mise en route'
     group_formation:
-      children: {  }
+      children:
+        - field_sur_machine
+        - field_en_salle
+        - field_nombre_de_jours
+        - field_nombre_de_personnes
       parent_name: group_environnement_machine
       weight: 30
       format_type: tab
@@ -332,7 +354,12 @@ third_party_settings:
         required_fields: true
       label: Formation
     group_notice:
-      children: {  }
+      children:
+        - field_papier
+        - field_quantite
+        - field_cd
+        - field_numerique
+        - field_langue
       parent_name: group_environnement_machine
       weight: 31
       format_type: tab
@@ -344,7 +371,8 @@ third_party_settings:
         required_fields: true
       label: Notice
     group_transport:
-      children: {  }
+      children:
+        - field_a_la_charge_de_
       parent_name: group_environnement_machine
       weight: 32
       format_type: tab
@@ -460,6 +488,12 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_a_la_charge_de_:
+    weight: 85
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_asservissement:
     type: entity_reference_paragraphs
     weight: 26
@@ -491,6 +525,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_cd:
+    weight: 82
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_concurrent_sur_cette_oppor:
     type: entity_reference_paragraphs
@@ -528,6 +568,12 @@ content:
     third_party_settings: {  }
     type: options_buttons
     region: content
+  field_demande_de_certification_e:
+    weight: 75
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_demande_de_fat_suivant_spe:
     weight: 22
     settings: {  }
@@ -561,6 +607,12 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+    region: content
+  field_en_salle:
+    weight: 77
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_energies:
     type: entity_reference_paragraphs
@@ -650,6 +702,18 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
+  field_installation_chez_le_clien:
+    weight: 72
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_langue:
+    weight: 84
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_materiels_imposes:
     type: entity_reference_paragraphs
     weight: 64
@@ -661,6 +725,12 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+    region: content
+  field_mise_en_route_de_la_machin:
+    weight: 74
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_nom_client:
     weight: 13
@@ -686,6 +756,26 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_nombre_de_jours:
+    weight: 78
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_nombre_de_personnes:
+    weight: 79
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_numerique:
+    weight: 83
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_objet:
     weight: 70
     settings:
@@ -693,6 +783,25 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_papier:
+    weight: 80
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_plan_de_prevention_pour_in:
+    weight: 73
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_quantite:
+    weight: 81
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
     region: content
   field_remarques_contraintes:
     type: entity_reference_paragraphs
@@ -729,6 +838,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_sur_machine:
+    weight: 76
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
     region: content
   field_telephone_contact_tech:
     weight: 51

@@ -1,0 +1,18 @@
+uuid: 319003ce-6a18-4dfb-93c6-0c37d2841041
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_sur_machine
+field_name: field_sur_machine
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

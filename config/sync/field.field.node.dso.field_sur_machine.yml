@@ -1,0 +1,23 @@
+uuid: 392e2337-3668-46ec-a645-639fa5a4809e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sur_machine
+    - node.type.dso
+id: node.dso.field_sur_machine
+field_name: field_sur_machine
+entity_type: node
+bundle: dso
+label: 'Sur machine'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: OUI
+  off_label: NON
+field_type: boolean
