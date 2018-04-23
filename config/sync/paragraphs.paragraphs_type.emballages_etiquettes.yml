@@ -1,0 +1,9 @@
+uuid: 6c615412-e2ba-43fc-ac3c-9b53655f5e31
+langcode: fr
+status: true
+dependencies: {  }
+id: emballages_etiquettes
+label: 'Emballages, étiquettes'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

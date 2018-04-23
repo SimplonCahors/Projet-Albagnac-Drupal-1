@@ -1,0 +1,19 @@
+uuid: 4e8a3b5c-ccc4-4b92-a223-f2f8e12b900e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_poids_produit_g_
+    - paragraphs.paragraphs_type.description_emballage
+id: paragraph.description_emballage.field_poids_produit_g_
+field_name: field_poids_produit_g_
+entity_type: paragraph
+bundle: description_emballage
+label: 'Poids produit (g)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

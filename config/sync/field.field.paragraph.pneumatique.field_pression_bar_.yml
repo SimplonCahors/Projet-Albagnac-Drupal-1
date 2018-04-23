@@ -1,0 +1,19 @@
+uuid: 66d34448-2fa6-4b0e-a572-406a2fd1e7e3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pression_bar_
+    - paragraphs.paragraphs_type.pneumatique
+id: paragraph.pneumatique.field_pression_bar_
+field_name: field_pression_bar_
+entity_type: paragraph
+bundle: pneumatique
+label: 'Pression (bar)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

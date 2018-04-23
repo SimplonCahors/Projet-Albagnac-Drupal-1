@@ -1,0 +1,61 @@
+uuid: 95891692-57f9-440e-92d1-b1627710ddff
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_impression
+    - node.type.dso
+    - paragraphs.paragraphs_type.emballage
+  module:
+    - entity_reference_revisions
+id: node.dso.field_impression
+field_name: field_impression
+entity_type: node
+bundle: dso
+label: 'Impression emballage'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      emballage: emballage
+    target_bundles_drag_drop:
+      emballage:
+        enabled: true
+        weight: 12
+      asservissement:
+        weight: 13
+        enabled: false
+      besoin:
+        weight: 14
+        enabled: false
+      concurrent_sur_cette_opportunite:
+        weight: 15
+        enabled: false
+      contact_commercial:
+        weight: 16
+        enabled: false
+      contact_technique:
+        weight: 17
+        enabled: false
+      description_emballage:
+        weight: 18
+        enabled: false
+      emballages_etiquettes:
+        weight: 19
+        enabled: false
+      etiquette:
+        weight: 20
+        enabled: false
+      fournisseur_s_actuel_s_:
+        weight: 21
+        enabled: false
+      materiel_impose_par_le_client:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

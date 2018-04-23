@@ -1,0 +1,23 @@
+uuid: 5f21e4cc-a78f-469d-bfbb-35b2d67740ff
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_demande_de_certification_e
+    - node.type.dso
+id: node.dso.field_demande_de_certification_e
+field_name: field_demande_de_certification_e
+entity_type: node
+bundle: dso
+label: 'Demande de certification externe'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: OUI
+  off_label: NON
+field_type: boolean

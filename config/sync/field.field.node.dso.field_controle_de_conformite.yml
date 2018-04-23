@@ -1,0 +1,23 @@
+uuid: d8a45d4d-802c-4ce0-ba78-a0e3fbc2cfab
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_controle_de_conformite
+    - node.type.dso
+id: node.dso.field_controle_de_conformite
+field_name: field_controle_de_conformite
+entity_type: node
+bundle: dso
+label: 'Contrôle de conformité suivant spécifications'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: OUI
+  off_label: NON
+field_type: boolean

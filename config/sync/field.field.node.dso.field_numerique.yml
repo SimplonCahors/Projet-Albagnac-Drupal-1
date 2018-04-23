@@ -1,0 +1,23 @@
+uuid: f6a84a49-e674-4f58-b851-92c2685a8498
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_numerique
+    - node.type.dso
+id: node.dso.field_numerique
+field_name: field_numerique
+entity_type: node
+bundle: dso
+label: Numérique
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: OUI
+  off_label: NON
+field_type: boolean

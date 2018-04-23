@@ -1,0 +1,23 @@
+uuid: f23d97de-f5a4-45df-a48b-bf0aca9c638e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombre_de_jours
+    - node.type.dso
+id: node.dso.field_nombre_de_jours
+field_name: field_nombre_de_jours
+entity_type: node
+bundle: dso
+label: 'Nombre de jours'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,19 @@
+uuid: 0d722275-e6ac-4a3d-bae0-943826023ed9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_modele_informations
+    - paragraphs.paragraphs_type.materiel_impose_par_le_client
+id: paragraph.materiel_impose_par_le_client.field_modele_informations
+field_name: field_modele_informations
+entity_type: paragraph
+bundle: materiel_impose_par_le_client
+label: 'Modèle / Informations'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

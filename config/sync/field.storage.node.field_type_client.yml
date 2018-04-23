@@ -1,18 +1,24 @@
-uuid: bdd5d923-ece0-4821-9656-fc0cd6f69e54
+uuid: 69ba1a33-1331-4cb0-b1ec-a5d2332d4142
 langcode: fr
 status: true
 dependencies:
   module:
     - node
+    - options
 id: node.field_type_client
 field_name: field_type_client
 entity_type: node
-type: string
+type: list_string
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+  allowed_values:
+    -
+      value: Nouveau
+      label: Nouveau
+    -
+      value: Existant
+      label: Existant
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true

@@ -1,0 +1,70 @@
+uuid: f2ef8b97-41c5-441a-babb-9fb161e8fb86
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pneumatique
+    - paragraphs.paragraphs_type.energies
+    - paragraphs.paragraphs_type.pneumatique
+  module:
+    - entity_reference_revisions
+id: paragraph.energies.field_pneumatique
+field_name: field_pneumatique
+entity_type: paragraph
+bundle: energies
+label: Pneumatique
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      pneumatique: pneumatique
+    target_bundles_drag_drop:
+      pneumatique:
+        enabled: true
+        weight: 15
+      asservissement:
+        weight: 16
+        enabled: false
+      besoin:
+        weight: 17
+        enabled: false
+      concurrent_sur_cette_opportunite:
+        weight: 18
+        enabled: false
+      contact_commercial:
+        weight: 19
+        enabled: false
+      contact_technique:
+        weight: 20
+        enabled: false
+      description_emballage:
+        weight: 21
+        enabled: false
+      emballage:
+        weight: 22
+        enabled: false
+      emballages_etiquettes:
+        weight: 23
+        enabled: false
+      energies:
+        weight: 24
+        enabled: false
+      etiquette:
+        weight: 25
+        enabled: false
+      fournisseur_s_actuel_s_:
+        weight: 26
+        enabled: false
+      materiel_impose_par_le_client:
+        weight: 27
+        enabled: false
+      remarques:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

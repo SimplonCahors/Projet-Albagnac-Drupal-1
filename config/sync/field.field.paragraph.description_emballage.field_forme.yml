@@ -1,0 +1,21 @@
+uuid: 4cb749f7-78bf-4373-a66d-f16364de0898
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_forme
+    - paragraphs.paragraphs_type.description_emballage
+  module:
+    - options
+id: paragraph.description_emballage.field_forme
+field_name: field_forme
+entity_type: paragraph
+bundle: description_emballage
+label: Forme
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

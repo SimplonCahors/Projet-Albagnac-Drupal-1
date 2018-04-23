@@ -1,0 +1,44 @@
+uuid: 6f155bc3-ba14-4631-83ec-bd9241b08ddb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.energies.field_pneumatique
+    - field.field.paragraph.energies.field_regime_de_neutre
+    - field.field.paragraph.energies.field_tension_electrique
+    - paragraphs.paragraphs_type.energies
+  module:
+    - paragraphs
+id: paragraph.energies.default
+targetEntityType: paragraph
+bundle: energies
+mode: default
+content:
+  field_pneumatique:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_regime_de_neutre:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tension_electrique:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

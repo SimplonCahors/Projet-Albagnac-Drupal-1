@@ -1,0 +1,134 @@
+uuid: 4283b5c2-eb42-4e11-96ee-14f7630ffec9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.description_emballage.field_deformation_niveau_
+    - field.field.paragraph.description_emballage.field_diametre_ou_longueur_x_lar
+    - field.field.paragraph.description_emballage.field_forme
+    - field.field.paragraph.description_emballage.field_hauteur_mm_
+    - field.field.paragraph.description_emballage.field_matiere
+    - field.field.paragraph.description_emballage.field_observation
+    - field.field.paragraph.description_emballage.field_photo
+    - field.field.paragraph.description_emballage.field_poids_produit_g_
+    - field.field.paragraph.description_emballage.field_produits_pleins_ou_vides
+    - field.field.paragraph.description_emballage.field_ref_client
+    - field.field.paragraph.description_emballage.field_ref_interne
+    - field.field.paragraph.description_emballage.field_temperature_produit_degc_
+    - field.field.paragraph.description_emballage.field_tolerance_dimensionnelle
+    - paragraphs.paragraphs_type.description_emballage
+  module:
+    - image
+    - options
+id: paragraph.description_emballage.default
+targetEntityType: paragraph
+bundle: description_emballage
+mode: default
+content:
+  field_deformation_niveau_:
+    weight: 16
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_diametre_ou_longueur_x_lar:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_forme:
+    weight: 14
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_hauteur_mm_:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_matiere:
+    weight: 13
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_observation:
+    weight: 11
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_photo:
+    weight: 12
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_poids_produit_g_:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_produits_pleins_ou_vides:
+    weight: 15
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_ref_client:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ref_interne:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_temperature_produit_degc_:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_tolerance_dimensionnelle:
+    weight: 10
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

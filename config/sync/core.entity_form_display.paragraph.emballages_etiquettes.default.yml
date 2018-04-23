@@ -1,0 +1,61 @@
+uuid: b2f88496-940c-4328-a82f-7416952af26e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.emballages_etiquettes.field_matiere_d_etiquette
+    - field.field.paragraph.emballages_etiquettes.field_matiere_de_l_emballage
+    - field.field.paragraph.emballages_etiquettes.field_nombre_d_emballage
+    - field.field.paragraph.emballages_etiquettes.field_nombre_d_etiquette
+    - field.field.paragraph.emballages_etiquettes.field_type_d_emballage
+    - field.field.paragraph.emballages_etiquettes.field_type_d_etiquette
+    - paragraphs.paragraphs_type.emballages_etiquettes
+id: paragraph.emballages_etiquettes.default
+targetEntityType: paragraph
+bundle: emballages_etiquettes
+mode: default
+content:
+  field_matiere_d_etiquette:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_matiere_de_l_emballage:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_nombre_d_emballage:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_nombre_d_etiquette:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_type_d_emballage:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_type_d_etiquette:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

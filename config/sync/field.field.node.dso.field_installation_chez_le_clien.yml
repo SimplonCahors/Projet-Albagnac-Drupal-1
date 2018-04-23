@@ -1,0 +1,23 @@
+uuid: 3f838bf6-7b65-420b-91c1-dd4e6469d0f0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_installation_chez_le_clien
+    - node.type.dso
+id: node.dso.field_installation_chez_le_clien
+field_name: field_installation_chez_le_clien
+entity_type: node
+bundle: dso
+label: 'Installation chez le client'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: OUI
+  off_label: NON
+field_type: boolean

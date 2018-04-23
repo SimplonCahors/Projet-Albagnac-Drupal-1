@@ -1,0 +1,21 @@
+uuid: d3257acd-9a6d-4e9b-9e4d-cb132a94dca7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_secteur
+    - node.type.dso
+  module:
+    - options
+id: node.dso.field_secteur
+field_name: field_secteur
+entity_type: node
+bundle: dso
+label: Secteur
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

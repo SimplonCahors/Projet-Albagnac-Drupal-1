@@ -1,0 +1,19 @@
+uuid: 5c92bd57-fca4-4afe-8572-2ce18315a569
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ref_interne
+    - paragraphs.paragraphs_type.description_emballage
+id: paragraph.description_emballage.field_ref_interne
+field_name: field_ref_interne
+entity_type: paragraph
+bundle: description_emballage
+label: 'Ref. interne'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

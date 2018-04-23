@@ -1,0 +1,21 @@
+uuid: bd487fd6-a8a2-4266-82af-bab639d97ead
+langcode: fr
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_poids_produit_g_
+field_name: field_poids_produit_g_
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

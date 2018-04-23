@@ -1,0 +1,9 @@
+uuid: a6888ad7-8b20-4da8-b751-02013c04fd4c
+langcode: fr
+status: true
+dependencies: {  }
+id: pneumatique
+label: Pneumatique
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

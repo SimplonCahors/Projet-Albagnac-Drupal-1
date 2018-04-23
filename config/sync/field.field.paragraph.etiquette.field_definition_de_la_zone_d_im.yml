@@ -1,0 +1,19 @@
+uuid: 1d40b042-66b8-4a12-9de4-227f00487f77
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_definition_de_la_zone_d_im
+    - paragraphs.paragraphs_type.etiquette
+id: paragraph.etiquette.field_definition_de_la_zone_d_im
+field_name: field_definition_de_la_zone_d_im
+entity_type: paragraph
+bundle: etiquette
+label: 'Définition de la zone d''impression'
+description: 'Dimensions (mm x mm)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

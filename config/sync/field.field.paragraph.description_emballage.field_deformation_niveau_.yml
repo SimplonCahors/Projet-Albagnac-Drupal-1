@@ -1,0 +1,21 @@
+uuid: 488303b8-94f7-47bc-95c0-bcb0e72baa81
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_deformation_niveau_
+    - paragraphs.paragraphs_type.description_emballage
+  module:
+    - options
+id: paragraph.description_emballage.field_deformation_niveau_
+field_name: field_deformation_niveau_
+entity_type: paragraph
+bundle: description_emballage
+label: 'Déformation (niveau)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

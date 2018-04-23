@@ -1,0 +1,23 @@
+uuid: 59c59272-6d3d-4a5b-9f17-666b9ff83312
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_demande_de_fat_suivant_spe
+    - node.type.dso
+id: node.dso.field_demande_de_fat_suivant_spe
+field_name: field_demande_de_fat_suivant_spe
+entity_type: node
+bundle: dso
+label: 'Demande de FAT suivant spécifications'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: OUI
+  off_label: NON
+field_type: boolean

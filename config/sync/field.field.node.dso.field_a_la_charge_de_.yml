@@ -1,0 +1,23 @@
+uuid: 1f08a09c-b1f6-465f-a03b-2158d9ed5488
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_a_la_charge_de_
+    - node.type.dso
+id: node.dso.field_a_la_charge_de_
+field_name: field_a_la_charge_de_
+entity_type: node
+bundle: dso
+label: 'À la charge de :'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Albagnac
+  off_label: Client
+field_type: boolean
