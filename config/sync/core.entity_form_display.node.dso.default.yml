@@ -471,10 +471,7 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
-  field_contact_commercial: true
-  field_contact_technique: true
   field_description_emballage: true
-  field_nom_du_commercial: true
   field_type_client_test: true
   langcode: true
   path: true

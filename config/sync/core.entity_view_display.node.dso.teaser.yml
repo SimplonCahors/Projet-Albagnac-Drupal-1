@@ -60,10 +60,6 @@ hidden:
   field_contact_commercial: true
   field_contact_technique: true
   field_description_emballage: true
-  field_email_contact_com: true
-  field_email_contact_tech: true
-  field_experience_contact_com: true
-  field_experience_contact_tech: true
   field_fax: true
   field_fournisseur_s_actuel_s_: true
   field_nom_client: true
@@ -76,6 +72,5 @@ hidden:
   field_secteur: true
   field_sieret: true
   field_telephone_contact_com: true
-  field_telephone_contact_tech: true
   field_type_client: true
   langcode: true
