@@ -1,4 +1,4 @@
-uuid: 3a95c45a-f18a-46ee-a309-c95fbdd60637
+uuid: f62a7a49-ee7e-43ae-a68f-0751cbd706d9
 langcode: fr
 status: true
 dependencies:
@@ -7,11 +7,8 @@ dependencies:
 id: paragraph.field_produits_pleins_ou_vides
 field_name: field_produits_pleins_ou_vides
 entity_type: paragraph
-type: string
-settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
+type: boolean
+settings: {  }
 module: core
 locked: false
 cardinality: 1

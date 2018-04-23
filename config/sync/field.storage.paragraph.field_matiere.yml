@@ -1,18 +1,30 @@
-uuid: de252950-355f-4cce-a408-f1e2571f2b00
+uuid: 973df6d5-749f-4454-bb90-0405c06a8214
 langcode: fr
 status: true
 dependencies:
   module:
+    - options
     - paragraphs
 id: paragraph.field_matiere
 field_name: field_matiere
 entity_type: paragraph
-type: string
+type: list_string
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+  allowed_values:
+    -
+      value: Métal
+      label: Métal
+    -
+      value: Plastique
+      label: Plastique
+    -
+      value: Verre
+      label: Verre
+    -
+      value: Autre
+      label: Autre
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true

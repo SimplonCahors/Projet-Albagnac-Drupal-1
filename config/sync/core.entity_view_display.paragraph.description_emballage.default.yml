@@ -19,18 +19,18 @@ dependencies:
     - paragraphs.paragraphs_type.description_emballage
   module:
     - image
+    - options
 id: paragraph.description_emballage.default
 targetEntityType: paragraph
 bundle: description_emballage
 mode: default
 content:
   field_deformation_niveau_:
-    weight: 9
+    weight: 16
     label: above
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    type: string
+    type: list_default
     region: content
   field_diametre_ou_longueur_x_lar:
     weight: 3
@@ -41,12 +41,11 @@ content:
     type: string
     region: content
   field_forme:
-    weight: 2
+    weight: 14
     label: above
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    type: string
+    type: list_default
     region: content
   field_hauteur_mm_:
     weight: 4
@@ -57,12 +56,11 @@ content:
     type: string
     region: content
   field_matiere:
-    weight: 8
+    weight: 13
     label: above
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    type: string
+    type: list_default
     region: content
   field_observation:
     weight: 11
@@ -89,12 +87,14 @@ content:
     type: string
     region: content
   field_produits_pleins_ou_vides:
-    weight: 5
+    weight: 15
     label: above
     settings:
-      link_to_entity: false
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
-    type: string
+    type: boolean
     region: content
   field_ref_client:
     weight: 1

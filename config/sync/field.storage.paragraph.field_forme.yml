@@ -1,18 +1,42 @@
-uuid: ad36807c-f057-463b-ae76-1fe221be06b6
+uuid: 73037a5e-846f-4453-bab4-ae009f6e26a6
 langcode: fr
 status: true
 dependencies:
   module:
+    - options
     - paragraphs
 id: paragraph.field_forme
 field_name: field_forme
 entity_type: paragraph
-type: string
+type: list_string
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+  allowed_values:
+    -
+      value: Cylindrique
+      label: Cylindrique
+    -
+      value: Carré
+      label: Carré
+    -
+      value: Barquette
+      label: Barquette
+    -
+      value: Conique
+      label: Conique
+    -
+      value: 'Forme spéciale'
+      label: 'Forme spéciale'
+    -
+      value: Ovoïde
+      label: Ovoïde
+    -
+      value: Bocal
+      label: Bocal
+    -
+      value: Sachet
+      label: Sachet
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true

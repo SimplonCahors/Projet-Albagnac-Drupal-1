@@ -63,15 +63,13 @@ bundle: description_emballage
 mode: default
 content:
   field_deformation_niveau_:
-    weight: 28
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 38
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: options_select
     region: content
   field_diametre_ou_longueur_x_lar:
-    weight: 22
+    weight: 34
     settings:
       size: 60
       placeholder: ''
@@ -79,15 +77,13 @@ content:
     type: string_textfield
     region: content
   field_forme:
-    weight: 21
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 33
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: options_select
     region: content
   field_hauteur_mm_:
-    weight: 23
+    weight: 35
     settings:
       size: 60
       placeholder: ''
@@ -95,15 +91,13 @@ content:
     type: string_textfield
     region: content
   field_matiere:
-    weight: 27
-    settings:
-      size: 60
-      placeholder: ''
+    weight: 37
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: options_select
     region: content
   field_observation:
-    weight: 30
+    weight: 40
     settings:
       rows: 5
       placeholder: ''
@@ -111,7 +105,7 @@ content:
     type: string_textarea
     region: content
   field_photo:
-    weight: 31
+    weight: 41
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -119,7 +113,7 @@ content:
     type: image_image
     region: content
   field_poids_produit_g_:
-    weight: 26
+    weight: 36
     settings:
       size: 60
       placeholder: ''
@@ -127,12 +121,11 @@ content:
     type: string_textfield
     region: content
   field_produits_pleins_ou_vides:
-    weight: 24
+    weight: 34
     settings:
-      size: 60
-      placeholder: ''
+      display_label: true
     third_party_settings: {  }
-    type: string_textfield
+    type: boolean_checkbox
     region: content
   field_ref_client:
     weight: 1
@@ -151,7 +144,7 @@ content:
     type: string_textfield
     region: content
   field_temperature_produit_degc_:
-    weight: 25
+    weight: 35
     settings:
       size: 60
       placeholder: ''
@@ -159,7 +152,7 @@ content:
     type: string_textfield
     region: content
   field_tolerance_dimensionnelle:
-    weight: 29
+    weight: 39
     settings:
       size: 60
       placeholder: ''
