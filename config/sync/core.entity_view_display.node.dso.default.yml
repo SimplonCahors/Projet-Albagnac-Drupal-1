@@ -42,8 +42,6 @@ dependencies:
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nombre_de_jours
     - field.field.node.dso.field_nombre_de_personnes
-    - field.field.node.dso.field_numeriq
-    - field.field.node.dso.field_nom_contact_comue
     - field.field.node.dso.field_no
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_objet

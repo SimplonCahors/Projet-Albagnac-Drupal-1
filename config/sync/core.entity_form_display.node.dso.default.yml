@@ -41,8 +41,6 @@ dependencies:
     - field.field.node.dso.field_mise_en_route_de_la_machin
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_contact_com
-    - field.field.node.dso.field_nom_contact_tech
-    - field.field.node.dso.field_nom_du_commercial
     - field.field.node.dso.field_nombre_de_jours
     - field.field.node.dso.field_nombre_de_personnes
     - field.field.node.dso.field_numerique
@@ -59,7 +57,6 @@ dependencies:
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sous_secteur
     - field.field.node.dso.field_sur_machine
-    - field.field.node.dso.field_telephone_contact_tech
     - field.field.node.dso.field_type_client
     - node.type.dso
   module:
