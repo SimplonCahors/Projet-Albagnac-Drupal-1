@@ -1,0 +1,9 @@
+uuid: 9b0e3abc-4554-4c92-862d-cc5731f6acb7
+langcode: fr
+status: true
+dependencies: {  }
+id: etiquette
+label: Étiquette
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
