@@ -1,0 +1,51 @@
+uuid: 674ebf9e-522f-4c31-b533-cff5ef376f1d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.etiquette.field_definition_de_la_zone_d_im
+    - field.field.paragraph.etiquette.field_position_de_l_etiquette
+    - field.field.paragraph.etiquette.field_reference_etiquette
+    - field.field.paragraph.etiquette.field_remarques_impression
+    - paragraphs.paragraphs_type.etiquette
+id: paragraph.etiquette.default
+targetEntityType: paragraph
+bundle: etiquette
+mode: default
+content:
+  field_definition_de_la_zone_d_im:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_position_de_l_etiquette:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reference_etiquette:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_remarques_impression:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

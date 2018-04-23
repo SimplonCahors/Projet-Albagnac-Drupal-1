@@ -1,0 +1,51 @@
+uuid: 2a506cb4-cac0-439e-8e00-7209375d9738
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.materiel_impose_par_le_client.field_marque
+    - field.field.paragraph.materiel_impose_par_le_client.field_mise_en_route
+    - field.field.paragraph.materiel_impose_par_le_client.field_modele_informations
+    - field.field.paragraph.materiel_impose_par_le_client.field_type_materiel
+    - paragraphs.paragraphs_type.materiel_impose_par_le_client
+id: paragraph.materiel_impose_par_le_client.default
+targetEntityType: paragraph
+bundle: materiel_impose_par_le_client
+mode: default
+content:
+  field_marque:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mise_en_route:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_modele_informations:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_type_materiel:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

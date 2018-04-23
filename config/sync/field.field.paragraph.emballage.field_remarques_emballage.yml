@@ -1,0 +1,19 @@
+uuid: 9079ed75-ac54-44ba-b70a-233ba311c5e2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_remarques_emballage
+    - paragraphs.paragraphs_type.emballage
+id: paragraph.emballage.field_remarques_emballage
+field_name: field_remarques_emballage
+entity_type: paragraph
+bundle: emballage
+label: Remarques
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

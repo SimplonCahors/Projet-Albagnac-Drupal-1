@@ -1,0 +1,51 @@
+uuid: e756aa91-261a-4320-ae1c-2090d72a0eb6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.emballage.field_definition_zone_emballage
+    - field.field.paragraph.emballage.field_position_a_impriner
+    - field.field.paragraph.emballage.field_reference_emballage
+    - field.field.paragraph.emballage.field_remarques_emballage
+    - paragraphs.paragraphs_type.emballage
+id: paragraph.emballage.default
+targetEntityType: paragraph
+bundle: emballage
+mode: default
+content:
+  field_definition_zone_emballage:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_position_a_impriner:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_reference_emballage:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_remarques_emballage:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

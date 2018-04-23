@@ -1,0 +1,19 @@
+uuid: 00648cc4-0183-42aa-a690-31c8d87f5f03
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_remarques_impression
+    - paragraphs.paragraphs_type.etiquette
+id: paragraph.etiquette.field_remarques_impression
+field_name: field_remarques_impression
+entity_type: paragraph
+bundle: etiquette
+label: Remarques
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

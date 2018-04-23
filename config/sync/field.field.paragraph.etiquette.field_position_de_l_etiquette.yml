@@ -1,0 +1,19 @@
+uuid: adc18e7f-b1c9-4d20-b967-69a411e463b2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_position_de_l_etiquette
+    - paragraphs.paragraphs_type.etiquette
+id: paragraph.etiquette.field_position_de_l_etiquette
+field_name: field_position_de_l_etiquette
+entity_type: paragraph
+bundle: etiquette
+label: 'Position de l''étiquette à imprimer sur l''emballage'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
