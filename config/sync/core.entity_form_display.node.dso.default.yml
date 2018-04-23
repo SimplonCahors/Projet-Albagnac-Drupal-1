@@ -38,8 +38,8 @@ dependencies:
     - field.field.node.dso.field_nom_contact_tech
     - field.field.node.dso.field_nom_du_commercial
     - field.field.node.dso.field_objet
-    - field.field.node.dso.field_remarques
     - field.field.node.dso.field_remarques_contraintes
+    - field.field.node.dso.field_secteur
     - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sous_secteur
@@ -200,7 +200,7 @@ third_party_settings:
       label: 'Matériels Imposés, Impression'
     group_remarques:
       children:
-        - field_remarques
+        - field_remarques_contraintes
       parent_name: group_informations_administrativ
       weight: 27
       format_type: tab
@@ -561,14 +561,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
-    region: content
-  field_remarques:
-    weight: 27
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
     region: content
   field_remarques_contraintes:
     type: entity_reference_paragraphs

@@ -21,23 +21,31 @@ dependencies:
     - field.field.node.dso.field_concurrent_sur_cette_oppor
     - field.field.node.dso.field_contact_commercial
     - field.field.node.dso.field_contact_technique
+    - field.field.node.dso.field_description_emballage
     - field.field.node.dso.field_email_contact_com
     - field.field.node.dso.field_email_contact_tech
+    - field.field.node.dso.field_emballages_etiquettes
     - field.field.node.dso.field_experience_contact_com
     - field.field.node.dso.field_experience_contact_tech
     - field.field.node.dso.field_fax
     - field.field.node.dso.field_fonction_contact_com
     - field.field.node.dso.field_fonction_contact_tech
     - field.field.node.dso.field_fournisseur_s_actuel_s_
+    - field.field.node.dso.field_impression
+    - field.field.node.dso.field_impression_etiquette
+    - field.field.node.dso.field_materiels_imposes
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_contact_com
     - field.field.node.dso.field_nom_contact_tech
     - field.field.node.dso.field_nom_du_commercial
-    - field.field.node.dso.field_remarques
+    - field.field.node.dso.field_objet
+    - field.field.node.dso.field_remarques_contraintes
+    - field.field.node.dso.field_secteur
     - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sous_secteur
     - field.field.node.dso.field_telephone_contact_tech
+    - field.field.node.dso.field_type_client
     - node.type.dso
   module:
     - user
@@ -81,15 +89,19 @@ hidden:
   field_fonction_contact_com: true
   field_fonction_contact_tech: true
   field_fournisseur_s_actuel_s_: true
+  field_impression: true
+  field_impression_etiquette: true
+  field_materiels_imposes: true
   field_nom_client: true
   field_nom_contact_com: true
   field_nom_contact_tech: true
   field_nom_du_commercial: true
+  field_objet: true
   field_placeh: true
   field_placeholder: true
   field_placeholder2: true
   field_placeholder3: true
-  field_remarques: true
+  field_remarques_contraintes: true
   field_secteur: true
   field_secteur_: true
   field_sieret: true

@@ -38,8 +38,8 @@ dependencies:
     - field.field.node.dso.field_nom_contact_tech
     - field.field.node.dso.field_nom_du_commercial
     - field.field.node.dso.field_objet
-    - field.field.node.dso.field_remarques
     - field.field.node.dso.field_remarques_contraintes
+    - field.field.node.dso.field_secteur
     - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sous_secteur
@@ -290,13 +290,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
-  field_remarques:
-    weight: 104
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
     region: content
   field_remarques_contraintes:
     type: entity_reference_revisions_entity_view
