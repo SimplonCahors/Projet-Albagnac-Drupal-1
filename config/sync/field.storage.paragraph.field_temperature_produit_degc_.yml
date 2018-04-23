@@ -1,12 +1,12 @@
-uuid: 5af0d4b7-f317-4972-9242-df2917d4de89
+uuid: 492a2de4-c0b9-42ff-8123-9a76d40abdac
 langcode: fr
 status: true
 dependencies:
   module:
-    - node
-id: node.field_nom_contact_com
-field_name: field_nom_contact_com
-entity_type: node
+    - paragraphs
+id: paragraph.field_temperature_produit_degc_
+field_name: field_temperature_produit_degc_
+entity_type: paragraph
 type: string
 settings:
   max_length: 255

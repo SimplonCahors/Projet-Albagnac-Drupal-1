@@ -4,8 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.dso.field_10_fax
-    - field.field.node.dso.field_10_telephone
     - field.field.node.dso.field_11_pays
     - field.field.node.dso.field_2_date_creation_fiche_
     - field.field.node.dso.field_3_date_premiere_c
@@ -21,23 +19,15 @@ dependencies:
     - field.field.node.dso.field_concurrent_sur_cette_oppor
     - field.field.node.dso.field_contact_commercial
     - field.field.node.dso.field_contact_technique
-    - field.field.node.dso.field_email_contact_com
-    - field.field.node.dso.field_email_contact_tech
-    - field.field.node.dso.field_experience_contact_com
-    - field.field.node.dso.field_experience_contact_tech
+    - field.field.node.dso.field_description_emballage
     - field.field.node.dso.field_fax
-    - field.field.node.dso.field_fonction_contact_com
-    - field.field.node.dso.field_fonction_contact_tech
     - field.field.node.dso.field_fournisseur_s_actuel_s_
     - field.field.node.dso.field_nom_client
-    - field.field.node.dso.field_nom_contact_com
-    - field.field.node.dso.field_nom_contact_tech
     - field.field.node.dso.field_nom_du_commercial
     - field.field.node.dso.field_remarques
-    - field.field.node.dso.field_secteur_
+    - field.field.node.dso.field_secteur
     - field.field.node.dso.field_sieret
-    - field.field.node.dso.field_sous_secteur
-    - field.field.node.dso.field_telephone_contact_tech
+    - field.field.node.dso.field_type_client
     - node.type.dso
   module:
     - user
@@ -53,8 +43,6 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
-  field_10_fax: true
-  field_10_telephone: true
   field_11_pays: true
   field_2_date_creation_fiche: true
   field_2_date_creation_fiche_: true
@@ -71,26 +59,18 @@ hidden:
   field_concurrent_sur_cette_oppor: true
   field_contact_commercial: true
   field_contact_technique: true
-  field_email_contact_com: true
-  field_email_contact_tech: true
-  field_experience_contact_com: true
-  field_experience_contact_tech: true
+  field_description_emballage: true
   field_fax: true
-  field_fonction_contact_com: true
-  field_fonction_contact_tech: true
   field_fournisseur_s_actuel_s_: true
   field_nom_client: true
-  field_nom_contact_com: true
-  field_nom_contact_tech: true
   field_nom_du_commercial: true
   field_placeh: true
   field_placeholder: true
   field_placeholder2: true
   field_placeholder3: true
   field_remarques: true
-  field_secteur_: true
+  field_secteur: true
   field_sieret: true
-  field_sous_secteur: true
   field_telephone_contact_com: true
-  field_telephone_contact_tech: true
+  field_type_client: true
   langcode: true

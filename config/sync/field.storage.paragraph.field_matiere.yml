@@ -1,12 +1,12 @@
-uuid: d34f6043-4ffa-4a61-a52b-579897340fd1
+uuid: de252950-355f-4cce-a408-f1e2571f2b00
 langcode: fr
 status: true
 dependencies:
   module:
-    - node
-id: node.field_fonction_contact_com
-field_name: field_fonction_contact_com
-entity_type: node
+    - paragraphs
+id: paragraph.field_matiere
+field_name: field_matiere
+entity_type: paragraph
 type: string
 settings:
   max_length: 255

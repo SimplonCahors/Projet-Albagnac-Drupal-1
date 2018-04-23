@@ -1,12 +1,12 @@
-uuid: 9090aa44-b408-4915-8a47-d11aeb9cb2cb
+uuid: b2882aac-e281-4987-84b5-e23d2a5a3179
 langcode: fr
 status: true
 dependencies:
   module:
-    - node
-id: node.field_experience_contact_com
-field_name: field_experience_contact_com
-entity_type: node
+    - paragraphs
+id: paragraph.field_ref_interne
+field_name: field_ref_interne
+entity_type: paragraph
 type: string
 settings:
   max_length: 255

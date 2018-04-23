@@ -1,12 +1,12 @@
-uuid: e1a16239-f35a-4750-aa7b-58ac75123a85
+uuid: b1413266-a456-424e-b892-73d23bb43c0c
 langcode: fr
 status: true
 dependencies:
   module:
-    - node
-id: node.field_secteur_
-field_name: field_secteur_
-entity_type: node
+    - paragraphs
+id: paragraph.field_diametre_ou_longueur_x_lar
+field_name: field_diametre_ou_longueur_x_lar
+entity_type: paragraph
 type: string
 settings:
   max_length: 255

@@ -1,12 +1,12 @@
-uuid: 73fa10fd-35f2-4eac-81bb-9afb1d9cff94
+uuid: 3a95c45a-f18a-46ee-a309-c95fbdd60637
 langcode: fr
 status: true
 dependencies:
   module:
-    - node
-id: node.field_nom_contact_tech
-field_name: field_nom_contact_tech
-entity_type: node
+    - paragraphs
+id: paragraph.field_produits_pleins_ou_vides
+field_name: field_produits_pleins_ou_vides
+entity_type: paragraph
 type: string
 settings:
   max_length: 255

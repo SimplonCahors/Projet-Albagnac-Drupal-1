@@ -1,0 +1,19 @@
+uuid: 4b7f4b92-f7c0-4825-8f89-003b4595d3d8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_produits_pleins_ou_vides
+    - paragraphs.paragraphs_type.description_emballage
+id: paragraph.description_emballage.field_produits_pleins_ou_vides
+field_name: field_produits_pleins_ou_vides
+entity_type: paragraph
+bundle: description_emballage
+label: 'Produits pleins ou vides'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

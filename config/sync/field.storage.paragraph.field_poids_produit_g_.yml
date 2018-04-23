@@ -1,12 +1,12 @@
-uuid: b9331cac-d243-4f4c-930a-b53f08729c5c
+uuid: bd487fd6-a8a2-4266-82af-bab639d97ead
 langcode: fr
 status: true
 dependencies:
   module:
-    - node
-id: node.field_experience_contact_tech
-field_name: field_experience_contact_tech
-entity_type: node
+    - paragraphs
+id: paragraph.field_poids_produit_g_
+field_name: field_poids_produit_g_
+entity_type: paragraph
 type: string
 settings:
   max_length: 255

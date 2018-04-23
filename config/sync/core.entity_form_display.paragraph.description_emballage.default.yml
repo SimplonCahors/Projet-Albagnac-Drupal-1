@@ -1,0 +1,172 @@
+uuid: 1c5f810c-a451-4c66-b032-5868a6d73102
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.description_emballage.field_deformation_niveau_
+    - field.field.paragraph.description_emballage.field_diametre_ou_longueur_x_lar
+    - field.field.paragraph.description_emballage.field_forme
+    - field.field.paragraph.description_emballage.field_hauteur_mm_
+    - field.field.paragraph.description_emballage.field_matiere
+    - field.field.paragraph.description_emballage.field_observation
+    - field.field.paragraph.description_emballage.field_photo
+    - field.field.paragraph.description_emballage.field_poids_produit_g_
+    - field.field.paragraph.description_emballage.field_produits_pleins_ou_vides
+    - field.field.paragraph.description_emballage.field_ref_client
+    - field.field.paragraph.description_emballage.field_ref_interne
+    - field.field.paragraph.description_emballage.field_temperature_produit_degc_
+    - field.field.paragraph.description_emballage.field_tolerance_dimensionnelle
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.description_emballage
+  module:
+    - field_group
+    - image
+third_party_settings:
+  field_group:
+    group_dimensions_du_produit:
+      children:
+        - field_forme
+        - field_diametre_ou_longueur_x_lar
+        - field_hauteur_mm_
+      parent_name: ''
+      weight: 20
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Dimensions du produit'
+    group_caracteristique_produit_a_:
+      children:
+        - field_produits_pleins_ou_vides
+        - field_temperature_produit_degc_
+        - field_poids_produit_g_
+        - field_matiere
+        - field_deformation_niveau_
+        - field_tolerance_dimensionnelle
+        - field_observation
+        - field_photo
+      parent_name: ''
+      weight: 20
+      format_type: details
+      format_settings:
+        label: 'Caractéristique produit à l étiquetage'
+        required_fields: true
+        id: ''
+        classes: ''
+        open: false
+      label: 'Caractéristique produit à l étiquetage'
+id: paragraph.description_emballage.default
+targetEntityType: paragraph
+bundle: description_emballage
+mode: default
+content:
+  field_deformation_niveau_:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_diametre_ou_longueur_x_lar:
+    weight: 22
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_forme:
+    weight: 21
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hauteur_mm_:
+    weight: 23
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_matiere:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_observation:
+    weight: 30
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_photo:
+    weight: 31
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_poids_produit_g_:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_produits_pleins_ou_vides:
+    weight: 24
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ref_client:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ref_interne:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_temperature_produit_degc_:
+    weight: 25
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tolerance_dimensionnelle:
+    weight: 29
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

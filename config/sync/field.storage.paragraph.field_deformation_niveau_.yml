@@ -1,12 +1,12 @@
-uuid: 226340f3-0b09-4ec4-8cd1-43e19c4ac4a1
+uuid: 4cbc1a0b-5e80-4b2d-b4dd-7164b02bc76d
 langcode: fr
 status: true
 dependencies:
   module:
-    - node
-id: node.field_fonction_contact_tech
-field_name: field_fonction_contact_tech
-entity_type: node
+    - paragraphs
+id: paragraph.field_deformation_niveau_
+field_name: field_deformation_niveau_
+entity_type: paragraph
 type: string
 settings:
   max_length: 255
