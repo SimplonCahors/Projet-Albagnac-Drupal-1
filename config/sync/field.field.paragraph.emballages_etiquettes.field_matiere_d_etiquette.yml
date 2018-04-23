@@ -1,0 +1,23 @@
+uuid: 6eb1c3d4-b200-42cc-9d57-1c81ca57f845
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_matiere_d_etiquette
+    - paragraphs.paragraphs_type.emballages_etiquettes
+id: paragraph.emballages_etiquettes.field_matiere_d_etiquette
+field_name: field_matiere_d_etiquette
+entity_type: paragraph
+bundle: emballages_etiquettes
+label: 'Matière d''étiquette'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Opaque
+  off_label: Transparente
+field_type: boolean

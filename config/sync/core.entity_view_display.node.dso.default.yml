@@ -20,8 +20,10 @@ dependencies:
     - field.field.node.dso.field_concurrent_sur_cette_oppor
     - field.field.node.dso.field_contact_commercial
     - field.field.node.dso.field_contact_technique
+    - field.field.node.dso.field_description_emballage
     - field.field.node.dso.field_email_contact_com
     - field.field.node.dso.field_email_contact_tech
+    - field.field.node.dso.field_emballages_etiquettes
     - field.field.node.dso.field_experience_contact_com
     - field.field.node.dso.field_experience_contact_tech
     - field.field.node.dso.field_fax
@@ -175,6 +177,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: basic_string
+    region: content
+  field_emballages_etiquettes:
+    type: entity_reference_revisions_entity_view
+    weight: 147
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     region: content
   field_experience_contact_com:
     weight: 136

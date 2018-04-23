@@ -23,6 +23,7 @@ dependencies:
     - field.field.node.dso.field_description_emballage
     - field.field.node.dso.field_email_contact_com
     - field.field.node.dso.field_email_contact_tech
+    - field.field.node.dso.field_emballages_etiquettes
     - field.field.node.dso.field_experience_contact_com
     - field.field.node.dso.field_experience_contact_tech
     - field.field.node.dso.field_fax
@@ -153,7 +154,8 @@ third_party_settings:
         required_fields: false
       label: Informations_commerciales
     group_emballage_etiquettes:
-      children: {  }
+      children:
+        - field_emballages_etiquettes
       parent_name: group_informations_administrativ
       weight: 23
       format_type: tab
@@ -418,6 +420,18 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: email_default
+    region: content
+  field_emballages_etiquettes:
+    type: entity_reference_paragraphs
+    weight: 63
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
     region: content
   field_experience_contact_com:
     weight: 52

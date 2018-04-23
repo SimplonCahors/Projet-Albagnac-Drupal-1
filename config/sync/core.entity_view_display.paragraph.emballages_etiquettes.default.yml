@@ -1,0 +1,70 @@
+uuid: e7055a8f-474c-48e2-9104-8b62126562e0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.emballages_etiquettes.field_matiere_d_etiquette
+    - field.field.paragraph.emballages_etiquettes.field_matiere_de_l_emballage
+    - field.field.paragraph.emballages_etiquettes.field_nombre_d_emballage
+    - field.field.paragraph.emballages_etiquettes.field_nombre_d_etiquette
+    - field.field.paragraph.emballages_etiquettes.field_type_d_emballage
+    - field.field.paragraph.emballages_etiquettes.field_type_d_etiquette
+    - paragraphs.paragraphs_type.emballages_etiquettes
+  module:
+    - options
+id: paragraph.emballages_etiquettes.default
+targetEntityType: paragraph
+bundle: emballages_etiquettes
+mode: default
+content:
+  field_matiere_d_etiquette:
+    weight: 3
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_matiere_de_l_emballage:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_nombre_d_emballage:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_nombre_d_etiquette:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_type_d_emballage:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_type_d_etiquette:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
