@@ -1,0 +1,19 @@
+uuid: 654e127d-6c6f-4d09-9282-e7999fd29200
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_objet
+    - node.type.dso
+id: node.dso.field_objet
+field_name: field_objet
+entity_type: node
+bundle: dso
+label: Objet
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

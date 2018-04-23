@@ -30,11 +30,16 @@ dependencies:
     - field.field.node.dso.field_fonction_contact_com
     - field.field.node.dso.field_fonction_contact_tech
     - field.field.node.dso.field_fournisseur_s_actuel_s_
+    - field.field.node.dso.field_impression
+    - field.field.node.dso.field_impression_etiquette
+    - field.field.node.dso.field_materiels_imposes
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_contact_com
     - field.field.node.dso.field_nom_contact_tech
     - field.field.node.dso.field_nom_du_commercial
+    - field.field.node.dso.field_objet
     - field.field.node.dso.field_remarques
+    - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sous_secteur
@@ -49,8 +54,7 @@ dependencies:
 third_party_settings:
   field_group:
     group_details_te:
-      children:
-        - field_description_emballage
+      children: {  }
       parent_name: group_demande_dev
       weight: 22
       format_type: details
@@ -180,29 +184,34 @@ third_party_settings:
         required_fields: false
       label: 'Environnement Machine'
     group_materiel_impose_impression:
-      children: {  }
+      children:
+        - field_materiels_imposes
+        - group_impression
       parent_name: group_informations_administrativ
       weight: 26
       format_type: tab
       format_settings:
-        id: ''
-        classes: ''
+        label: 'Matériels Imposés, Impression'
         formatter: closed
         description: ''
+        id: ''
+        classes: ''
         required_fields: false
-      label: 'Matériel Imposé, Impression'
+      label: 'Matériels Imposés, Impression'
     group_remarques:
-      children: {  }
+      children:
+        - field_remarques
       parent_name: group_informations_administrativ
       weight: 27
       format_type: tab
       format_settings:
-        id: ''
-        classes: ''
+        label: 'Remarques / contraintes éventuelles'
         formatter: closed
         description: ''
+        id: ''
+        classes: ''
         required_fields: false
-      label: Remarques
+      label: 'Remarques / contraintes éventuelles'
     group_etiquettes:
       children: {  }
       parent_name: group_demande_dev
@@ -259,6 +268,20 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Contact technique'
+    group_impression:
+      children:
+        - field_impression_etiquette
+        - field_impression
+      parent_name: group_materiel_impose_impression
+      weight: 65
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Impression
 id: node.dso.default
 targetEntityType: node
 bundle: dso
@@ -391,20 +414,6 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
-  field_description_emballage:
-    type: paragraphs
-    weight: 0
-    region: content
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      closed_mode: summary
-      autocollapse: none
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
   field_email_contact_com:
     weight: 50
     settings:
@@ -485,6 +494,42 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+  field_impression:
+    type: entity_reference_paragraphs
+    weight: 68
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_impression_etiquette:
+    type: entity_reference_paragraphs
+    weight: 67
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_materiels_imposes:
+    type: entity_reference_paragraphs
+    weight: 64
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_nom_client:
     weight: 13
     settings:
@@ -509,6 +554,14 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_objet:
+    weight: 70
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_remarques:
     weight: 27
     settings:
@@ -516,6 +569,18 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
+    region: content
+  field_remarques_contraintes:
+    type: entity_reference_paragraphs
+    weight: 69
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
     region: content
   field_secteur_:
     weight: 41
@@ -581,6 +646,7 @@ content:
 hidden:
   field_contact_commercial: true
   field_contact_technique: true
+  field_description_emballage: true
   field_nom_du_commercial: true
   field_type_client_test: true
   langcode: true
