@@ -137,7 +137,9 @@ third_party_settings:
       label: 'Informations administratives du demandeur'
     group_informations_commerciales:
       children:
-        - body
+        - field_besoin
+        - field_concurrent_sur_cette_oppor
+        - field_fournisseur_s_actuel_s_
       parent_name: group_informations_administrativ
       weight: 22
       format_type: tab
@@ -164,7 +166,7 @@ third_party_settings:
       children:
         - field_asservissement
       parent_name: group_informations_administrativ
-      weight: 24
+      weight: 25
       format_type: tab
       format_settings:
         id: ''
@@ -176,7 +178,7 @@ third_party_settings:
     group_materiel_impose_impression:
       children: {  }
       parent_name: group_informations_administrativ
-      weight: 25
+      weight: 26
       format_type: tab
       format_settings:
         id: ''
@@ -353,6 +355,18 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
+  field_besoin:
+    type: entity_reference_paragraphs
+    weight: 24
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
   field_categorie_:
     weight: 40
     settings:
@@ -361,6 +375,18 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_concurrent_sur_cette_oppor:
+    type: entity_reference_paragraphs
+    weight: 25
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
   field_email_contact_com:
     weight: 49
     settings:
@@ -417,6 +443,18 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_fournisseur_s_actuel_s_:
+    type: entity_reference_paragraphs
+    weight: 26
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
   field_nom_client:
     weight: 13
     settings:
@@ -513,11 +551,8 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
-  field_besoin: true
-  field_concurrent_sur_cette_oppor: true
   field_contact_commercial: true
   field_contact_technique: true
-  field_fournisseur_s_actuel_s_: true
   field_nom_du_commercial: true
   langcode: true
   path: true
