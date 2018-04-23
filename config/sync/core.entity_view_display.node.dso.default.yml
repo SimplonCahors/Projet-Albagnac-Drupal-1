@@ -417,6 +417,7 @@ hidden:
   field_contact_technique: true
   field_description_emballage: true
   field_fournisseur_s_actuel_s_: true
+  field_no: true
   field_nom_du_commercial: true
   field_secteur: true
   field_type_client_test: true

@@ -79,10 +79,16 @@ hidden:
   field_concurrent_sur_cette_oppor: true
   field_contact_commercial: true
   field_contact_technique: true
+  field_controle_de_conformite: true
+  field_date_desiree_controle: true
+  field_demande_certification_ext: true
+  field_demande_de_cem_electromagn: true
+  field_demande_de_fat_suivant_spe: true
   field_description_emballage: true
   field_email_contact_com: true
   field_email_contact_tech: true
   field_emballages_etiquettes: true
+  field_energies: true
   field_experience_contact_com: true
   field_experience_contact_tech: true
   field_fax: true
@@ -92,6 +98,7 @@ hidden:
   field_impression: true
   field_impression_etiquette: true
   field_materiels_imposes: true
+  field_no: true
   field_nom_client: true
   field_nom_contact_com: true
   field_nom_contact_tech: true
