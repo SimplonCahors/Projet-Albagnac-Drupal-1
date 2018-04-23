@@ -1,0 +1,21 @@
+uuid: 70f857f2-4e5c-4279-9abb-24c2116071b3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_regime_de_neutre
+    - paragraphs.paragraphs_type.energies
+  module:
+    - options
+id: paragraph.energies.field_regime_de_neutre
+field_name: field_regime_de_neutre
+entity_type: paragraph
+bundle: energies
+label: 'Régime de neutre'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

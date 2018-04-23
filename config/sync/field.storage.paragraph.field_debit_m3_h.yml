@@ -1,0 +1,21 @@
+uuid: 155d57b6-7b04-4aff-9fd3-58e9637b27ad
+langcode: fr
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_debit_m3_h
+field_name: field_debit_m3_h
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,9 @@
+uuid: 1dfa8dd1-1316-4f39-8d68-14bb9f616af3
+langcode: fr
+status: true
+dependencies: {  }
+id: energies
+label: Énergies
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

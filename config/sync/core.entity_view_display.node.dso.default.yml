@@ -20,10 +20,16 @@ dependencies:
     - field.field.node.dso.field_concurrent_sur_cette_oppor
     - field.field.node.dso.field_contact_commercial
     - field.field.node.dso.field_contact_technique
+    - field.field.node.dso.field_controle_de_conformite
+    - field.field.node.dso.field_date_desiree_controle
+    - field.field.node.dso.field_demande_certification_ext
+    - field.field.node.dso.field_demande_de_cem_electromagn
+    - field.field.node.dso.field_demande_de_fat_suivant_spe
     - field.field.node.dso.field_description_emballage
     - field.field.node.dso.field_email_contact_com
     - field.field.node.dso.field_email_contact_tech
     - field.field.node.dso.field_emballages_etiquettes
+    - field.field.node.dso.field_energies
     - field.field.node.dso.field_experience_contact_com
     - field.field.node.dso.field_experience_contact_tech
     - field.field.node.dso.field_fax
@@ -169,6 +175,55 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_controle_de_conformite:
+    weight: 154
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_date_desiree_controle:
+    weight: 158
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_demande_certification_ext:
+    weight: 156
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_demande_de_cem_electromagn:
+    weight: 155
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_demande_de_fat_suivant_spe:
+    weight: 157
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
   field_email_contact_com:
     weight: 141
     label: above
@@ -186,6 +241,15 @@ content:
   field_emballages_etiquettes:
     type: entity_reference_revisions_entity_view
     weight: 147
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_energies:
+    type: entity_reference_revisions_entity_view
+    weight: 153
     label: above
     settings:
       view_mode: default

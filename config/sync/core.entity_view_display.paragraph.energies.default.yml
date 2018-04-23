@@ -1,0 +1,47 @@
+uuid: d4fcd9ab-f8c4-4c3b-8ea6-03aeadc8ec72
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.energies.field_pneumatique
+    - field.field.paragraph.energies.field_regime_de_neutre
+    - field.field.paragraph.energies.field_tension_electrique
+    - paragraphs.paragraphs_type.energies
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.energies.default
+targetEntityType: paragraph
+bundle: energies
+mode: default
+content:
+  field_pneumatique:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_regime_de_neutre:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_tension_electrique:
+    weight: 0
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

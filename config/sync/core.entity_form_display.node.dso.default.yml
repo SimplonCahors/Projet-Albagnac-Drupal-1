@@ -20,10 +20,16 @@ dependencies:
     - field.field.node.dso.field_concurrent_sur_cette_oppor
     - field.field.node.dso.field_contact_commercial
     - field.field.node.dso.field_contact_technique
+    - field.field.node.dso.field_controle_de_conformite
+    - field.field.node.dso.field_date_desiree_controle
+    - field.field.node.dso.field_demande_certification_ext
+    - field.field.node.dso.field_demande_de_cem_electromagn
+    - field.field.node.dso.field_demande_de_fat_suivant_spe
     - field.field.node.dso.field_description_emballage
     - field.field.node.dso.field_email_contact_com
     - field.field.node.dso.field_email_contact_tech
     - field.field.node.dso.field_emballages_etiquettes
+    - field.field.node.dso.field_energies
     - field.field.node.dso.field_experience_contact_com
     - field.field.node.dso.field_experience_contact_tech
     - field.field.node.dso.field_fax
@@ -173,6 +179,12 @@ third_party_settings:
     group_environnement_machine:
       children:
         - field_asservissement
+        - group_energies_disponib
+        - group_mode_de_controle_demande_p
+        - group_installation_mise_en_route
+        - group_formation
+        - group_notice
+        - group_transport
       parent_name: group_informations_administrativ
       weight: 25
       format_type: tab
@@ -282,6 +294,84 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Impression
+    group_energies_disponib:
+      children:
+        - field_energies
+      parent_name: group_environnement_machine
+      weight: 27
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Énergies disponibles'
+    group_installation_mise_en_route:
+      children: {  }
+      parent_name: group_environnement_machine
+      weight: 29
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Installation et mise en route'
+    group_formation:
+      children: {  }
+      parent_name: group_environnement_machine
+      weight: 30
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Formation
+    group_notice:
+      children: {  }
+      parent_name: group_environnement_machine
+      weight: 31
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Notice
+    group_transport:
+      children: {  }
+      parent_name: group_environnement_machine
+      weight: 32
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Transport
+    group_mode_de_controle_demande_p:
+      children:
+        - field_controle_de_conformite
+        - field_demande_de_fat_suivant_spe
+        - field_date_desiree_controle
+        - field_demande_de_cem_electromagn
+        - field_demande_certification_ext
+      parent_name: group_environnement_machine
+      weight: 28
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Mode de contrôle demandé par le client'
 id: node.dso.default
 targetEntityType: node
 bundle: dso
@@ -414,6 +504,36 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+  field_controle_de_conformite:
+    weight: 21
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_date_desiree_controle:
+    weight: 23
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_demande_certification_ext:
+    weight: 25
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_demande_de_cem_electromagn:
+    weight: 24
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_demande_de_fat_suivant_spe:
+    weight: 22
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_email_contact_com:
     weight: 50
     settings:
@@ -433,6 +553,18 @@ content:
   field_emballages_etiquettes:
     type: entity_reference_paragraphs
     weight: 63
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_energies:
+    type: entity_reference_paragraphs
+    weight: 71
     settings:
       title: Paragraph
       title_plural: Paragraphs

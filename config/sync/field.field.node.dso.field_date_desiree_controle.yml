@@ -1,0 +1,21 @@
+uuid: 6b59db85-c6d0-4fb5-bba1-c5e3a81dbc4c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_desiree_controle
+    - node.type.dso
+  module:
+    - datetime
+id: node.dso.field_date_desiree_controle
+field_name: field_date_desiree_controle
+entity_type: node
+bundle: dso
+label: 'Date désirée'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
