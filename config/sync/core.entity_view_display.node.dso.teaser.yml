@@ -21,10 +21,15 @@ dependencies:
     - field.field.node.dso.field_concurrent_sur_cette_oppor
     - field.field.node.dso.field_contact_commercial
     - field.field.node.dso.field_contact_technique
+    - field.field.node.dso.field_controle_de_conformite
+    - field.field.node.dso.field_date_desiree_controle
+    - field.field.node.dso.field_demande_certification_ext
+    - field.field.node.dso.field_demande_de_cem_electromagn
+    - field.field.node.dso.field_demande_de_fat_suivant_spe
     - field.field.node.dso.field_description_emballage
     - field.field.node.dso.field_email_contact_com
-    - field.field.node.dso.field_email_contact_tech
     - field.field.node.dso.field_emballages_etiquettes
+    - field.field.node.dso.field_energies
     - field.field.node.dso.field_experience_contact_com
     - field.field.node.dso.field_experience_contact_tech
     - field.field.node.dso.field_fax
@@ -34,9 +39,9 @@ dependencies:
     - field.field.node.dso.field_impression
     - field.field.node.dso.field_impression_etiquette
     - field.field.node.dso.field_materiels_imposes
+    - field.field.node.dso.field_no
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_contact_com
-    - field.field.node.dso.field_nom_contact_tech
     - field.field.node.dso.field_nom_du_commercial
     - field.field.node.dso.field_objet
     - field.field.node.dso.field_remarques_contraintes
@@ -86,7 +91,6 @@ hidden:
   field_demande_de_fat_suivant_spe: true
   field_description_emballage: true
   field_email_contact_com: true
-  field_email_contact_tech: true
   field_emballages_etiquettes: true
   field_energies: true
   field_experience_contact_com: true
@@ -101,7 +105,6 @@ hidden:
   field_no: true
   field_nom_client: true
   field_nom_contact_com: true
-  field_nom_contact_tech: true
   field_nom_du_commercial: true
   field_objet: true
   field_placeh: true

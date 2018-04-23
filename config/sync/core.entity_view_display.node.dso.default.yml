@@ -27,7 +27,6 @@ dependencies:
     - field.field.node.dso.field_demande_de_fat_suivant_spe
     - field.field.node.dso.field_description_emballage
     - field.field.node.dso.field_email_contact_com
-    - field.field.node.dso.field_email_contact_tech
     - field.field.node.dso.field_emballages_etiquettes
     - field.field.node.dso.field_energies
     - field.field.node.dso.field_experience_contact_com
@@ -39,9 +38,9 @@ dependencies:
     - field.field.node.dso.field_impression
     - field.field.node.dso.field_impression_etiquette
     - field.field.node.dso.field_materiels_imposes
+    - field.field.node.dso.field_no
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_contact_com
-    - field.field.node.dso.field_nom_contact_tech
     - field.field.node.dso.field_nom_du_commercial
     - field.field.node.dso.field_objet
     - field.field.node.dso.field_remarques_contraintes
@@ -231,13 +230,6 @@ content:
     third_party_settings: {  }
     type: basic_string
     region: content
-  field_email_contact_tech:
-    weight: 140
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
   field_emballages_etiquettes:
     type: entity_reference_revisions_entity_view
     weight: 147
@@ -333,14 +325,6 @@ content:
     region: content
   field_nom_contact_com:
     weight: 132
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_nom_contact_tech:
-    weight: 137
     label: above
     settings:
       link_to_entity: false
