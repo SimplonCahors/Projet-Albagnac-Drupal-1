@@ -27,7 +27,7 @@ dependencies:
     - field.field.node.dso.field_demande_de_cem_electromagn
     - field.field.node.dso.field_demande_de_certification_e
     - field.field.node.dso.field_demande_de_fat_suivant_spe
-    - field.field.node.dso.field_description_emballage
+    - field.field.node.dso.field_des
     - field.field.node.dso.field_emballages_etiquettes
     - field.field.node.dso.field_en_salle
     - field.field.node.dso.field_energies
@@ -39,14 +39,12 @@ dependencies:
     - field.field.node.dso.field_langue
     - field.field.node.dso.field_materiels_imposes
     - field.field.node.dso.field_mise_en_route_de_la_machin
+    - field.field.node.dso.field_no
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_contact_com
     - field.field.node.dso.field_nombre_de_jours
     - field.field.node.dso.field_nombre_de_personnes
     - field.field.node.dso.field_numerique
-    - field.field.node.dso.field_no
-    - field.field.node.dso.field_nom_client
-    - field.field.node.dso.field_nom_contact_com
     - field.field.node.dso.field_objet
     - field.field.node.dso.field_papier
     - field.field.node.dso.field_plan_de_prevention_pour_in
@@ -67,9 +65,10 @@ dependencies:
 third_party_settings:
   field_group:
     group_details_te:
-      children: {  }
+      children:
+        - field_des
       parent_name: group_demande_dev
-      weight: 22
+      weight: 21
       format_type: details
       format_settings:
         label: Emballage
@@ -136,7 +135,6 @@ third_party_settings:
         - field_7_nom_client
         - field_8_adresse_postale
         - field_9_telephone
-        - field_10_fax
         - field_11_pays
         - field_categorie_
         - field_secteur_
@@ -256,10 +254,6 @@ third_party_settings:
     group_contact_commercial:
       children:
         - field_nom_contact_com
-        - field_fonction_contact_com
-        - field_email_contact_com
-        - field_telephone_contact_tech
-        - field_experience_contact_com
       parent_name: group_informations_demandeur
       weight: 45
       format_type: tab
@@ -272,11 +266,7 @@ third_party_settings:
       label: 'Contact commercial'
     group_contact_technique:
       children:
-        - field_nom_contact_tech
-        - field_fonction_contact_tech
-        - field_email_contact_tech
         - field_10_telephone
-        - field_experience_contact_tech
       parent_name: group_informations_demandeur
       weight: 46
       format_type: tab
@@ -565,6 +555,18 @@ content:
     third_party_settings: {  }
     type: options_buttons
     region: content
+  field_des:
+    type: entity_reference_paragraphs
+    weight: 22
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_emballages_etiquettes:
     type: entity_reference_paragraphs
     weight: 63
@@ -822,7 +824,6 @@ content:
 hidden:
   field_contact_commercial: true
   field_contact_technique: true
-  field_description_emballage: true
   field_no: true
   field_secteur: true
   field_type_client_test: true

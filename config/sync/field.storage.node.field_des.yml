@@ -1,4 +1,4 @@
-uuid: c2d1d02d-cfc8-458d-83d6-4711ab0dd8ff
+uuid: c31176d8-cc63-45c3-8c26-a55a4baa81ef
 langcode: fr
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - entity_reference_revisions
     - node
     - paragraphs
-id: node.field_description_emballage
-field_name: field_description_emballage
+id: node.field_des
+field_name: field_des
 entity_type: node
 type: entity_reference_revisions
 settings:

@@ -1,15 +1,15 @@
-uuid: 796313f9-3db0-484e-a8bc-e735d3f107c8
+uuid: 587b24a1-9616-4b8c-8ea5-33c76e8c583a
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_description_emballage
+    - field.storage.node.field_des
     - node.type.dso
     - paragraphs.paragraphs_type.description_emballage
   module:
     - entity_reference_revisions
-id: node.dso.field_description_emballage
-field_name: field_description_emballage
+id: node.dso.field_des
+field_name: field_des
 entity_type: node
 bundle: dso
 label: 'Description emballage'
@@ -25,25 +25,46 @@ settings:
     target_bundles:
       description_emballage: description_emballage
     target_bundles_drag_drop:
-      description_emballage:
-        enabled: true
-        weight: 8
       asservissement:
-        weight: 9
+        weight: 15
         enabled: false
       besoin:
-        weight: 10
+        weight: 16
         enabled: false
       concurrent_sur_cette_opportunite:
-        weight: 11
+        weight: 17
         enabled: false
       contact_commercial:
-        weight: 12
+        weight: 18
         enabled: false
       contact_technique:
-        weight: 13
+        weight: 19
+        enabled: false
+      description_emballage:
+        enabled: true
+        weight: 20
+      emballage:
+        weight: 21
+        enabled: false
+      emballages_etiquettes:
+        weight: 22
+        enabled: false
+      energies:
+        weight: 23
+        enabled: false
+      etiquette:
+        weight: 24
         enabled: false
       fournisseur_s_actuel_s_:
-        weight: 14
+        weight: 25
+        enabled: false
+      materiel_impose_par_le_client:
+        weight: 26
+        enabled: false
+      pneumatique:
+        weight: 27
+        enabled: false
+      remarques:
+        weight: 28
         enabled: false
 field_type: entity_reference_revisions
