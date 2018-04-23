@@ -69,9 +69,11 @@ hidden:
   field_7_nom_client: true
   field_8_adresse_postale: true
   field_9_telephone: true
+  field_a_la_charge_de_: true
   field_asservissement: true
   field_besoin: true
   field_categorie_: true
+  field_cd: true
   field_concurrent_sur_cette_oppor: true
   field_contact_commercial: true
   field_contact_technique: true
@@ -79,28 +81,40 @@ hidden:
   field_date_desiree_controle: true
   field_demande_certification_ext: true
   field_demande_de_cem_electromagn: true
+  field_demande_de_certification_e: true
   field_demande_de_fat_suivant_spe: true
   field_description_emballage: true
   field_emballages_etiquettes: true
+  field_en_salle: true
   field_energies: true
   field_fax: true
   field_fournisseur_s_actuel_s_: true
   field_impression: true
   field_impression_etiquette: true
+  field_installation_chez_le_clien: true
+  field_langue: true
   field_materiels_imposes: true
+  field_mise_en_route_de_la_machin: true
   field_no: true
   field_nom_client: true
   field_nom_contact_com: true
+  field_nombre_de_jours: true
+  field_nombre_de_personnes: true
+  field_numerique: true
   field_objet: true
+  field_papier: true
   field_placeh: true
   field_placeholder: true
   field_placeholder2: true
   field_placeholder3: true
+  field_plan_de_prevention_pour_in: true
+  field_quantite: true
   field_remarques_contraintes: true
   field_secteur: true
   field_secteur_: true
   field_sieret: true
   field_sous_secteur: true
+  field_sur_machine: true
   field_telephone_contact_com: true
   field_type_client: true
   langcode: true
