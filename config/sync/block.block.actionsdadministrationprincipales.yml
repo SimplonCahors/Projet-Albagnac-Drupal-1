@@ -1,15 +1,13 @@
-uuid: e297251f-28ad-4a3c-b2ac-2c6b25b62d58
+uuid: 5c6b25fb-7ff8-420e-baaa-d93ff58a826d
 langcode: fr
 status: true
 dependencies:
   theme:
-    - bootstrap
-_core:
-  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
-id: bootstrap_local_actions
-theme: bootstrap
+    - bootchild
+id: actionsdadministrationprincipales
+theme: bootchild
 region: header
-weight: -7
+weight: 0
 provider: null
 plugin: local_actions_block
 settings:

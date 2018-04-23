@@ -1,17 +1,15 @@
-uuid: 5e8ac836-7985-4715-ab9b-5ab8f39f7e45
+uuid: 6405a0ce-c240-4529-ab89-9f64eabe0b8d
 langcode: fr
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bootstrap
-_core:
-  default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
-id: bootstrap_breadcrumbs
-theme: bootstrap
+    - bootchild
+id: filsdariane
+theme: bootchild
 region: header
-weight: -7
+weight: 0
 provider: null
 plugin: system_breadcrumb_block
 settings:

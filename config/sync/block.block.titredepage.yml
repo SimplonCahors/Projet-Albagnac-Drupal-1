@@ -1,0 +1,18 @@
+uuid: 982fa818-31c2-4d7c-96cc-dba650addea1
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - bootchild
+id: titredepage
+theme: bootchild
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Titre de page'
+  provider: core
+  label_display: '0'
+visibility: {  }
