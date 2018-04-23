@@ -1,0 +1,21 @@
+uuid: a8490718-ec9d-4f79-8656-c68a15ff3700
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_matiere_de_l_emballage
+    - paragraphs.paragraphs_type.emballages_etiquettes
+  module:
+    - options
+id: paragraph.emballages_etiquettes.field_matiere_de_l_emballage
+field_name: field_matiere_de_l_emballage
+entity_type: paragraph
+bundle: emballages_etiquettes
+label: 'Matière de l''emballage'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

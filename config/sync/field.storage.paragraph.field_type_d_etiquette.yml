@@ -1,0 +1,54 @@
+uuid: 972d80a2-c324-486f-867f-3e560f1e61e3
+langcode: fr
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_type_d_etiquette
+field_name: field_type_d_etiquette
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Collerette entourante'
+      label: 'Collerette entourante'
+    -
+      value: Collerette
+      label: Collerette
+    -
+      value: Corp
+      label: Corp
+    -
+      value: Contre
+      label: Contre
+    -
+      value: Médaille
+      label: Médaille
+    -
+      value: 'Capsule thermo'
+      label: 'Capsule thermo'
+    -
+      value: Capsule
+      label: Capsule
+    -
+      value: Livret
+      label: Livret
+    -
+      value: '1 Rabat'
+      label: '1 Rabat'
+    -
+      value: '2 Rabats'
+      label: '2 Rabats'
+    -
+      value: Simple
+      label: Simple
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

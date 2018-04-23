@@ -38,7 +38,6 @@ dependencies:
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sous_secteur
     - field.field.node.dso.field_telephone_contact_tech
-    - field.field.node.dso.field_type_client
     - node.type.dso
   module:
     - user
@@ -72,6 +71,7 @@ hidden:
   field_concurrent_sur_cette_oppor: true
   field_contact_commercial: true
   field_contact_technique: true
+  field_description_emballage: true
   field_email_contact_com: true
   field_email_contact_tech: true
   field_experience_contact_com: true

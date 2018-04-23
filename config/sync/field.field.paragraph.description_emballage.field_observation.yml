@@ -1,0 +1,19 @@
+uuid: 08c7576b-f36e-4c31-9df3-93617e41f1c1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_observation
+    - paragraphs.paragraphs_type.description_emballage
+id: paragraph.description_emballage.field_observation
+field_name: field_observation
+entity_type: paragraph
+bundle: description_emballage
+label: Observation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

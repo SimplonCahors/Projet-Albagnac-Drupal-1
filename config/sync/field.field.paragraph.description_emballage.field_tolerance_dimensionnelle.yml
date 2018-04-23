@@ -1,0 +1,19 @@
+uuid: 3353b704-ecc7-41aa-b47e-ae75519a47ef
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tolerance_dimensionnelle
+    - paragraphs.paragraphs_type.description_emballage
+id: paragraph.description_emballage.field_tolerance_dimensionnelle
+field_name: field_tolerance_dimensionnelle
+entity_type: paragraph
+bundle: description_emballage
+label: 'Tolérance dimensionnelle'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
