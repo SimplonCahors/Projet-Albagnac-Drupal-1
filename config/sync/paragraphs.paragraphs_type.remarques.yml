@@ -1,9 +1,0 @@
-uuid: c3dec775-5219-487a-9ca8-5ed93f2a26a6
-langcode: fr
-status: true
-dependencies: {  }
-id: remarques
-label: Remarques
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

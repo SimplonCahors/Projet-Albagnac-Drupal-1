@@ -30,16 +30,11 @@ dependencies:
     - field.field.node.dso.field_fonction_contact_com
     - field.field.node.dso.field_fonction_contact_tech
     - field.field.node.dso.field_fournisseur_s_actuel_s_
-    - field.field.node.dso.field_impression
-    - field.field.node.dso.field_impression_etiquette
-    - field.field.node.dso.field_materiels_imposes
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nom_contact_com
     - field.field.node.dso.field_nom_contact_tech
     - field.field.node.dso.field_nom_du_commercial
-    - field.field.node.dso.field_objet
     - field.field.node.dso.field_remarques
-    - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sous_secteur
@@ -232,33 +227,6 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_impression:
-    type: entity_reference_revisions_entity_view
-    weight: 149
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: content
-  field_impression_etiquette:
-    type: entity_reference_revisions_entity_view
-    weight: 150
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: content
-  field_materiels_imposes:
-    type: entity_reference_revisions_entity_view
-    weight: 148
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: content
   field_nom_client:
     weight: 103
     label: above
@@ -283,29 +251,12 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_objet:
-    weight: 152
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_remarques:
     weight: 104
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
-    region: content
-  field_remarques_contraintes:
-    type: entity_reference_revisions_entity_view
-    weight: 151
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
     region: content
   field_secteur_:
     weight: 126

@@ -1,9 +1,0 @@
-uuid: 689ab148-1eaa-4221-b09f-dd5939ee6525
-langcode: fr
-status: true
-dependencies: {  }
-id: emballage
-label: Emballage
-icon_uuid: null
-description: ''
-behavior_plugins: {  }
