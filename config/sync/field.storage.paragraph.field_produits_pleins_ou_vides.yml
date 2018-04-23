@@ -1,0 +1,21 @@
+uuid: 3a95c45a-f18a-46ee-a309-c95fbdd60637
+langcode: fr
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_produits_pleins_ou_vides
+field_name: field_produits_pleins_ou_vides
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

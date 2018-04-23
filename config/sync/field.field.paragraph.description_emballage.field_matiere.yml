@@ -1,0 +1,19 @@
+uuid: 9e5aec2d-47f1-4c47-b584-e84acdb7befb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_matiere
+    - paragraphs.paragraphs_type.description_emballage
+id: paragraph.description_emballage.field_matiere
+field_name: field_matiere
+entity_type: paragraph
+bundle: description_emballage
+label: Matière
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

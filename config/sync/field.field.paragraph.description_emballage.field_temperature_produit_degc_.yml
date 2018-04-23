@@ -1,0 +1,19 @@
+uuid: 834d0f44-31cc-4d4b-b556-e24f4a828b38
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_temperature_produit_degc_
+    - paragraphs.paragraphs_type.description_emballage
+id: paragraph.description_emballage.field_temperature_produit_degc_
+field_name: field_temperature_produit_degc_
+entity_type: paragraph
+bundle: description_emballage
+label: 'Température  produit (°C)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
