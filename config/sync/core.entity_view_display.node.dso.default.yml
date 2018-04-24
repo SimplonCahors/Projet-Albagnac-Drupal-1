@@ -3,7 +3,6 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.dso.field_10_telephone
     - field.field.node.dso.field_11_pays
     - field.field.node.dso.field_2_date_creation_fiche_
     - field.field.node.dso.field_3_date_premiere_c
@@ -41,7 +40,6 @@ dependencies:
     - field.field.node.dso.field_mise_en_route_de_la_machin
     - field.field.node.dso.field_no
     - field.field.node.dso.field_nom_client
-    - field.field.node.dso.field_nom_contact_com
     - field.field.node.dso.field_nombre_de_jours
     - field.field.node.dso.field_nombre_de_personnes
     - field.field.node.dso.field_numerique
@@ -71,13 +69,6 @@ targetEntityType: node
 bundle: dso
 mode: default
 content:
-  field_10_telephone:
-    weight: 139
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
   field_11_pays:
     weight: 124
     label: above
@@ -488,7 +479,6 @@ hidden:
   field_contact_technique: true
   field_fournisseur_s_actuel_s_: true
   field_no: true
-  field_nom_contact_com: true
   field_secteur: true
   field_type_client_test: true
   langcode: true
