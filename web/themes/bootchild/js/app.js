@@ -1,11 +1,14 @@
-var x = document.querySelector('body').classList;
+var isADV = document.querySelector('body').classList.contains('role-ad') 
 
-console.log(x.contains('role-ad'));
+if (isADV) {
 
-if (document.querySelector('body').classList.contains('role-ad')) {
 document.querySelector('[href="/liste"]').style.display = "none";
-
 }
 
+if(!isADV) {
+
+document.querySelector('[href="/admin/people"]').style.display = "none";
+
+}
 
 
