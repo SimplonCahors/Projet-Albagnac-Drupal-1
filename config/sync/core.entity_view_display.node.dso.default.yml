@@ -17,8 +17,10 @@ dependencies:
     - field.field.node.dso.field_asservissement
     - field.field.node.dso.field_autre
     - field.field.node.dso.field_autre_arrivee_produits
+    - field.field.node.dso.field_autre_langue
     - field.field.node.dso.field_autre_milieu
     - field.field.node.dso.field_autre_nom_commercial
+    - field.field.node.dso.field_autre_secteur
     - field.field.node.dso.field_autre_transfert_aval
     - field.field.node.dso.field_besoin
     - field.field.node.dso.field_cadence_souhaitee_pdts_h_
@@ -63,7 +65,6 @@ dependencies:
     - field.field.node.dso.field_quantite
     - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_secteur
-    - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sens_de_la_machine
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sortie_produits_aval
@@ -211,6 +212,14 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_autre_langue:
+    weight: 198
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_autre_milieu:
     weight: 188
     label: above
@@ -221,6 +230,14 @@ content:
     region: content
   field_autre_nom_commercial:
     weight: 197
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_autre_secteur:
+    weight: 199
     label: above
     settings:
       link_to_entity: false
@@ -566,14 +583,6 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    region: content
-  field_secteur_:
-    weight: 126
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_sens_de_la_machine:
     weight: 185

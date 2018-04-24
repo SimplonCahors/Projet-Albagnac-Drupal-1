@@ -1,0 +1,19 @@
+uuid: 1ae13c5c-af56-438d-907c-005cd4bf6da8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autre_langue
+    - node.type.dso
+id: node.dso.field_autre_langue
+field_name: field_autre_langue
+entity_type: node
+bundle: dso
+label: Autre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

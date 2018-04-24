@@ -14,30 +14,44 @@ dependencies:
     - field.field.node.dso.field_8_adresse_postale
     - field.field.node.dso.field_9_telephone
     - field.field.node.dso.field_a_la_charge_de_
+    - field.field.node.dso.field_arrivee_produits_amont
     - field.field.node.dso.field_asservissement
+    - field.field.node.dso.field_autre
+    - field.field.node.dso.field_autre_arrivee_produits
+    - field.field.node.dso.field_autre_milieu
+    - field.field.node.dso.field_autre_nom_commercial
+    - field.field.node.dso.field_autre_transfert_aval
     - field.field.node.dso.field_besoin
+    - field.field.node.dso.field_cadence_souhaitee_pdts_h_
     - field.field.node.dso.field_categorie_
     - field.field.node.dso.field_cd
+    - field.field.node.dso.field_communication_machine_amon
+    - field.field.node.dso.field_communication_machine_aval
     - field.field.node.dso.field_concurrent_sur_cette_oppor
     - field.field.node.dso.field_contact_commercial
     - field.field.node.dso.field_contact_technique
     - field.field.node.dso.field_controle_de_conformite
+    - field.field.node.dso.field_coupure_sur_bourrage
     - field.field.node.dso.field_date_desiree_controle
     - field.field.node.dso.field_demande_certification_ext
     - field.field.node.dso.field_demande_de_cem_electromagn
     - field.field.node.dso.field_demande_de_certification_e
     - field.field.node.dso.field_demande_de_fat_suivant_spe
     - field.field.node.dso.field_des
+    - field.field.node.dso.field_descriptif_asservissement
     - field.field.node.dso.field_emballages_etiquettes
     - field.field.node.dso.field_en_salle
     - field.field.node.dso.field_energies
+    - field.field.node.dso.field_espace_disponible_au_sol_m
     - field.field.node.dso.field_fax
     - field.field.node.dso.field_fournisseur_s_actuel_s_
+    - field.field.node.dso.field_hauteur_de_convoyeur_mm_
     - field.field.node.dso.field_impression
     - field.field.node.dso.field_impression_etiquette
     - field.field.node.dso.field_installation_chez_le_clien
     - field.field.node.dso.field_langue
     - field.field.node.dso.field_materiels_imposes
+    - field.field.node.dso.field_milieu
     - field.field.node.dso.field_mise_en_route_de_la_machin
     - field.field.node.dso.field_no
     - field.field.node.dso.field_nom_client
@@ -50,11 +64,19 @@ dependencies:
     - field.field.node.dso.field_quantite
     - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_secteur
-    - field.field.node.dso.field_secteur_
+    - field.field.node.dso.field_sens_de_la_machine
     - field.field.node.dso.field_sieret
+    - field.field.node.dso.field_sortie_produits_aval
     - field.field.node.dso.field_sous_secteur
     - field.field.node.dso.field_sur_machine
+    - field.field.node.dso.field_temperature_local_travail
+    - field.field.node.dso.field_transfert_amont
+    - field.field.node.dso.field_transfert_aval
     - field.field.node.dso.field_type_client
+    - field.field.node.dso.field_type_de_convoyage_amont
+    - field.field.node.dso.field_type_de_convoyage_aval
+    - field.field.node.dso.field_type_de_machine_amont
+    - field.field.node.dso.field_type_de_machine_aval
     - node.type.dso
   module:
     - user
@@ -86,6 +108,7 @@ hidden:
   field_autre: true
   field_autre_arrivee_produits: true
   field_autre_milieu: true
+  field_autre_nom_commercial: true
   field_autre_transfert_aval: true
   field_besoin: true
   field_cadence_souhaitee_pdts_h_: true
@@ -134,7 +157,6 @@ hidden:
   field_quantite: true
   field_remarques_contraintes: true
   field_secteur: true
-  field_secteur_: true
   field_sens_de_la_machine: true
   field_sieret: true
   field_sortie_produits_aval: true
