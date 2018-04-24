@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.dso.field_autre
     - field.field.node.dso.field_autre_arrivee_produits
     - field.field.node.dso.field_autre_milieu
+    - field.field.node.dso.field_autre_nom_commercial
     - field.field.node.dso.field_autre_transfert_aval
     - field.field.node.dso.field_besoin
     - field.field.node.dso.field_cadence_souhaitee_pdts_h_
@@ -133,6 +134,7 @@ third_party_settings:
     group_onglet1:
       children:
         - field_no
+        - field_autre_nom_commercial
         - field_2_date_creation_fiche_
         - field_3_date_premiere_c
         - field_4_reponse_souhaitee
@@ -457,31 +459,31 @@ content:
     type: string_textfield
     region: content
   field_2_date_creation_fiche_:
-    weight: 15
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_3_date_premiere_c:
     weight: 16
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_4_reponse_souhaitee:
+  field_3_date_premiere_c:
     weight: 17
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_5_date_envoie_offre:
+  field_4_reponse_souhaitee:
     weight: 18
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_6_date_livraison_souhaite:
+  field_5_date_envoie_offre:
     weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_6_date_livraison_souhaite:
+    weight: 20
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
@@ -583,6 +585,32 @@ content:
       conditional_fields:
         9378b1b7-6b5b-4164-a5f3-5979fdd55907:
           dependee: field_milieu
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: Autre
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: dso
+    type: string_textfield
+    region: content
+  field_autre_nom_commercial:
+    weight: 15
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        e44b9a0b-cd44-4049-b6b2-ab9b33b71ad3:
+          dependee: field_no
           settings:
             state: visible
             condition: value

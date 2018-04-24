@@ -1,0 +1,51 @@
+uuid: e6087243-3d57-4657-8f18-cb455aeb73ef
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.asservissement.field_commun_avec_machine
+    - field.field.paragraph.asservissement.field_communication_avec_machine
+    - field.field.paragraph.asservissement.field_coupure_sur_bourrage
+    - field.field.paragraph.asservissement.field_descriptif
+    - paragraphs.paragraphs_type.asservissement
+id: paragraph.asservissement.default
+targetEntityType: paragraph
+bundle: asservissement
+mode: default
+content:
+  field_commun_avec_machine:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_communication_avec_machine:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_coupure_sur_bourrage:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_descriptif:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

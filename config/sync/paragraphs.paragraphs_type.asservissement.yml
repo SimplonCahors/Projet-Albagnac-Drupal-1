@@ -1,0 +1,9 @@
+uuid: 4f2322a0-e554-43df-afef-e4474f1273ab
+langcode: fr
+status: true
+dependencies: {  }
+id: asservissement
+label: Asservissement
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
