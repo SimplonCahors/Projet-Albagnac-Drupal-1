@@ -14,30 +14,43 @@ dependencies:
     - field.field.node.dso.field_8_adresse_postale
     - field.field.node.dso.field_9_telephone
     - field.field.node.dso.field_a_la_charge_de_
+    - field.field.node.dso.field_arrivee_produits_amont
     - field.field.node.dso.field_asservissement
+    - field.field.node.dso.field_autre
+    - field.field.node.dso.field_autre_arrivee_produits
+    - field.field.node.dso.field_autre_milieu
+    - field.field.node.dso.field_autre_transfert_aval
     - field.field.node.dso.field_besoin
+    - field.field.node.dso.field_cadence_souhaitee_pdts_h_
     - field.field.node.dso.field_categorie_
     - field.field.node.dso.field_cd
+    - field.field.node.dso.field_communication_machine_amon
+    - field.field.node.dso.field_communication_machine_aval
     - field.field.node.dso.field_concurrent_sur_cette_oppor
     - field.field.node.dso.field_contact_commercial
     - field.field.node.dso.field_contact_technique
     - field.field.node.dso.field_controle_de_conformite
+    - field.field.node.dso.field_coupure_sur_bourrage
     - field.field.node.dso.field_date_desiree_controle
     - field.field.node.dso.field_demande_certification_ext
     - field.field.node.dso.field_demande_de_cem_electromagn
     - field.field.node.dso.field_demande_de_certification_e
     - field.field.node.dso.field_demande_de_fat_suivant_spe
     - field.field.node.dso.field_des
+    - field.field.node.dso.field_descriptif_asservissement
     - field.field.node.dso.field_emballages_etiquettes
     - field.field.node.dso.field_en_salle
     - field.field.node.dso.field_energies
+    - field.field.node.dso.field_espace_disponible_au_sol_m
     - field.field.node.dso.field_fax
     - field.field.node.dso.field_fournisseur_s_actuel_s_
+    - field.field.node.dso.field_hauteur_de_convoyeur_mm_
     - field.field.node.dso.field_impression
     - field.field.node.dso.field_impression_etiquette
     - field.field.node.dso.field_installation_chez_le_clien
     - field.field.node.dso.field_langue
     - field.field.node.dso.field_materiels_imposes
+    - field.field.node.dso.field_milieu
     - field.field.node.dso.field_mise_en_route_de_la_machin
     - field.field.node.dso.field_no
     - field.field.node.dso.field_nom_client
@@ -52,10 +65,19 @@ dependencies:
     - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_secteur
     - field.field.node.dso.field_secteur_
+    - field.field.node.dso.field_sens_de_la_machine
     - field.field.node.dso.field_sieret
+    - field.field.node.dso.field_sortie_produits_aval
     - field.field.node.dso.field_sous_secteur
     - field.field.node.dso.field_sur_machine
+    - field.field.node.dso.field_temperature_local_travail
+    - field.field.node.dso.field_transfert_amont
+    - field.field.node.dso.field_transfert_aval
     - field.field.node.dso.field_type_client
+    - field.field.node.dso.field_type_de_convoyage_amont
+    - field.field.node.dso.field_type_de_convoyage_aval
+    - field.field.node.dso.field_type_de_machine_amont
+    - field.field.node.dso.field_type_de_machine_aval
     - node.type.dso
   module:
     - datetime
@@ -183,7 +205,25 @@ third_party_settings:
       label: 'Emballage et étiquettes'
     group_environnement_machine:
       children:
-        - field_asservissement
+        - field_type_de_machine_amont
+        - field_type_de_machine_aval
+        - field_type_de_convoyage_amont
+        - field_type_de_convoyage_aval
+        - field_transfert_amont
+        - field_autre
+        - field_transfert_aval
+        - field_autre_transfert_aval
+        - field_arrivee_produits_amont
+        - field_autre_arrivee_produits
+        - field_sortie_produits_aval
+        - field_sens_de_la_machine
+        - field_cadence_souhaitee_pdts_h_
+        - field_milieu
+        - field_autre_milieu
+        - field_hauteur_de_convoyeur_mm_
+        - field_espace_disponible_au_sol_m
+        - field_temperature_local_travail
+        - group_asservissement
         - group_energies_disponib
         - group_mode_de_controle_demande_p
         - group_installation_mise_en_route
@@ -295,7 +335,7 @@ third_party_settings:
       children:
         - field_energies
       parent_name: group_environnement_machine
-      weight: 27
+      weight: 107
       format_type: tab
       format_settings:
         id: ''
@@ -311,7 +351,7 @@ third_party_settings:
         - field_mise_en_route_de_la_machin
         - field_demande_de_certification_e
       parent_name: group_environnement_machine
-      weight: 29
+      weight: 109
       format_type: tab
       format_settings:
         id: ''
@@ -327,7 +367,7 @@ third_party_settings:
         - field_nombre_de_jours
         - field_nombre_de_personnes
       parent_name: group_environnement_machine
-      weight: 30
+      weight: 110
       format_type: tab
       format_settings:
         id: ''
@@ -344,7 +384,7 @@ third_party_settings:
         - field_numerique
         - field_langue
       parent_name: group_environnement_machine
-      weight: 31
+      weight: 111
       format_type: tab
       format_settings:
         id: ''
@@ -357,7 +397,7 @@ third_party_settings:
       children:
         - field_a_la_charge_de_
       parent_name: group_environnement_machine
-      weight: 32
+      weight: 112
       format_type: tab
       format_settings:
         id: ''
@@ -374,7 +414,7 @@ third_party_settings:
         - field_demande_de_cem_electromagn
         - field_demande_certification_ext
       parent_name: group_environnement_machine
-      weight: 28
+      weight: 108
       format_type: tab
       format_settings:
         id: ''
@@ -383,6 +423,22 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Mode de contrôle demandé par le client'
+    group_asservissement:
+      children:
+        - field_communication_machine_amon
+        - field_communication_machine_aval
+        - field_coupure_sur_bourrage
+        - field_descriptif_asservissement
+      parent_name: group_environnement_machine
+      weight: 104
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Asservissement
 id: node.dso.default
 targetEntityType: node
 bundle: dso
@@ -469,17 +525,115 @@ content:
     third_party_settings: {  }
     type: options_buttons
     region: content
-  field_asservissement:
-    type: entity_reference_paragraphs
-    weight: 26
-    settings:
-      title: Paragraphe
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: select
-      form_display_mode: default
-      default_paragraph_type: asservissement
+  field_arrivee_produits_amont:
+    weight: 94
+    settings: {  }
     third_party_settings: {  }
+    type: options_select
+    region: content
+  field_autre:
+    weight: 91
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        424eea79-43df-4d72-9c91-2ee565603d09:
+          dependee: field_transfert_amont
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: Autre
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: dso
+    type: string_textfield
+    region: content
+  field_autre_arrivee_produits:
+    weight: 95
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        b9f3e739-191d-4adb-a04f-127594145172:
+          dependee: field_arrivee_produits_amont
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: Autre
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: dso
+    type: string_textfield
+    region: content
+  field_autre_milieu:
+    weight: 100
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        9378b1b7-6b5b-4164-a5f3-5979fdd55907:
+          dependee: field_milieu
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: Autre
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: dso
+    type: string_textfield
+    region: content
+  field_autre_transfert_aval:
+    weight: 93
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        82fe6469-d217-43ab-88b2-dd3eff91e36d:
+          dependee: field_transfert_aval
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: Autre
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: dso
+    type: string_textfield
     region: content
   field_besoin:
     type: entity_reference_paragraphs
@@ -493,6 +647,13 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+  field_cadence_souhaitee_pdts_h_:
+    weight: 98
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
   field_categorie_:
     weight: 40
     settings:
@@ -503,6 +664,18 @@ content:
     region: content
   field_cd:
     weight: 82
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_communication_machine_amon:
+    weight: 112
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_communication_machine_aval:
+    weight: 113
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -521,6 +694,12 @@ content:
     third_party_settings: {  }
   field_controle_de_conformite:
     weight: 21
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_coupure_sur_bourrage:
+    weight: 114
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -567,6 +746,14 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
+  field_descriptif_asservissement:
+    weight: 115
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_emballages_etiquettes:
     type: entity_reference_paragraphs
     weight: 63
@@ -597,8 +784,15 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
+  field_espace_disponible_au_sol_m:
+    weight: 102
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
   field_fax:
-    weight: 44
+    weight: 5
     settings:
       size: 60
       placeholder: ''
@@ -617,6 +811,13 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+  field_hauteur_de_convoyeur_mm_:
+    weight: 101
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
   field_impression:
     type: entity_reference_paragraphs
     weight: 68
@@ -664,6 +865,12 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+    region: content
+  field_milieu:
+    weight: 99
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_mise_en_route_de_la_machin:
     weight: 74
@@ -716,7 +923,7 @@ content:
     type: options_buttons
     region: content
   field_objet:
-    weight: 70
+    weight: 6
     settings:
       size: 60
       placeholder: ''
@@ -762,8 +969,22 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_sens_de_la_machine:
+    weight: 97
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_sieret:
     weight: 44
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sortie_produits_aval:
+    weight: 96
     settings:
       size: 60
       placeholder: ''
@@ -791,11 +1012,62 @@ content:
     third_party_settings: {  }
     type: telephone_default
     region: content
+  field_temperature_local_travail:
+    weight: 103
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_transfert_amont:
+    weight: 90
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_transfert_aval:
+    weight: 92
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_type_client:
     weight: 43
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
+  field_type_de_convoyage_amont:
+    weight: 88
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_type_de_convoyage_aval:
+    weight: 89
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_type_de_machine_amont:
+    weight: 86
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_type_de_machine_aval:
+    weight: 87
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   status:
     type: boolean_checkbox
@@ -822,6 +1094,7 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
+  field_asservissement: true
   field_contact_commercial: true
   field_contact_technique: true
   field_no: true

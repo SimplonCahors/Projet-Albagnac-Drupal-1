@@ -1,0 +1,39 @@
+uuid: 24829e87-bd75-4bea-aa17-64664e894bbc
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_transfert_aval
+field_name: field_transfert_aval
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Plaque de glissement'
+      label: 'Plaque de glissement'
+    -
+      value: 'A rouleaux'
+      label: 'A rouleaux'
+    -
+      value: 'A courroies motorisées'
+      label: 'A courroies motorisées'
+    -
+      value: Jointif
+      label: Jointif
+    -
+      value: Aucun
+      label: Aucun
+    -
+      value: Autre
+      label: Autre
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

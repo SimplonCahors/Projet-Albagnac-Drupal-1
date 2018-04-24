@@ -1,0 +1,19 @@
+uuid: 55000e4a-5701-45eb-a657-fdd0c92643f2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descriptif_asservissement
+    - node.type.dso
+id: node.dso.field_descriptif_asservissement
+field_name: field_descriptif_asservissement
+entity_type: node
+bundle: dso
+label: Descriptif
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

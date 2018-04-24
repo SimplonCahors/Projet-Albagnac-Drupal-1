@@ -1,0 +1,21 @@
+uuid: ffc1f699-5066-421c-b228-ebe354f3c9f3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_transfert_amont
+    - node.type.dso
+  module:
+    - options
+id: node.dso.field_transfert_amont
+field_name: field_transfert_amont
+entity_type: node
+bundle: dso
+label: 'Transfert amont'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

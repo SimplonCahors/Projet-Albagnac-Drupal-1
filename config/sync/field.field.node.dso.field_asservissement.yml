@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_asservissement
     - node.type.dso
-    - paragraphs.paragraphs_type.asservissement
   module:
     - entity_reference_revisions
 id: node.dso.field_asservissement
@@ -22,8 +21,7 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     negate: 0
-    target_bundles:
-      asservissement: asservissement
+    target_bundles: {  }
     target_bundles_drag_drop:
       asservissement:
         enabled: true

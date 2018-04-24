@@ -1,12 +1,12 @@
-uuid: 3851299c-1fe6-4ebf-9115-4de2d5dc381e
+uuid: 3e7afaa5-1a89-4413-b7c1-a649f063d014
 langcode: fr
 status: true
 dependencies:
   module:
-    - paragraphs
-id: paragraph.field_coupure_sur_bourrage
-field_name: field_coupure_sur_bourrage
-entity_type: paragraph
+    - node
+id: node.field_type_de_convoyage_aval
+field_name: field_type_de_convoyage_aval
+entity_type: node
 type: string
 settings:
   max_length: 255

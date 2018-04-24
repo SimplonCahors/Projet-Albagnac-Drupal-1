@@ -1,12 +1,12 @@
-uuid: 330c78fb-11b9-45ae-b64a-8c4083ee8e83
+uuid: cc9491dd-fae7-42b3-8c64-04fa380bb68c
 langcode: fr
 status: true
 dependencies:
   module:
-    - paragraphs
-id: paragraph.field_communication_avec_machine
-field_name: field_communication_avec_machine
-entity_type: paragraph
+    - node
+id: node.field_autre_transfert_aval
+field_name: field_autre_transfert_aval
+entity_type: node
 type: string
 settings:
   max_length: 255
