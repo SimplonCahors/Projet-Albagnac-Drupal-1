@@ -40,6 +40,7 @@ dependencies:
     - field.field.node.dso.field_demande_de_fat_suivant_spe
     - field.field.node.dso.field_des
     - field.field.node.dso.field_descriptif_asservissement
+    - field.field.node.dso.field_description_etiquette
     - field.field.node.dso.field_emballages_etiquettes
     - field.field.node.dso.field_en_salle
     - field.field.node.dso.field_energies
@@ -273,7 +274,8 @@ third_party_settings:
         required_fields: false
       label: 'Remarques / contraintes éventuelles'
     group_etiquettes:
-      children: {  }
+      children:
+        - field_description_etiquette
       parent_name: group_demande_dev
       weight: 23
       format_type: details
@@ -851,6 +853,18 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_description_etiquette:
+    type: entity_reference_paragraphs
+    weight: 116
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
     region: content
   field_emballages_etiquettes:
     type: entity_reference_paragraphs

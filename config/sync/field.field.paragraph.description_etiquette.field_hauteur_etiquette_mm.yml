@@ -1,0 +1,23 @@
+uuid: b9b5d8ef-db1f-4e5c-a0a9-6d66cd71604c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hauteur_etiquette_mm
+    - paragraphs.paragraphs_type.description_etiquette
+id: paragraph.description_etiquette.field_hauteur_etiquette_mm
+field_name: field_hauteur_etiquette_mm
+entity_type: paragraph
+bundle: description_etiquette
+label: 'Hauteur (mm)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,9 @@
+uuid: bc3aa383-a74f-4daa-8013-888d4e0a1146
+langcode: fr
+status: true
+dependencies: {  }
+id: description_etiquette
+label: 'Description etiquette'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
