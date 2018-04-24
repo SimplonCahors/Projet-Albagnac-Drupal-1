@@ -1,0 +1,19 @@
+uuid: 28e44ece-0c6f-4532-b9c5-22b1cbca0fed
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_de_convoyage_aval
+    - node.type.dso
+id: node.dso.field_type_de_convoyage_aval
+field_name: field_type_de_convoyage_aval
+entity_type: node
+bundle: dso
+label: 'Type de convoyage aval'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

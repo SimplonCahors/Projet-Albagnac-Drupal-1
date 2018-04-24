@@ -1,0 +1,23 @@
+uuid: 351aa864-aa98-478a-a0cf-bdaf7b0af246
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hauteur_de_convoyeur_mm_
+    - node.type.dso
+id: node.dso.field_hauteur_de_convoyeur_mm_
+field_name: field_hauteur_de_convoyeur_mm_
+entity_type: node
+bundle: dso
+label: 'Hauteur de convoyeur (mm)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

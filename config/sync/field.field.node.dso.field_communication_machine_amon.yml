@@ -1,0 +1,23 @@
+uuid: b80c9284-2486-4042-b2a0-690d88e313df
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_communication_machine_amon
+    - node.type.dso
+id: node.dso.field_communication_machine_amon
+field_name: field_communication_machine_amon
+entity_type: node
+bundle: dso
+label: 'Communication avec machine amont'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: OUI
+  off_label: NON
+field_type: boolean

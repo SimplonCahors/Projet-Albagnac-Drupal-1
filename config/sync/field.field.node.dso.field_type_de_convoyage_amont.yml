@@ -1,0 +1,19 @@
+uuid: 6aab1eda-f1a4-45fd-9c56-4c08e1ac46a4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_de_convoyage_amont
+    - node.type.dso
+id: node.dso.field_type_de_convoyage_amont
+field_name: field_type_de_convoyage_amont
+entity_type: node
+bundle: dso
+label: 'Type de convoyage amont'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

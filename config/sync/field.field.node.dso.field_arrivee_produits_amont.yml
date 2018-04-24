@@ -1,0 +1,21 @@
+uuid: 8aeced9e-aa0d-4567-b25b-2b104e5551ab
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_arrivee_produits_amont
+    - node.type.dso
+  module:
+    - options
+id: node.dso.field_arrivee_produits_amont
+field_name: field_arrivee_produits_amont
+entity_type: node
+bundle: dso
+label: 'Arrivée produits amont'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

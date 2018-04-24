@@ -1,0 +1,20 @@
+uuid: 87cec857-7c1f-4465-932c-10ca78b28cac
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_espace_disponible_au_sol_m
+field_name: field_espace_disponible_au_sol_m
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

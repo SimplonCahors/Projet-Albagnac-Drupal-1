@@ -1,12 +1,12 @@
-uuid: 884729a7-6367-4626-b9e9-d640ae006331
+uuid: 1ded16f3-3aed-404e-9413-a9e83c55f39c
 langcode: fr
 status: true
 dependencies:
   module:
-    - paragraphs
-id: paragraph.field_commun_avec_machine
-field_name: field_commun_avec_machine
-entity_type: paragraph
+    - node
+id: node.field_type_de_machine_aval
+field_name: field_type_de_machine_aval
+entity_type: node
 type: string
 settings:
   max_length: 255

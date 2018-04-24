@@ -1,14 +1,16 @@
-uuid: aa13dcfc-706c-4952-858b-f3eda2589e61
+uuid: 51108123-a619-4ee7-a0e9-2f61f15f33f7
 langcode: fr
 status: true
 dependencies:
   module:
-    - paragraphs
-id: paragraph.field_descriptif
-field_name: field_descriptif
-entity_type: paragraph
-type: string_long
+    - node
+id: node.field_descriptif_asservissement
+field_name: field_descriptif_asservissement
+entity_type: node
+type: string
 settings:
+  max_length: 255
+  is_ascii: false
   case_sensitive: false
 module: core
 locked: false

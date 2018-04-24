@@ -1,0 +1,19 @@
+uuid: ba0ee4a1-2825-40f3-a0f0-dddeb55d88d0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_de_machine_amont
+    - node.type.dso
+id: node.dso.field_type_de_machine_amont
+field_name: field_type_de_machine_amont
+entity_type: node
+bundle: dso
+label: 'Type de machine amont'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

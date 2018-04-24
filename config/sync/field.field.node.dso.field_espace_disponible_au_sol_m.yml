@@ -1,0 +1,23 @@
+uuid: 841c9365-03a2-4d01-959e-bb8af9e0fbac
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_espace_disponible_au_sol_m
+    - node.type.dso
+id: node.dso.field_espace_disponible_au_sol_m
+field_name: field_espace_disponible_au_sol_m
+entity_type: node
+bundle: dso
+label: 'Espace disponible au sol (m x m)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

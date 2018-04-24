@@ -1,0 +1,21 @@
+uuid: 5ecee9d7-d621-4ddf-8f20-dcf604e3205c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_transfert_aval
+    - node.type.dso
+  module:
+    - options
+id: node.dso.field_transfert_aval
+field_name: field_transfert_aval
+entity_type: node
+bundle: dso
+label: 'Transfert aval'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,39 @@
+uuid: ad748b9e-e16a-42ab-b335-d0b028d19c70
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_milieu
+field_name: field_milieu
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Salle blanche'
+      label: 'Salle blanche'
+    -
+      value: 'Salle grise'
+      label: 'Salle grise'
+    -
+      value: Normal
+      label: Normal
+    -
+      value: Agressif
+      label: Agressif
+    -
+      value: Poussiéreux
+      label: Poussiéreux
+    -
+      value: Autre
+      label: Autre
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

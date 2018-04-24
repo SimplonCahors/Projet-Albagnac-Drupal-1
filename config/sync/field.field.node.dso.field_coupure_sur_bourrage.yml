@@ -1,0 +1,23 @@
+uuid: e5198951-05dc-4963-afe8-f846ff747732
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coupure_sur_bourrage
+    - node.type.dso
+id: node.dso.field_coupure_sur_bourrage
+field_name: field_coupure_sur_bourrage
+entity_type: node
+bundle: dso
+label: 'Coupure sur bourrage'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: OUI
+  off_label: NON
+field_type: boolean

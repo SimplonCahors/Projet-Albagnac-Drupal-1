@@ -1,0 +1,23 @@
+uuid: 55877326-e8f4-4fcc-a4d4-080fd6dead38
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cadence_souhaitee_pdts_h_
+    - node.type.dso
+id: node.dso.field_cadence_souhaitee_pdts_h_
+field_name: field_cadence_souhaitee_pdts_h_
+entity_type: node
+bundle: dso
+label: 'Cadence souhaitée (Pdts/h)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
