@@ -40,6 +40,7 @@ dependencies:
     - field.field.node.dso.field_materiels_imposes
     - field.field.node.dso.field_mise_en_route_de_la_machin
     - field.field.node.dso.field_no
+    - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nombre_de_jours
     - field.field.node.dso.field_nombre_de_personnes
     - field.field.node.dso.field_numerique
@@ -49,6 +50,7 @@ dependencies:
     - field.field.node.dso.field_quantite
     - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_secteur
+    - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sous_secteur
     - field.field.node.dso.field_sur_machine
@@ -79,32 +81,46 @@ hidden:
   field_8_adresse_postale: true
   field_9_telephone: true
   field_a_la_charge_de_: true
+  field_arrivee_produits_amont: true
   field_asservissement: true
+  field_autre: true
+  field_autre_arrivee_produits: true
+  field_autre_milieu: true
+  field_autre_transfert_aval: true
   field_besoin: true
+  field_cadence_souhaitee_pdts_h_: true
   field_categorie_: true
   field_cd: true
+  field_communication_machine_amon: true
+  field_communication_machine_aval: true
   field_concurrent_sur_cette_oppor: true
   field_contact_commercial: true
   field_contact_technique: true
   field_controle_de_conformite: true
+  field_coupure_sur_bourrage: true
   field_date_desiree_controle: true
   field_demande_certification_ext: true
   field_demande_de_cem_electromagn: true
   field_demande_de_certification_e: true
   field_demande_de_fat_suivant_spe: true
   field_des: true
+  field_descriptif_asservissement: true
   field_emballages_etiquettes: true
   field_en_salle: true
   field_energies: true
+  field_espace_disponible_au_sol_m: true
   field_fax: true
   field_fournisseur_s_actuel_s_: true
+  field_hauteur_de_convoyeur_mm_: true
   field_impression: true
   field_impression_etiquette: true
   field_installation_chez_le_clien: true
   field_langue: true
   field_materiels_imposes: true
+  field_milieu: true
   field_mise_en_route_de_la_machin: true
   field_no: true
+  field_nom_client: true
   field_nombre_de_jours: true
   field_nombre_de_personnes: true
   field_numerique: true
@@ -118,9 +134,19 @@ hidden:
   field_quantite: true
   field_remarques_contraintes: true
   field_secteur: true
+  field_secteur_: true
+  field_sens_de_la_machine: true
   field_sieret: true
+  field_sortie_produits_aval: true
   field_sous_secteur: true
   field_sur_machine: true
   field_telephone_contact_com: true
+  field_temperature_local_travail: true
+  field_transfert_amont: true
+  field_transfert_aval: true
   field_type_client: true
+  field_type_de_convoyage_amont: true
+  field_type_de_convoyage_aval: true
+  field_type_de_machine_amont: true
+  field_type_de_machine_aval: true
   langcode: true

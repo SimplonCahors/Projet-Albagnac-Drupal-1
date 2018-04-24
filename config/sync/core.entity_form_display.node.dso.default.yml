@@ -52,6 +52,7 @@ dependencies:
     - field.field.node.dso.field_milieu
     - field.field.node.dso.field_mise_en_route_de_la_machin
     - field.field.node.dso.field_no
+    - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nombre_de_jours
     - field.field.node.dso.field_nombre_de_personnes
     - field.field.node.dso.field_numerique
@@ -131,14 +132,14 @@ third_party_settings:
       label: 'Demande de Devis'
     group_onglet1:
       children:
-        - field_nom_client
+        - field_no
         - field_2_date_creation_fiche_
         - field_3_date_premiere_c
         - field_4_reponse_souhaitee
         - field_5_date_envoie_offre
         - field_6_date_livraison_souhaite
       parent_name: group_informations_administrativ
-      weight: 20
+      weight: 14
       format_type: tab
       format_settings:
         label: 'Informations du Devis'
@@ -153,16 +154,17 @@ third_party_settings:
         - field_7_nom_client
         - field_8_adresse_postale
         - field_9_telephone
+        - field_fax
         - field_11_pays
         - field_categorie_
-        - field_secteur_
+        - field_secteur
         - field_sous_secteur
         - field_type_client
         - field_sieret
         - group_contact_commercial
         - group_contact_technique
       parent_name: group_informations_administrativ
-      weight: 21
+      weight: 15
       format_type: tab
       format_settings:
         id: ''
@@ -177,7 +179,7 @@ third_party_settings:
         - field_concurrent_sur_cette_oppor
         - field_fournisseur_s_actuel_s_
       parent_name: group_informations_administrativ
-      weight: 22
+      weight: 16
       format_type: tab
       format_settings:
         id: ''
@@ -190,7 +192,7 @@ third_party_settings:
       children:
         - field_emballages_etiquettes
       parent_name: group_informations_administrativ
-      weight: 23
+      weight: 17
       format_type: tab
       format_settings:
         id: ''
@@ -227,7 +229,7 @@ third_party_settings:
         - group_notice
         - group_transport
       parent_name: group_informations_administrativ
-      weight: 25
+      weight: 18
       format_type: tab
       format_settings:
         id: ''
@@ -241,7 +243,7 @@ third_party_settings:
         - field_materiels_imposes
         - group_impression
       parent_name: group_informations_administrativ
-      weight: 26
+      weight: 19
       format_type: tab
       format_settings:
         label: 'Matériels Imposés, Impression'
@@ -255,7 +257,7 @@ third_party_settings:
       children:
         - field_remarques_contraintes
       parent_name: group_informations_administrativ
-      weight: 27
+      weight: 20
       format_type: tab
       format_settings:
         label: 'Remarques / contraintes éventuelles'
@@ -289,9 +291,9 @@ third_party_settings:
       label: Combinaison
     group_contact_commercial:
       children:
-        - field_nom_contact_com
+        - field_contact_commercial
       parent_name: group_informations_demandeur
-      weight: 45
+      weight: 46
       format_type: tab
       format_settings:
         id: ''
@@ -302,9 +304,9 @@ third_party_settings:
       label: 'Contact commercial'
     group_contact_technique:
       children:
-        - field_10_telephone
+        - field_contact_technique
       parent_name: group_informations_demandeur
-      weight: 46
+      weight: 47
       format_type: tab
       format_settings:
         id: ''
@@ -455,31 +457,31 @@ content:
     type: string_textfield
     region: content
   field_2_date_creation_fiche_:
-    weight: 14
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_3_date_premiere_c:
     weight: 15
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_4_reponse_souhaitee:
+  field_3_date_premiere_c:
     weight: 16
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_5_date_envoie_offre:
+  field_4_reponse_souhaitee:
     weight: 17
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_6_date_livraison_souhaite:
+  field_5_date_envoie_offre:
     weight: 18
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_6_date_livraison_souhaite:
+    weight: 19
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
@@ -681,6 +683,30 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
+  field_contact_commercial:
+    type: entity_reference_paragraphs
+    weight: 11
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  field_contact_technique:
+    type: entity_reference_paragraphs
+    weight: 12
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
   field_controle_de_conformite:
     weight: 21
     settings: {  }
@@ -781,7 +807,7 @@ content:
     type: number
     region: content
   field_fax:
-    weight: 5
+    weight: 38
     settings:
       size: 60
       placeholder: ''
@@ -867,6 +893,12 @@ content:
     third_party_settings: {  }
     type: options_buttons
     region: content
+  field_no:
+    type: options_select
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_nom_contact_tech:
     weight: 58
     settings:
@@ -894,14 +926,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
-    region: content
-  field_objet:
-    weight: 6
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
   field_papier:
     weight: 80
@@ -934,14 +958,12 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
-  field_secteur_:
-    weight: 41
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
+  field_secteur:
+    type: options_select
+    weight: 42
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_sens_de_la_machine:
     weight: 97
     settings: {  }
@@ -949,7 +971,7 @@ content:
     type: options_buttons
     region: content
   field_sieret:
-    weight: 44
+    weight: 45
     settings:
       size: 60
       placeholder: ''
@@ -965,7 +987,7 @@ content:
     type: string_textfield
     region: content
   field_sous_secteur:
-    weight: 42
+    weight: 43
     settings:
       size: 60
       placeholder: ''
@@ -1005,7 +1027,7 @@ content:
     type: options_select
     region: content
   field_type_client:
-    weight: 43
+    weight: 44
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -1068,10 +1090,9 @@ content:
     third_party_settings: {  }
 hidden:
   field_asservissement: true
-  field_contact_commercial: true
-  field_contact_technique: true
-  field_no: true
-  field_secteur: true
+  field_nom_client: true
+  field_objet: true
+  field_secteur_: true
   field_type_client_test: true
   langcode: true
   path: true
