@@ -1,0 +1,21 @@
+uuid: bc14be70-ecad-4b16-9840-2bcf26aea5d5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categorie_client
+    - node.type.dso
+  module:
+    - options
+id: node.dso.field_categorie_client
+field_name: field_categorie_client
+entity_type: node
+bundle: dso
+label: Categorie
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

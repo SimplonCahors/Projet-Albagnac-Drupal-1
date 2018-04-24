@@ -21,10 +21,11 @@ dependencies:
     - field.field.node.dso.field_autre_milieu
     - field.field.node.dso.field_autre_nom_commercial
     - field.field.node.dso.field_autre_secteur
+    - field.field.node.dso.field_autre_sous_secteur_client
     - field.field.node.dso.field_autre_transfert_aval
     - field.field.node.dso.field_besoin
     - field.field.node.dso.field_cadence_souhaitee_pdts_h_
-    - field.field.node.dso.field_categorie_
+    - field.field.node.dso.field_categorie_client
     - field.field.node.dso.field_cd
     - field.field.node.dso.field_communication_machine_amon
     - field.field.node.dso.field_communication_machine_aval
@@ -69,7 +70,7 @@ dependencies:
     - field.field.node.dso.field_sens_de_la_machine
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sortie_produits_aval
-    - field.field.node.dso.field_sous_secteur
+    - field.field.node.dso.field_sous_secteur_client
     - field.field.node.dso.field_sur_machine
     - field.field.node.dso.field_temperature_local_travail
     - field.field.node.dso.field_transfert_amont
@@ -160,11 +161,12 @@ third_party_settings:
         - field_9_telephone
         - field_fax
         - field_11_pays
-        - field_categorie_
+        - field_categorie_client
         - field_secteur
+        - field_sous_secteur_client
+        - field_autre_sous_secteur_client
         - field_autre_langue
         - field_autre_secteur
-        - field_sous_secteur
         - field_type_client
         - field_sieret
         - group_contact_commercial
@@ -300,7 +302,7 @@ third_party_settings:
       children:
         - field_contact_commercial
       parent_name: group_informations_demandeur
-      weight: 47
+      weight: 48
       format_type: tab
       format_settings:
         id: ''
@@ -313,7 +315,7 @@ third_party_settings:
       children:
         - field_contact_technique
       parent_name: group_informations_demandeur
-      weight: 48
+      weight: 49
       format_type: tab
       format_settings:
         id: ''
@@ -582,7 +584,7 @@ content:
     type: string_textfield
     region: content
   field_autre_langue:
-    weight: 42
+    weight: 44
     settings:
       size: 60
       placeholder: ''
@@ -660,7 +662,7 @@ content:
     type: string_textfield
     region: content
   field_autre_secteur:
-    weight: 43
+    weight: 45
     settings:
       size: 60
       placeholder: ''
@@ -683,6 +685,14 @@ content:
             selector: ''
           entity_type: node
           bundle: dso
+    type: string_textfield
+    region: content
+  field_autre_sous_secteur_client:
+    weight: 43
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
     type: string_textfield
     region: content
   field_autre_transfert_aval:
@@ -730,13 +740,11 @@ content:
     third_party_settings: {  }
     type: number
     region: content
-  field_categorie_:
+  field_categorie_client:
     weight: 40
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: options_select
     region: content
   field_cd:
     weight: 82
@@ -1068,7 +1076,7 @@ content:
     type: options_buttons
     region: content
   field_sieret:
-    weight: 46
+    weight: 47
     settings:
       size: 60
       placeholder: ''
@@ -1083,13 +1091,11 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_sous_secteur:
-    weight: 44
-    settings:
-      size: 60
-      placeholder: ''
+  field_sous_secteur_client:
+    weight: 42
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+    type: options_select
     region: content
   field_sur_machine:
     weight: 76
@@ -1124,7 +1130,7 @@ content:
     type: options_select
     region: content
   field_type_client:
-    weight: 45
+    weight: 46
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
