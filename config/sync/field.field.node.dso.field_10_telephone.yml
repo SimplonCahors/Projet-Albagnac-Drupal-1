@@ -1,12 +1,14 @@
-uuid: 11c000de-bdd9-4591-8d9b-b0fdadc94a61
+uuid: 1d64357d-f1d2-4dc3-b067-b104cbd94aa1
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_9_telephone
+    - field.storage.node.field_10_telephone
     - node.type.dso
-id: node.dso.field_9_telephone
-field_name: field_9_telephone
+  module:
+    - telephone
+id: node.dso.field_10_telephone
+field_name: field_10_telephone
 entity_type: node
 bundle: dso
 label: Téléphone
@@ -16,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: telephone

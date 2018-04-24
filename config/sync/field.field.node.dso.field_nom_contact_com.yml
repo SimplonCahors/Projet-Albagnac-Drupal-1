@@ -1,15 +1,15 @@
-uuid: ccec7254-f61e-4b92-bc57-2fd4d76f5a00
+uuid: 064de138-efc9-4409-85c7-48262e2c9be9
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_autre
+    - field.storage.node.field_nom_contact_com
     - node.type.dso
-id: node.dso.field_autre
-field_name: field_autre
+id: node.dso.field_nom_contact_com
+field_name: field_nom_contact_com
 entity_type: node
 bundle: dso
-label: Autre
+label: Nom
 description: ''
 required: false
 translatable: false
