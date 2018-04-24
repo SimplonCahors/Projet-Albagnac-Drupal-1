@@ -3,7 +3,6 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.dso.field_10_telephone
     - field.field.node.dso.field_11_pays
     - field.field.node.dso.field_2_date_creation_fiche_
     - field.field.node.dso.field_3_date_premiere_c
@@ -54,7 +53,6 @@ dependencies:
     - field.field.node.dso.field_mise_en_route_de_la_machin
     - field.field.node.dso.field_no
     - field.field.node.dso.field_nom_client
-    - field.field.node.dso.field_nom_contact_com
     - field.field.node.dso.field_nombre_de_jours
     - field.field.node.dso.field_nombre_de_personnes
     - field.field.node.dso.field_numerique
@@ -83,7 +81,6 @@ dependencies:
     - datetime
     - field_group
     - paragraphs
-    - telephone
 third_party_settings:
   field_group:
     group_details_te:
@@ -450,13 +447,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_10_telephone:
-    weight: 61
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: telephone_default
-    region: content
   field_11_pays:
     weight: 39
     settings:
@@ -880,14 +870,6 @@ content:
     region: content
   field_nom_client:
     weight: 13
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_nom_contact_com:
-    weight: 47
     settings:
       size: 60
       placeholder: ''

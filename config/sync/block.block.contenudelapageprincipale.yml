@@ -1,0 +1,20 @@
+uuid: 2d398bb9-f047-4771-b2e0-7931f0476726
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootchild
+id: contenudelapageprincipale
+theme: bootchild
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenu de la page principale'
+  provider: system
+  label_display: visible
+visibility: {  }

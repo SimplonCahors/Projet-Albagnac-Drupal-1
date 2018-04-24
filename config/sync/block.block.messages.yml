@@ -1,0 +1,20 @@
+uuid: 841639f1-7522-42e5-abc7-7e25764847b8
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootchild
+id: messages
+theme: bootchild
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }

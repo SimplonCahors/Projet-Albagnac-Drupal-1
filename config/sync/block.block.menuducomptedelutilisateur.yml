@@ -1,0 +1,24 @@
+uuid: c2311093-a94d-4cec-9d0b-bf619f6f4e58
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - bootchild
+id: menuducomptedelutilisateur
+theme: bootchild
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Menu du compte de l''utilisateur'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }

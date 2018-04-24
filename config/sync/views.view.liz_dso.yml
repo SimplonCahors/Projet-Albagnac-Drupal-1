@@ -1,6 +1,6 @@
 uuid: 5d55c6c4-9f4a-4842-927d-5733b996d723
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
     - system.menu.admin

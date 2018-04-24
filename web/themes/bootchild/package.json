@@ -1,0 +1,22 @@
+{
+  "name": "bootchild",
+  "version": "1.0.0",
+  "description": "<!-- @file Instructions for subtheming using the Sass Starterkit. --> <!-- @defgroup sub_theming_sass --> <!-- @ingroup sub_theming --> # Sass Starterkit",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.3.0",
+    "eslint": "^4.19.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^4.0.1",
+    "livereloader": "^0.1.0",
+    "sass": "^1.2.1"
+  }
+}

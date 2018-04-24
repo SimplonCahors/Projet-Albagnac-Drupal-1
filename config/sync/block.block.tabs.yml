@@ -1,0 +1,20 @@
+uuid: a34981ae-6e9a-4939-8695-46726c401b00
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - bootchild
+id: tabs
+theme: bootchild
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
