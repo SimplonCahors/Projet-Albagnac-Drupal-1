@@ -40,7 +40,6 @@ dependencies:
     - field.field.node.dso.field_materiels_imposes
     - field.field.node.dso.field_mise_en_route_de_la_machin
     - field.field.node.dso.field_no
-    - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nombre_de_jours
     - field.field.node.dso.field_nombre_de_personnes
     - field.field.node.dso.field_numerique
@@ -50,7 +49,6 @@ dependencies:
     - field.field.node.dso.field_quantite
     - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_secteur
-    - field.field.node.dso.field_secteur_
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sous_secteur
     - field.field.node.dso.field_sur_machine
@@ -107,7 +105,6 @@ hidden:
   field_materiels_imposes: true
   field_mise_en_route_de_la_machin: true
   field_no: true
-  field_nom_client: true
   field_nombre_de_jours: true
   field_nombre_de_personnes: true
   field_numerique: true
@@ -121,7 +118,6 @@ hidden:
   field_quantite: true
   field_remarques_contraintes: true
   field_secteur: true
-  field_secteur_: true
   field_sieret: true
   field_sous_secteur: true
   field_sur_machine: true
