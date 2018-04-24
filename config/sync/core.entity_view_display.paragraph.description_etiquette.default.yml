@@ -1,0 +1,122 @@
+uuid: 8e87710f-8407-4730-b9a1-cec3a688a950
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.description_etiquette.field_diametre_bobine
+    - field.field.paragraph.description_etiquette.field_diametre_etiquette_mm
+    - field.field.paragraph.description_etiquette.field_diametre_mandrin
+    - field.field.paragraph.description_etiquette.field_enroulement
+    - field.field.paragraph.description_etiquette.field_hauteur_bobine
+    - field.field.paragraph.description_etiquette.field_hauteur_etiquette_mm
+    - field.field.paragraph.description_etiquette.field_largeur_etiquette_mm
+    - field.field.paragraph.description_etiquette.field_nombre_d_etiquettes
+    - field.field.paragraph.description_etiquette.field_observation_etiquette
+    - field.field.paragraph.description_etiquette.field_photo_etiquette
+    - paragraphs.paragraphs_type.description_etiquette
+  module:
+    - image
+id: paragraph.description_etiquette.default
+targetEntityType: paragraph
+bundle: description_etiquette
+mode: default
+content:
+  field_diametre_bobine:
+    weight: 6
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_diametre_etiquette_mm:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_diametre_mandrin:
+    weight: 7
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_enroulement:
+    weight: 9
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_hauteur_bobine:
+    weight: 5
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_hauteur_etiquette_mm:
+    weight: 0
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_largeur_etiquette_mm:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_nombre_d_etiquettes:
+    weight: 8
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_observation_etiquette:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_photo_etiquette:
+    weight: 4
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

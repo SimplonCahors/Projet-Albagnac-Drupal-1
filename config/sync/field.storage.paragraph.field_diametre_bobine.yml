@@ -1,0 +1,20 @@
+uuid: d3f3c4b5-d53b-45dc-a425-7da1e558fdb8
+langcode: fr
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_diametre_bobine
+field_name: field_diametre_bobine
+entity_type: paragraph
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

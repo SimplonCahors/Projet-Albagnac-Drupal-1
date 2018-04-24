@@ -1,0 +1,73 @@
+uuid: ed87c374-a2dc-4475-beb4-4b51331fc290
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description_etiquette
+    - node.type.dso
+    - paragraphs.paragraphs_type.description_etiquette
+  module:
+    - entity_reference_revisions
+id: node.dso.field_description_etiquette
+field_name: field_description_etiquette
+entity_type: node
+bundle: dso
+label: 'Description etiquette'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      description_etiquette: description_etiquette
+    target_bundles_drag_drop:
+      description_etiquette:
+        enabled: true
+        weight: 16
+      asservissement:
+        weight: 17
+        enabled: false
+      besoin:
+        weight: 18
+        enabled: false
+      concurrent_sur_cette_opportunite:
+        weight: 19
+        enabled: false
+      contact_commercial:
+        weight: 20
+        enabled: false
+      contact_technique:
+        weight: 21
+        enabled: false
+      description_emballage:
+        weight: 22
+        enabled: false
+      emballage:
+        weight: 23
+        enabled: false
+      emballages_etiquettes:
+        weight: 24
+        enabled: false
+      energies:
+        weight: 25
+        enabled: false
+      etiquette:
+        weight: 26
+        enabled: false
+      fournisseur_s_actuel_s_:
+        weight: 27
+        enabled: false
+      materiel_impose_par_le_client:
+        weight: 28
+        enabled: false
+      pneumatique:
+        weight: 29
+        enabled: false
+      remarques:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

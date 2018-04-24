@@ -1,0 +1,23 @@
+uuid: bdf96bdb-9408-447b-9cb7-e004c01aacac
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_largeur_etiquette_mm
+    - paragraphs.paragraphs_type.description_etiquette
+id: paragraph.description_etiquette.field_largeur_etiquette_mm
+field_name: field_largeur_etiquette_mm
+entity_type: paragraph
+bundle: description_etiquette
+label: 'Largeur (mm)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

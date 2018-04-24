@@ -1,0 +1,23 @@
+uuid: 536af050-4581-4409-b728-18e375e81894
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hauteur_bobine
+    - paragraphs.paragraphs_type.description_etiquette
+id: paragraph.description_etiquette.field_hauteur_bobine
+field_name: field_hauteur_bobine
+entity_type: paragraph
+bundle: description_etiquette
+label: 'Hauteur (H)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

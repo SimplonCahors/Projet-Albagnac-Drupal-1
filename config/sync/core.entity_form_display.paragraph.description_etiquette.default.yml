@@ -1,0 +1,138 @@
+uuid: afa65a28-7594-479d-8697-c5dcfb79c604
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.description_etiquette.field_diametre_bobine
+    - field.field.paragraph.description_etiquette.field_diametre_etiquette_mm
+    - field.field.paragraph.description_etiquette.field_diametre_mandrin
+    - field.field.paragraph.description_etiquette.field_enroulement
+    - field.field.paragraph.description_etiquette.field_hauteur_bobine
+    - field.field.paragraph.description_etiquette.field_hauteur_etiquette_mm
+    - field.field.paragraph.description_etiquette.field_largeur_etiquette_mm
+    - field.field.paragraph.description_etiquette.field_nombre_d_etiquettes
+    - field.field.paragraph.description_etiquette.field_observation_etiquette
+    - field.field.paragraph.description_etiquette.field_photo_etiquette
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.description_etiquette
+  module:
+    - field_group
+    - image
+third_party_settings:
+  field_group:
+    group_dimension_etiquette:
+      children:
+        - field_hauteur_etiquette_mm
+        - field_largeur_etiquette_mm
+        - field_diametre_etiquette_mm
+        - field_observation_etiquette
+        - field_photo_etiquette
+      parent_name: ''
+      weight: 0
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Dimension
+    group_bobine_etiquette:
+      children:
+        - field_hauteur_bobine
+        - field_diametre_bobine
+        - field_diametre_mandrin
+        - field_nombre_d_etiquettes
+        - field_enroulement
+      parent_name: ''
+      weight: 1
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Bobine
+id: paragraph.description_etiquette.default
+targetEntityType: paragraph
+bundle: description_etiquette
+mode: default
+content:
+  field_diametre_bobine:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_diametre_etiquette_mm:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_diametre_mandrin:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_enroulement:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_hauteur_bobine:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_hauteur_etiquette_mm:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_largeur_etiquette_mm:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_nombre_d_etiquettes:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_observation_etiquette:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_photo_etiquette:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

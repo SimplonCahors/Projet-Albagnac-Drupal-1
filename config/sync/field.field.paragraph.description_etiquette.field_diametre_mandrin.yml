@@ -1,0 +1,23 @@
+uuid: b002786a-ba70-4b2d-aee3-e37ca1e36ed5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_diametre_mandrin
+    - paragraphs.paragraphs_type.description_etiquette
+id: paragraph.description_etiquette.field_diametre_mandrin
+field_name: field_diametre_mandrin
+entity_type: paragraph
+bundle: description_etiquette
+label: 'Diamètre mandrin (d)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

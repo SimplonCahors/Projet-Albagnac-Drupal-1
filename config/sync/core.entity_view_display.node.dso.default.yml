@@ -38,6 +38,7 @@ dependencies:
     - field.field.node.dso.field_demande_de_fat_suivant_spe
     - field.field.node.dso.field_des
     - field.field.node.dso.field_descriptif_asservissement
+    - field.field.node.dso.field_description_etiquette
     - field.field.node.dso.field_emballages_etiquettes
     - field.field.node.dso.field_en_salle
     - field.field.node.dso.field_energies
@@ -367,6 +368,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_description_etiquette:
+    type: entity_reference_revisions_entity_view
+    weight: 198
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     region: content
   field_emballages_etiquettes:
     type: entity_reference_revisions_entity_view
