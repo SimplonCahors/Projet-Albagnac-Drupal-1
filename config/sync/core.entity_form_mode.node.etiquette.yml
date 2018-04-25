@@ -1,0 +1,10 @@
+uuid: 6befec67-3ced-4634-bf6e-0be881e96211
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.etiquette
+label: Etiquette
+targetEntityType: node
+cache: true

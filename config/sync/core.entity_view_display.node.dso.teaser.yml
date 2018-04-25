@@ -18,13 +18,12 @@ dependencies:
     - field.field.node.dso.field_asservissement
     - field.field.node.dso.field_autre
     - field.field.node.dso.field_autre_arrivee_produits
-    - field.field.node.dso.field_autre_langue
     - field.field.node.dso.field_autre_milieu
     - field.field.node.dso.field_autre_nom_commercial
-    - field.field.node.dso.field_autre_secteur
     - field.field.node.dso.field_autre_transfert_aval
     - field.field.node.dso.field_besoin
     - field.field.node.dso.field_cadence_souhaitee_pdts_h_
+    - field.field.node.dso.field_categorie_
     - field.field.node.dso.field_cd
     - field.field.node.dso.field_communication_machine_amon
     - field.field.node.dso.field_communication_machine_aval
@@ -69,6 +68,7 @@ dependencies:
     - field.field.node.dso.field_sens_de_la_machine
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_sortie_produits_aval
+    - field.field.node.dso.field_sous_secteur
     - field.field.node.dso.field_sur_machine
     - field.field.node.dso.field_temperature_local_travail
     - field.field.node.dso.field_transfert_amont
@@ -108,13 +108,12 @@ hidden:
   field_asservissement: true
   field_autre: true
   field_autre_arrivee_produits: true
-  field_autre_langue: true
   field_autre_milieu: true
   field_autre_nom_commercial: true
-  field_autre_secteur: true
   field_autre_transfert_aval: true
   field_besoin: true
   field_cadence_souhaitee_pdts_h_: true
+  field_categorie_: true
   field_cd: true
   field_communication_machine_amon: true
   field_communication_machine_aval: true
@@ -163,6 +162,7 @@ hidden:
   field_sens_de_la_machine: true
   field_sieret: true
   field_sortie_produits_aval: true
+  field_sous_secteur: true
   field_sur_machine: true
   field_telephone_contact_com: true
   field_temperature_local_travail: true

@@ -1,8 +1,9 @@
-uuid: 2ec4e469-685e-44e0-8043-3f6677e9f539
+uuid: c0838c0f-d038-4af5-9d63-4048963a417a
 langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_form_mode.node.etiquette
     - field.field.node.dso.field_11_pays
     - field.field.node.dso.field_2_date_creation_fiche_
     - field.field.node.dso.field_3_date_premiere_c
@@ -17,8 +18,6 @@ dependencies:
     - field.field.node.dso.field_asservissement
     - field.field.node.dso.field_autre
     - field.field.node.dso.field_autre_arrivee_produits
-    - field.field.node.dso.field_autre_categorie_client
-    - field.field.node.dso.field_autre_langue
     - field.field.node.dso.field_autre_milieu
     - field.field.node.dso.field_autre_nom_commercial
     - field.field.node.dso.field_autre_transfert_aval
@@ -160,13 +159,6 @@ third_party_settings:
         - field_9_telephone
         - field_fax
         - field_11_pays
-        - field_categorie_client
-        - field_autre_categorie_client
-        - field_secteur
-        - field_autre_langue
-        - field_sous_secteur_client
-        - field_autre_sous_secteur_client
-        - field_autre_secteur
         - field_categorie_
         - field_secteur
         - field_sous_secteur
@@ -305,8 +297,6 @@ third_party_settings:
       children:
         - field_contact_commercial
       parent_name: group_informations_demandeur
-      weight: 49
-=======
       weight: 46
       format_type: tab
       format_settings:
@@ -320,7 +310,6 @@ third_party_settings:
       children:
         - field_contact_technique
       parent_name: group_informations_demandeur
-      weight: 50
       weight: 47
       format_type: tab
       format_settings:
@@ -452,10 +441,10 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Asservissement
-id: node.dso.default
+id: node.dso.etiquette
 targetEntityType: node
 bundle: dso
-mode: default
+mode: etiquette
 content:
   created:
     type: datetime_timestamp
@@ -589,58 +578,6 @@ content:
           bundle: dso
     type: string_textfield
     region: content
-  field_autre_categorie_client:
-    weight: 41
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings:
-      conditional_fields:
-        db4e3f68-5780-44b8-af0c-9a9f4c4de4c4:
-          dependee: field_categorie_client
-          settings:
-            state: visible
-            condition: value
-            grouping: AND
-            values_set: 1
-            value: ''
-            values: {  }
-            value_form:
-              -
-                value: Autre
-            effect: show
-            effect_options: {  }
-            selector: ''
-          entity_type: node
-          bundle: dso
-    type: string_textfield
-    region: content
-  field_autre_langue:
-    weight: 43
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings:
-      conditional_fields:
-        8045d897-c335-4a5e-be88-9bae1e0fccfa:
-          dependee: field_langue
-          settings:
-            state: visible
-            condition: value
-            grouping: AND
-            values_set: 1
-            value: ''
-            values: {  }
-            value_form:
-              -
-                value: Autre
-            effect: show
-            effect_options: {  }
-            selector: ''
-          entity_type: node
-          bundle: dso
-    type: string_textfield
-    region: content
   field_autre_milieu:
     weight: 100
     settings:
@@ -686,58 +623,6 @@ content:
             value_form:
               -
                 value: Autre
-            effect: show
-            effect_options: {  }
-            selector: ''
-          entity_type: node
-          bundle: dso
-    type: string_textfield
-    region: content
-  field_autre_secteur:
-    weight: 46
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings:
-      conditional_fields:
-        d7f12709-5c41-475e-965f-a0017b942470:
-          dependee: field_secteur
-          settings:
-            state: visible
-            condition: value
-            grouping: AND
-            values_set: 1
-            value: ''
-            values: {  }
-            value_form:
-              -
-                value: Autre
-            effect: show
-            effect_options: {  }
-            selector: ''
-          entity_type: node
-          bundle: dso
-    type: string_textfield
-    region: content
-  field_autre_sous_secteur_client:
-    weight: 45
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings:
-      conditional_fields:
-        3adc1e74-63b7-4776-b32f-948f558a3e28:
-          dependee: field_sous_secteur_client
-          settings:
-            state: visible
-            condition: value
-            grouping: AND
-            values_set: 1
-            value: ''
-            values: {  }
-            value_form:
-              -
-                value: 'Autres secteurs'
             effect: show
             effect_options: {  }
             selector: ''
@@ -1128,11 +1013,7 @@ content:
     type: options_buttons
     region: content
   field_sieret:
-<<<<<<< HEAD
-    weight: 48
-=======
     weight: 45
->>>>>>> 2d5e0e1956f4289d2921239f20cb10c487c79a7f
     settings:
       size: 60
       placeholder: ''
@@ -1147,17 +1028,11 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-<<<<<<< HEAD
-  field_sous_secteur_client:
-    weight: 44
-    settings: {  }
-=======
   field_sous_secteur:
     weight: 43
     settings:
       size: 60
       placeholder: ''
->>>>>>> 2d5e0e1956f4289d2921239f20cb10c487c79a7f
     third_party_settings: {  }
     type: string_textfield
     region: content
@@ -1194,11 +1069,7 @@ content:
     type: options_select
     region: content
   field_type_client:
-<<<<<<< HEAD
-    weight: 47
-=======
     weight: 44
->>>>>>> 2d5e0e1956f4289d2921239f20cb10c487c79a7f
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
