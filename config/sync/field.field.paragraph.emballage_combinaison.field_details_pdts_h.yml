@@ -1,0 +1,19 @@
+uuid: 6eaecac6-82cf-496b-bd1e-b16eb6e9a6df
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_details_pdts_h
+    - paragraphs.paragraphs_type.emballage_combinaison
+id: paragraph.emballage_combinaison.field_details_pdts_h
+field_name: field_details_pdts_h
+entity_type: paragraph
+bundle: emballage_combinaison
+label: 'Détails pdts/h'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

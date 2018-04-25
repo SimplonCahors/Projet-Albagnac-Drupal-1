@@ -1,0 +1,45 @@
+uuid: 626b11a4-8d7c-40eb-ac30-8fffe94b94d0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.emballage_combinaison.field_details_pdts_h
+    - field.field.paragraph.emballage_combinaison.field_photo_combinaison
+    - field.field.paragraph.emballage_combinaison.field_type_combinaison
+    - paragraphs.paragraphs_type.emballage_combinaison
+  module:
+    - image
+    - options
+id: paragraph.emballage_combinaison.default
+targetEntityType: paragraph
+bundle: emballage_combinaison
+mode: default
+content:
+  field_details_pdts_h:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_photo_combinaison:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_type_combinaison:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

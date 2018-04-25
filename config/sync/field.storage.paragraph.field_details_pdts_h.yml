@@ -1,12 +1,12 @@
-uuid: 1d488e59-3107-4298-8f3b-fbf3df0e3d00
+uuid: 40e6ffcf-4084-485a-a0a2-b16f99571dc1
 langcode: fr
 status: true
 dependencies:
   module:
-    - node
-id: node.field_autre_secteur
-field_name: field_autre_secteur
-entity_type: node
+    - paragraphs
+id: paragraph.field_details_pdts_h
+field_name: field_details_pdts_h
+entity_type: paragraph
 type: string
 settings:
   max_length: 255

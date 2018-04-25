@@ -1,0 +1,21 @@
+uuid: 82284b2b-9816-4062-aebc-6ecb128bbe51
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_type_combinaison
+    - paragraphs.paragraphs_type.emballage_combinaison
+  module:
+    - options
+id: paragraph.emballage_combinaison.field_type_combinaison
+field_name: field_type_combinaison
+entity_type: paragraph
+bundle: emballage_combinaison
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

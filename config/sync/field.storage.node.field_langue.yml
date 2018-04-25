@@ -38,9 +38,6 @@ settings:
     -
       value: Russe
       label: Russe
-    -
-      value: Autre
-      label: Autre
   allowed_values_function: ''
 module: options
 locked: false
