@@ -1132,6 +1132,8 @@ content:
     third_party_settings: {  }
 hidden:
   field_asservissement: true
+  field_emballage: true
+  field_liz_test: true
   field_nom_client: true
   field_objet: true
   field_type_client_test: true

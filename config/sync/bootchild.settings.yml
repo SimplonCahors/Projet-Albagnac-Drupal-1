@@ -14,14 +14,8 @@ features:
 logo:
   path: ''
   url: ''
-<<<<<<< HEAD
-  use_default: false
-table_responsive: '-1'
-table: ''
-=======
   use_default: true
 schemas:
   bootstrap: 8000
   bootchild: 8000
->>>>>>> 03ca9443cb233560064ef8fe0732366bae8f698e
 langcode: fr

@@ -130,6 +130,7 @@ hidden:
   field_des: true
   field_descriptif_asservissement: true
   field_description_etiquette: true
+  field_emballage: true
   field_emballages_etiquettes: true
   field_en_salle: true
   field_energies: true
@@ -141,6 +142,7 @@ hidden:
   field_impression_etiquette: true
   field_installation_chez_le_clien: true
   field_langue: true
+  field_liz_test: true
   field_materiels_imposes: true
   field_milieu: true
   field_mise_en_route_de_la_machin: true
@@ -166,6 +168,7 @@ hidden:
   field_sur_machine: true
   field_telephone_contact_com: true
   field_temperature_local_travail: true
+  field_test: true
   field_transfert_amont: true
   field_transfert_aval: true
   field_type_client: true

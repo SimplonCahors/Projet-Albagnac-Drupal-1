@@ -51,7 +51,6 @@ dependencies:
     - field.field.node.dso.field_impression_etiquette
     - field.field.node.dso.field_installation_chez_le_clien
     - field.field.node.dso.field_langue
-    - field.field.node.dso.field_liz_test
     - field.field.node.dso.field_materiels_imposes
     - field.field.node.dso.field_milieu
     - field.field.node.dso.field_mise_en_route_de_la_machin
@@ -72,7 +71,6 @@ dependencies:
     - field.field.node.dso.field_sous_secteur
     - field.field.node.dso.field_sur_machine
     - field.field.node.dso.field_temperature_local_travail
-    - field.field.node.dso.field_test
     - field.field.node.dso.field_transfert_amont
     - field.field.node.dso.field_transfert_aval
     - field.field.node.dso.field_type_client
@@ -480,15 +478,6 @@ content:
     third_party_settings: {  }
     type: list_default
     region: content
-  field_liz_test:
-    type: entity_reference_entity_view
-    weight: 205
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    region: content
   field_materiels_imposes:
     type: entity_reference_revisions_entity_view
     weight: 148
@@ -651,14 +640,6 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_decimal
-    region: content
-  field_test:
-    weight: 199
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
     region: content
   field_transfert_amont:
     weight: 178

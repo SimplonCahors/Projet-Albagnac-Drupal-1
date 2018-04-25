@@ -51,7 +51,6 @@ dependencies:
     - field.field.node.dso.field_impression_etiquette
     - field.field.node.dso.field_installation_chez_le_clien
     - field.field.node.dso.field_langue
-    - field.field.node.dso.field_liz_test
     - field.field.node.dso.field_materiels_imposes
     - field.field.node.dso.field_milieu
     - field.field.node.dso.field_mise_en_route_de_la_machin
@@ -72,7 +71,6 @@ dependencies:
     - field.field.node.dso.field_sous_secteur
     - field.field.node.dso.field_sur_machine
     - field.field.node.dso.field_temperature_local_travail
-    - field.field.node.dso.field_test
     - field.field.node.dso.field_transfert_amont
     - field.field.node.dso.field_transfert_aval
     - field.field.node.dso.field_type_client
@@ -163,18 +161,11 @@ third_party_settings:
         - field_11_pays
         - field_categorie_
         - field_secteur
-<<<<<<< HEAD
-        - field_sous_secteur_client
-        - field_autre_sous_secteur_client
-        - field_autre_secteur
-=======
         - field_sous_secteur
->>>>>>> 03ca9443cb233560064ef8fe0732366bae8f698e
         - field_type_client
         - field_sieret
         - group_contact_commercial
         - group_contact_technique
-        - field_autre_langue
       parent_name: group_informations_administrativ
       weight: 15
       format_type: tab
@@ -282,7 +273,6 @@ third_party_settings:
     group_etiquettes:
       children:
         - field_description_etiquette
-        - field_enroulement_bobine_image
       parent_name: group_demande_dev
       weight: 23
       format_type: details
@@ -934,15 +924,6 @@ content:
     third_party_settings: {  }
     type: options_buttons
     region: content
-  field_liz_test:
-    weight: 118
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_materiels_imposes:
     type: entity_reference_paragraphs
     weight: 64
@@ -1087,15 +1068,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
-    region: content
-  field_test:
-    weight: 117
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
     region: content
   field_transfert_amont:
     weight: 90
