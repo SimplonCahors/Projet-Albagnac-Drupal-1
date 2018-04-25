@@ -112,6 +112,7 @@ hidden:
   field_autre: true
   field_autre_arrivee_produits: true
   field_autre_categorie_client: true
+  field_autre_langue: true
   field_autre_milieu: true
   field_autre_nom_commercial: true
   field_autre_secteur: true
