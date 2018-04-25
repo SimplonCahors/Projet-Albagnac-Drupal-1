@@ -1,15 +1,15 @@
-uuid: f83549a1-d8c3-408d-ad41-d41acc132ce2
+uuid: 1941bbbb-b066-4d04-8e41-bb4cd0b51326
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_autre_secteur
+    - field.storage.node.field_sous_secteur
     - node.type.dso
-id: node.dso.field_autre_secteur
-field_name: field_autre_secteur
+id: node.dso.field_sous_secteur
+field_name: field_sous_secteur
 entity_type: node
 bundle: dso
-label: Autre
+label: 'Sous secteur'
 description: ''
 required: false
 translatable: false

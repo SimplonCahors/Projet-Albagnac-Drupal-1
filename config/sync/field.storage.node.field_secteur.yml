@@ -17,9 +17,6 @@ settings:
     -
       value: INDUSTRIE
       label: INDUSTRIE
-    -
-      value: Autre
-      label: Autre
   allowed_values_function: ''
 module: options
 locked: false

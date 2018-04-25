@@ -1,8 +1,9 @@
-uuid: 2ec4e469-685e-44e0-8043-3f6677e9f539
+uuid: c0838c0f-d038-4af5-9d63-4048963a417a
 langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_form_mode.node.etiquette
     - field.field.node.dso.field_11_pays
     - field.field.node.dso.field_2_date_creation_fiche_
     - field.field.node.dso.field_3_date_premiere_c
@@ -440,10 +441,10 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Asservissement
-id: node.dso.default
+id: node.dso.etiquette
 targetEntityType: node
 bundle: dso
-mode: default
+mode: etiquette
 content:
   created:
     type: datetime_timestamp
