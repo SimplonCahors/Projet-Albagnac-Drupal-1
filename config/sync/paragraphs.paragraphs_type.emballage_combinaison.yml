@@ -1,0 +1,9 @@
+uuid: 317aff8f-7fca-4c3c-b7d2-6552fc551e2c
+langcode: fr
+status: true
+dependencies: {  }
+id: emballage_combinaison
+label: Emballage
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

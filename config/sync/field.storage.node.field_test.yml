@@ -1,17 +1,16 @@
-uuid: 1d488e59-3107-4298-8f3b-fbf3df0e3d00
+uuid: 8e570b05-049a-49c8-9d2f-d4abccf3968b
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-id: node.field_autre_secteur
-field_name: field_autre_secteur
+    - taxonomy
+id: node.field_test
+field_name: field_test
 entity_type: node
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1

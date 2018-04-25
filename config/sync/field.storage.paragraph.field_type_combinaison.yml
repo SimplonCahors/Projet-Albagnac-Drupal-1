@@ -1,0 +1,36 @@
+uuid: 86a0bd50-5233-4198-966d-6261d4e085d6
+langcode: fr
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_type_combinaison
+field_name: field_type_combinaison
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Cadencé
+      label: Cadencé
+    -
+      value: 'Par vagues'
+      label: 'Par vagues'
+    -
+      value: Aléatoire
+      label: Aléatoire
+    -
+      value: Manuel
+      label: Manuel
+    -
+      value: Autre
+      label: Autre
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

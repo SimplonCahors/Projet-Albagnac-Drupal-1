@@ -9,7 +9,7 @@ id: paragraph.emballage.field_position_a_impriner
 field_name: field_position_a_impriner
 entity_type: paragraph
 bundle: emballage
-label: 'Position à impriner sur l''emballage'
+label: 'Position à imprimer sur l''emballage'
 description: ''
 required: false
 translatable: false

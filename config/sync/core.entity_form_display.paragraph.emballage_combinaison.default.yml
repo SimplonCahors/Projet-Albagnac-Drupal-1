@@ -1,0 +1,98 @@
+uuid: 00226e7d-386e-4ca7-93f8-e0cf160dfccd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.emballage_combinaison.field_details_pdts_h
+    - field.field.paragraph.emballage_combinaison.field_photo_combinaison
+    - field.field.paragraph.emballage_combinaison.field_type_combinaison
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.emballage_combinaison
+  module:
+    - field_group
+    - image
+third_party_settings:
+  field_group:
+    group_emballages:
+      children:
+        - field_photo_combinaison
+      parent_name: ''
+      weight: 0
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Emballages
+    group_etiquettes:
+      children:
+        - group_bilan_des_combinaisons
+      parent_name: ''
+      weight: 1
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Étiquettes
+    group_cadence:
+      children:
+        - field_type_combinaison
+        - field_details_pdts_h
+      parent_name: ''
+      weight: 2
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Cadence
+    group_bilan_des_combinaisons:
+      children: {  }
+      parent_name: group_etiquettes
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Bilan des combinaisons pour l''emballage'
+id: paragraph.emballage_combinaison.default
+targetEntityType: paragraph
+bundle: emballage_combinaison
+mode: default
+content:
+  field_details_pdts_h:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_photo_combinaison:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_type_combinaison:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
