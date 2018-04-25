@@ -70,6 +70,7 @@ dependencies:
     - field.field.node.dso.field_sous_secteur
     - field.field.node.dso.field_sur_machine
     - field.field.node.dso.field_temperature_local_travail
+    - field.field.node.dso.field_test
     - field.field.node.dso.field_transfert_amont
     - field.field.node.dso.field_transfert_aval
     - field.field.node.dso.field_type_client
@@ -1054,6 +1055,15 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  field_test:
+    weight: 117
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_transfert_amont:
     weight: 90
