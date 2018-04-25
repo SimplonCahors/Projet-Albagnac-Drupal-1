@@ -8,4 +8,5 @@ id: anonymous
 label: Anonyme
 weight: 1
 is_admin: false
-permissions: {  }
+permissions:
+  - 'view media'

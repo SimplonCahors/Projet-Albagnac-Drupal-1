@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.description_etiquette.field_diametre_bobine
     - field.field.paragraph.description_etiquette.field_diametre_etiquette_mm
     - field.field.paragraph.description_etiquette.field_diametre_mandrin
-    - field.field.paragraph.description_etiquette.field_enroulement
+    - field.field.paragraph.description_etiquette.field_etiquettes_enroulement
     - field.field.paragraph.description_etiquette.field_hauteur_bobine
     - field.field.paragraph.description_etiquette.field_hauteur_etiquette_mm
     - field.field.paragraph.description_etiquette.field_largeur_etiquette_mm
@@ -43,7 +43,7 @@ third_party_settings:
         - field_diametre_bobine
         - field_diametre_mandrin
         - field_nombre_d_etiquettes
-        - field_enroulement
+        - field_etiquettes_enroulement
       parent_name: ''
       weight: 1
       format_type: tab
@@ -80,13 +80,14 @@ content:
     third_party_settings: {  }
     type: number
     region: content
-  field_enroulement:
+  field_etiquettes_enroulement:
     weight: 6
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: image_image
+    type: entity_reference_autocomplete
     region: content
   field_hauteur_bobine:
     weight: 2

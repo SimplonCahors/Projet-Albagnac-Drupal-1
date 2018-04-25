@@ -54,6 +54,7 @@ dependencies:
     - field.field.node.dso.field_impression_etiquette
     - field.field.node.dso.field_installation_chez_le_clien
     - field.field.node.dso.field_langue
+    - field.field.node.dso.field_liz_test
     - field.field.node.dso.field_materiels_imposes
     - field.field.node.dso.field_milieu
     - field.field.node.dso.field_mise_en_route_de_la_machin
@@ -502,6 +503,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
+  field_liz_test:
+    type: entity_reference_entity_view
+    weight: 205
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
     region: content
   field_materiels_imposes:
     type: entity_reference_revisions_entity_view

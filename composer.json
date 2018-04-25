@@ -23,6 +23,7 @@
         "drupal/conditional_fields": "^1.0@alpha",
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5.1",
+        "drupal/ctools": "^3.0",
         "drupal/diff": "^1.0@RC",
         "drupal/entity_print": "2.x",
         "drupal/field_group": "^1.0",

@@ -1,0 +1,21 @@
+uuid: 9075a74b-0538-4ab1-a2e2-090ce39c3b0b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_liz_test
+    - node.type.dso
+id: node.dso.field_liz_test
+field_name: field_liz_test
+entity_type: node
+bundle: dso
+label: 'Liz Test'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings: {  }
+field_type: entity_reference

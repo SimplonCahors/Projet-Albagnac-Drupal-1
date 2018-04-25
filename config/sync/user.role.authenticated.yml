@@ -21,4 +21,5 @@ permissions:
   - 'search content'
   - 'use advanced search'
   - 'view dso revisions'
+  - 'view media'
   - 'view own unpublished content'
