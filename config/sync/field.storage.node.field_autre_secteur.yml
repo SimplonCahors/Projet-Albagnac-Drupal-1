@@ -1,11 +1,11 @@
-uuid: 5b7b3895-c802-4815-8769-b160236a5be8
+uuid: 1d488e59-3107-4298-8f3b-fbf3df0e3d00
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-id: node.field_categorie_
-field_name: field_categorie_
+id: node.field_autre_secteur
+field_name: field_autre_secteur
 entity_type: node
 type: string
 settings:

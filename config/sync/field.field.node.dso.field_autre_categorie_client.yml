@@ -1,21 +1,19 @@
-uuid: aa745ece-9b16-4b11-a715-823a5a83212b
+uuid: 53060dd1-06b6-4963-989f-b19e5f17c2e9
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_categorie_
+    - field.storage.node.field_autre_categorie_client
     - node.type.dso
-id: node.dso.field_categorie_
-field_name: field_categorie_
+id: node.dso.field_autre_categorie_client
+field_name: field_autre_categorie_client
 entity_type: node
 bundle: dso
-label: 'Categorie '
+label: Autre
 description: ''
 required: false
 translatable: false
-default_value:
-  -
-    value: client
+default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: string
