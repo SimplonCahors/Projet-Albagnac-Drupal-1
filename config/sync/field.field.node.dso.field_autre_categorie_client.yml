@@ -1,0 +1,19 @@
+uuid: 53060dd1-06b6-4963-989f-b19e5f17c2e9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_autre_categorie_client
+    - node.type.dso
+id: node.dso.field_autre_categorie_client
+field_name: field_autre_categorie_client
+entity_type: node
+bundle: dso
+label: Autre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

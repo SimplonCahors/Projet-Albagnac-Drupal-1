@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.dso.field_asservissement
     - field.field.node.dso.field_autre
     - field.field.node.dso.field_autre_arrivee_produits
+    - field.field.node.dso.field_autre_categorie_client
     - field.field.node.dso.field_autre_langue
     - field.field.node.dso.field_autre_milieu
     - field.field.node.dso.field_autre_nom_commercial
@@ -208,6 +209,14 @@ content:
     region: content
   field_autre_arrivee_produits:
     weight: 183
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_autre_categorie_client:
+    weight: 203
     label: above
     settings:
       link_to_entity: false
