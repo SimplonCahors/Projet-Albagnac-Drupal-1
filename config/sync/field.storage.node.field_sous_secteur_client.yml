@@ -1,0 +1,36 @@
+uuid: d2b5f758-56ae-479e-a04b-a41b20eeb4e4
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_sous_secteur_client
+field_name: field_sous_secteur_client
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Agro-alimentaire
+      label: Agro-alimentaire
+    -
+      value: Cosmétique
+      label: Cosmétique
+    -
+      value: Chimie
+      label: Chimie
+    -
+      value: Vinicole
+      label: Vinicole
+    -
+      value: 'Autres secteurs'
+      label: 'Autres secteurs'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

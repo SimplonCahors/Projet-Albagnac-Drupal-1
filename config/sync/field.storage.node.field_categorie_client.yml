@@ -1,22 +1,22 @@
-uuid: 90f7c522-d6e6-4ae0-ab60-a06e0106af8a
+uuid: 0d6bc440-97d8-48c4-bf08-791a22bfbb81
 langcode: fr
 status: true
 dependencies:
   module:
     - node
     - options
-id: node.field_secteur
-field_name: field_secteur
+id: node.field_categorie_client
+field_name: field_categorie_client
 entity_type: node
 type: list_string
 settings:
   allowed_values:
     -
-      value: VINICOLE
-      label: VINICOLE
+      value: Client
+      label: Client
     -
-      value: INDUSTRIE
-      label: INDUSTRIE
+      value: Revendeur
+      label: Revendeur
     -
       value: Autre
       label: Autre
