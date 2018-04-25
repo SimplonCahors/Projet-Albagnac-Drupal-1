@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.dso.field_autre
     - field.field.node.dso.field_autre_arrivee_produits
     - field.field.node.dso.field_autre_categorie_client
+    - field.field.node.dso.field_autre_langue
     - field.field.node.dso.field_autre_milieu
     - field.field.node.dso.field_autre_nom_commercial
     - field.field.node.dso.field_autre_secteur
@@ -593,6 +594,32 @@ content:
       conditional_fields:
         db4e3f68-5780-44b8-af0c-9a9f4c4de4c4:
           dependee: field_categorie_client
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: Autre
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: node
+          bundle: dso
+    type: string_textfield
+    region: content
+  field_autre_langue:
+    weight: 117
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        15c058bf-c1c5-4af5-b8c6-9f0661756eb9:
+          dependee: field_langue
           settings:
             state: visible
             condition: value
