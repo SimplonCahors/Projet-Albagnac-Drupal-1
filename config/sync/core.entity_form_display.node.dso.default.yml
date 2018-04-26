@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.dso.field_autre_milieu
     - field.field.node.dso.field_autre_nom_commercial
     - field.field.node.dso.field_autre_transfert_aval
+    - field.field.node.dso.field_autre_type
     - field.field.node.dso.field_besoin
     - field.field.node.dso.field_cadence_souhaitee_pdts_h_
     - field.field.node.dso.field_categorie_
@@ -655,6 +656,14 @@ content:
             selector: ''
           entity_type: node
           bundle: dso
+    type: string_textfield
+    region: content
+  field_autre_type:
+    weight: 119
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
     type: string_textfield
     region: content
   field_besoin:

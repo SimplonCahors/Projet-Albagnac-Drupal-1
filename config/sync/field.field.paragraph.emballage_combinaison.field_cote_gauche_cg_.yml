@@ -1,0 +1,19 @@
+uuid: c45192ae-0ea4-484e-b019-72010d8e6e4f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cote_gauche_cg_
+    - paragraphs.paragraphs_type.emballage_combinaison
+id: paragraph.emballage_combinaison.field_cote_gauche_cg_
+field_name: field_cote_gauche_cg_
+entity_type: paragraph
+bundle: emballage_combinaison
+label: 'Côté Gauche (CG)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

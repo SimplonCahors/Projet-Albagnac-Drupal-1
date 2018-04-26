@@ -1,0 +1,19 @@
+uuid: fa298c90-2338-436f-9f03-0749b116deed
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_avant_av_
+    - paragraphs.paragraphs_type.emballage_combinaison
+id: paragraph.emballage_combinaison.field_avant_av_
+field_name: field_avant_av_
+entity_type: paragraph
+bundle: emballage_combinaison
+label: 'Avant (Av)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

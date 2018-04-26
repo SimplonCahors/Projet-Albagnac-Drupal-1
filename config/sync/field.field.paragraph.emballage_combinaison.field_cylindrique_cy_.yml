@@ -1,0 +1,19 @@
+uuid: 5eb38b35-e55f-46e7-a225-a21f6abf7d99
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cylindrique_cy_
+    - paragraphs.paragraphs_type.emballage_combinaison
+id: paragraph.emballage_combinaison.field_cylindrique_cy_
+field_name: field_cylindrique_cy_
+entity_type: paragraph
+bundle: emballage_combinaison
+label: 'Cylindrique (Cy)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
