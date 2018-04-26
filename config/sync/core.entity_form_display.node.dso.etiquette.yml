@@ -1,6 +1,6 @@
 uuid: c0838c0f-d038-4af5-9d63-4048963a417a
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
     - core.entity_form_mode.node.etiquette
@@ -45,12 +45,20 @@ dependencies:
     - field.field.node.dso.field_emballages_etiquettes
     - field.field.node.dso.field_en_salle
     - field.field.node.dso.field_energies
+    - field.field.node.dso.field_environnement_concurentiel
     - field.field.node.dso.field_espace_disponible_au_sol_m
     - field.field.node.dso.field_fax
+    - field.field.node.dso.field_fournisseur_actuel_
     - field.field.node.dso.field_fournisseur_s_actuel_s_
     - field.field.node.dso.field_hauteur_de_convoyeur_mm_
+    - field.field.node.dso.field_implantations_des_sites_en
     - field.field.node.dso.field_impression
     - field.field.node.dso.field_impression_etiquette
+    - field.field.node.dso.field_info_com_concu_remarques
+    - field.field.node.dso.field_info_com_concu_type
+    - field.field.node.dso.field_infos_com_besoin
+    - field.field.node.dso.field_infos_com_besoin_rema
+    - field.field.node.dso.field_infos_com_concu_nom_
     - field.field.node.dso.field_installation_chez_le_clien
     - field.field.node.dso.field_langue
     - field.field.node.dso.field_materiels_imposes
@@ -60,6 +68,7 @@ dependencies:
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nombre_de_jours
     - field.field.node.dso.field_nombre_de_personnes
+    - field.field.node.dso.field_nombre_et_type_potentiel_d
     - field.field.node.dso.field_nouveau_client
     - field.field.node.dso.field_numerique
     - field.field.node.dso.field_objet
@@ -67,9 +76,11 @@ dependencies:
     - field.field.node.dso.field_plan_de_prevention_pour_in
     - field.field.node.dso.field_quantite
     - field.field.node.dso.field_remarques_contraintes
+    - field.field.node.dso.field_remarques_demande_devis
     - field.field.node.dso.field_secteur
     - field.field.node.dso.field_sens_de_la_machine
     - field.field.node.dso.field_sieret
+    - field.field.node.dso.field_site_de_production
     - field.field.node.dso.field_sortie_produits_aval
     - field.field.node.dso.field_sous_secteur
     - field.field.node.dso.field_sur_machine
@@ -1095,10 +1106,21 @@ hidden:
   field_demande_de_cem_electromagn: true
   field_demande_de_fat_suivant_spe: true
   field_emballage: true
+  field_environnement_concurentiel: true
+  field_fournisseur_actuel_: true
+  field_implantations_des_sites_en: true
+  field_info_com_concu_remarques: true
+  field_info_com_concu_type: true
+  field_infos_com_besoin: true
+  field_infos_com_besoin_rema: true
+  field_infos_com_concu_nom_: true
   field_liz_test: true
   field_nom_client: true
+  field_nombre_et_type_potentiel_d: true
   field_nouveau_client: true
   field_objet: true
+  field_remarques_demande_devis: true
+  field_site_de_production: true
   field_type_client_test: true
   langcode: true
   path: true

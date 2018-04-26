@@ -1,0 +1,21 @@
+uuid: 593462c2-8d34-433b-a6b9-f6316c7a4e14
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_infos_com_concu_nom_
+field_name: field_infos_com_concu_nom_
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

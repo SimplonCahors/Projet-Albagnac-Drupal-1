@@ -53,8 +53,11 @@ dependencies:
     - field.field.node.dso.field_implantations_des_sites_en
     - field.field.node.dso.field_impression
     - field.field.node.dso.field_impression_etiquette
+    - field.field.node.dso.field_info_com_concu_remarques
+    - field.field.node.dso.field_info_com_concu_type
     - field.field.node.dso.field_infos_com_besoin
     - field.field.node.dso.field_infos_com_besoin_rema
+    - field.field.node.dso.field_infos_com_concu_nom_
     - field.field.node.dso.field_installation_chez_le_clien
     - field.field.node.dso.field_langue
     - field.field.node.dso.field_materiels_imposes
@@ -451,7 +454,7 @@ content:
     region: content
   field_2_date_creation_fiche_:
     weight: 78
-    label: inline
+    label: above
     settings:
       format_type: medium
       timezone_override: ''
@@ -460,7 +463,7 @@ content:
     region: content
   field_3_date_premiere_c:
     weight: 79
-    label: inline
+    label: above
     settings:
       format_type: medium
       timezone_override: ''
@@ -469,7 +472,7 @@ content:
     region: content
   field_4_reponse_souhaitee:
     weight: 80
-    label: inline
+    label: above
     settings:
       format_type: medium
       timezone_override: ''
@@ -478,7 +481,7 @@ content:
     region: content
   field_5_date_envoie_offre:
     weight: 81
-    label: inline
+    label: above
     settings:
       format_type: medium
       timezone_override: ''
@@ -487,7 +490,7 @@ content:
     region: content
   field_6_date_livraison_souhaite:
     weight: 82
-    label: inline
+    label: above
     settings:
       format_type: medium
       timezone_override: ''
@@ -561,7 +564,7 @@ content:
     region: content
   field_autre_nom_commercial:
     weight: 77
-    label: inline
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -858,6 +861,22 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
+  field_info_com_concu_remarques:
+    weight: 216
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_info_com_concu_type:
+    weight: 215
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_infos_com_besoin:
     weight: 206
     label: above
@@ -867,6 +886,14 @@ content:
     region: content
   field_infos_com_besoin_rema:
     weight: 207
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_infos_com_concu_nom_:
+    weight: 214
     label: above
     settings:
       link_to_entity: false
@@ -920,7 +947,7 @@ content:
     type: list_default
     weight: 76
     region: content
-    label: inline
+    label: above
     settings: {  }
     third_party_settings: {  }
   field_nombre_de_jours:

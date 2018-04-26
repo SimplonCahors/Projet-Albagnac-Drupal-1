@@ -1,0 +1,21 @@
+uuid: 49d96be6-5b3b-4a53-8a06-0cec576571f4
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_info_com_concu_remarques
+field_name: field_info_com_concu_remarques
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

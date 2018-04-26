@@ -53,8 +53,11 @@ dependencies:
     - field.field.node.dso.field_implantations_des_sites_en
     - field.field.node.dso.field_impression
     - field.field.node.dso.field_impression_etiquette
+    - field.field.node.dso.field_info_com_concu_remarques
+    - field.field.node.dso.field_info_com_concu_type
     - field.field.node.dso.field_infos_com_besoin
     - field.field.node.dso.field_infos_com_besoin_rema
+    - field.field.node.dso.field_infos_com_concu_nom_
     - field.field.node.dso.field_installation_chez_le_clien
     - field.field.node.dso.field_langue
     - field.field.node.dso.field_materiels_imposes
@@ -146,10 +149,7 @@ third_party_settings:
         - field_no
         - field_autre_nom_commercial
         - field_2_date_creation_fiche_
-        - field_3_date_premiere_c
-        - field_4_reponse_souhaitee
-        - field_5_date_envoie_offre
-        - field_6_date_livraison_souhaite
+        - group_dates_dso
       parent_name: group_informations_administrativ
       weight: 14
       format_type: tab
@@ -188,6 +188,8 @@ third_party_settings:
     group_informations_commerciales:
       children:
         - group_etat_lieux
+        - group_concurrent_sur_cette_oppor
+        - group_perspectives_commerciales
       parent_name: group_informations_administrativ
       weight: 16
       format_type: tab
@@ -454,10 +456,8 @@ third_party_settings:
         - field_infos_com_besoin
         - field_infos_com_besoin_rema
         - field_fournisseur_actuel_
-        - field_concurrent_sur_cette_oppor
-        - group_perspectives_commerciales
       parent_name: group_informations_commerciales
-      weight: 20
+      weight: 26
       format_type: html_element
       format_settings:
         id: ''
@@ -476,8 +476,8 @@ third_party_settings:
         - field_site_de_production
         - field_implantations_des_sites_en
         - field_environnement_concurentiel
-      parent_name: group_etat_lieux
-      weight: 25
+      parent_name: group_informations_commerciales
+      weight: 28
       format_type: html_element
       format_settings:
         id: ''
@@ -490,6 +490,46 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'Perspectives commerciales'
+    group_concurrent_sur_cette_oppor:
+      children:
+        - field_infos_com_concu_nom_
+        - field_info_com_concu_type
+        - field_info_com_concu_remarques
+      parent_name: group_informations_commerciales
+      weight: 27
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: ''
+        element: div
+        show_label: true
+        label_element: h3
+        required_fields: false
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Concurrent sur cette opportunité'
+    group_dates_dso:
+      children:
+        - field_3_date_premiere_c
+        - field_4_reponse_souhaitee
+        - field_5_date_envoie_offre
+        - field_6_date_livraison_souhaite
+      parent_name: group_onglet1
+      weight: 17
+      format_type: html_element
+      format_settings:
+        label: 'Dates DSO'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'd-flex justify-content-center'
+        required_fields: false
+      label: 'Dates DSO'
 id: node.dso.default
 targetEntityType: node
 bundle: dso
@@ -516,19 +556,19 @@ content:
     type: datetime_default
     region: content
   field_3_date_premiere_c:
-    weight: 17
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_4_reponse_souhaitee:
     weight: 18
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_5_date_envoie_offre:
+  field_4_reponse_souhaitee:
     weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_5_date_envoie_offre:
+    weight: 20
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
@@ -748,18 +788,6 @@ content:
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
-  field_concurrent_sur_cette_oppor:
-    type: entity_reference_paragraphs
-    weight: 24
-    region: content
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
   field_contact_commercial:
     type: entity_reference_paragraphs
     weight: 11
@@ -975,6 +1003,22 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
+  field_info_com_concu_remarques:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_info_com_concu_type:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_infos_com_besoin:
     weight: 21
     settings: {  }
@@ -983,6 +1027,14 @@ content:
     region: content
   field_infos_com_besoin_rema:
     weight: 22
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_infos_com_concu_nom_:
+    weight: 6
     settings:
       size: 60
       placeholder: ''
@@ -1236,6 +1288,7 @@ content:
 hidden:
   field_asservissement: true
   field_besoin: true
+  field_concurrent_sur_cette_oppor: true
   field_fournisseur_s_actuel_s_: true
   field_nom_client: true
   field_objet: true

@@ -1,6 +1,12 @@
-if(window.location.href.toString().includes('node/add')) {
+console.log('bonjour')
+
+if(window.location.href.toString().includes('node/add/dso')) {
     
-    document.querySelectorAll('.tabledrag-toggle-weight').forEach( x => {x.style.display = NavigationEvent})
+    document.querySelectorAll('.tabledrag-toggle-weight')
+        .forEach( x => {
+            console.log(x.style.display)
+        x.style.display = none;
+    })
 }
 
 // 
