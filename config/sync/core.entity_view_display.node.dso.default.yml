@@ -1161,6 +1161,7 @@ hidden:
   entity_print_view_word_docx: true
   field_asservissement: true
   field_besoin: true
+  field_etiquette: true
   field_fournisseur_s_actuel_s_: true
   field_nom_client: true
   field_objet: true

@@ -1107,6 +1107,7 @@ hidden:
   field_demande_de_fat_suivant_spe: true
   field_emballage: true
   field_environnement_concurentiel: true
+  field_etiquette: true
   field_fournisseur_actuel_: true
   field_implantations_des_sites_en: true
   field_info_com_concu_remarques: true

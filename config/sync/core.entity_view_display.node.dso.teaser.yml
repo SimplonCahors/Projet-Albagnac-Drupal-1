@@ -137,12 +137,21 @@ hidden:
   field_emballages_etiquettes: true
   field_en_salle: true
   field_energies: true
+  field_environnement_concurentiel: true
   field_espace_disponible_au_sol_m: true
+  field_etiquette: true
   field_fax: true
+  field_fournisseur_actuel_: true
   field_fournisseur_s_actuel_s_: true
   field_hauteur_de_convoyeur_mm_: true
+  field_implantations_des_sites_en: true
   field_impression: true
   field_impression_etiquette: true
+  field_info_com_concu_remarques: true
+  field_info_com_concu_type: true
+  field_infos_com_besoin: true
+  field_infos_com_besoin_rema: true
+  field_infos_com_concu_nom_: true
   field_installation_chez_le_clien: true
   field_langue: true
   field_liz_test: true
@@ -153,6 +162,7 @@ hidden:
   field_nom_client: true
   field_nombre_de_jours: true
   field_nombre_de_personnes: true
+  field_nombre_et_type_potentiel_d: true
   field_nouveau_client: true
   field_numerique: true
   field_objet: true
@@ -164,9 +174,11 @@ hidden:
   field_plan_de_prevention_pour_in: true
   field_quantite: true
   field_remarques_contraintes: true
+  field_remarques_demande_devis: true
   field_secteur: true
   field_sens_de_la_machine: true
   field_sieret: true
+  field_site_de_production: true
   field_sortie_produits_aval: true
   field_sous_secteur: true
   field_sur_machine: true
