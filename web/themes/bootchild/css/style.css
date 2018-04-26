@@ -6392,3 +6392,20 @@ p:last-child,
   padding: 0; }
   .help-block:first-child, .control-group .help-inline:first-child {
     margin-top: 0; }
+
+.field-group-tabs-wrapper ul.nav.nav-tabs {
+  padding-bottom: 0;
+  width: 100%; }
+
+.field-group-tabs-wrapper ul.nav.nav-tabs > li {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 2px; }
+
+.field-group-tabs-wrapper ul.nav.nav-tabs > li > a,
+.field-group-tabs-wrapper ul.nav.nav-tabs > li > a:hover,
+.field-group-tabs-wrapper ul.nav.nav-tabs > li.active > a {
+  border-bottom: 0 none;
+  border-color: #dddddd #dddddd transparent #dddddd;
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 0; }
