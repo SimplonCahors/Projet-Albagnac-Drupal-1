@@ -1,0 +1,19 @@
+uuid: 5ded49d0-3b09-4225-8205-5be79b030cc9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_nombre_etiquette
+    - paragraphs.paragraphs_type.etiquettes
+id: paragraph.etiquettes.field_nombre_etiquette
+field_name: field_nombre_etiquette
+entity_type: paragraph
+bundle: etiquettes
+label: 'nombre etiquette'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
