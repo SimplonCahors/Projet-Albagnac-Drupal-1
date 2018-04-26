@@ -30,10 +30,10 @@ dependencies:
     - field.field.node.dso.field_concurrent_sur_cette_oppor
     - field.field.node.dso.field_contact_commercial
     - field.field.node.dso.field_contact_technique
-    - field.field.node.dso.field_controle_de_conformite
+    - field.field.node.dso.field_controle_de_conformite_sui
     - field.field.node.dso.field_coupure_bourrage
     - field.field.node.dso.field_date_desiree_controle
-    - field.field.node.dso.field_demande_certification_ext
+    - field.field.node.dso.field_demande_certification_e
     - field.field.node.dso.field_demande_de_cem_electromagn
     - field.field.node.dso.field_demande_de_certification_e
     - field.field.node.dso.field_demande_de_fat_suivant_spe
@@ -44,12 +44,17 @@ dependencies:
     - field.field.node.dso.field_emballages_etiquettes
     - field.field.node.dso.field_en_salle
     - field.field.node.dso.field_energies
+    - field.field.node.dso.field_environnement_concurentiel
     - field.field.node.dso.field_espace_disponible_au_sol_m
     - field.field.node.dso.field_fax
+    - field.field.node.dso.field_fournisseur_actuel_
     - field.field.node.dso.field_fournisseur_s_actuel_s_
     - field.field.node.dso.field_hauteur_de_convoyeur_mm_
+    - field.field.node.dso.field_implantations_des_sites_en
     - field.field.node.dso.field_impression
     - field.field.node.dso.field_impression_etiquette
+    - field.field.node.dso.field_infos_com_besoin
+    - field.field.node.dso.field_infos_com_besoin_rema
     - field.field.node.dso.field_installation_chez_le_clien
     - field.field.node.dso.field_langue
     - field.field.node.dso.field_materiels_imposes
@@ -59,6 +64,7 @@ dependencies:
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nombre_de_jours
     - field.field.node.dso.field_nombre_de_personnes
+    - field.field.node.dso.field_nombre_et_type_potentiel_d
     - field.field.node.dso.field_nouveau_client
     - field.field.node.dso.field_numerique
     - field.field.node.dso.field_objet
@@ -66,9 +72,11 @@ dependencies:
     - field.field.node.dso.field_plan_de_prevention_pour_in
     - field.field.node.dso.field_quantite
     - field.field.node.dso.field_remarques_contraintes
+    - field.field.node.dso.field_remarques_demande_devis
     - field.field.node.dso.field_secteur
     - field.field.node.dso.field_sens_de_la_machine
     - field.field.node.dso.field_sieret
+    - field.field.node.dso.field_site_de_production
     - field.field.node.dso.field_sortie_produits_aval
     - field.field.node.dso.field_sous_secteur
     - field.field.node.dso.field_sur_machine
@@ -99,6 +107,7 @@ third_party_settings:
         - group_contact_technique
         - group_informations_commerciales
         - group_emballage_et_etiquettes
+        - field_remarques_demande_devis
         - group_environnement_machine
         - group_materiels_imposes_impressi
         - group_remarques_contraintes_even
@@ -142,6 +151,7 @@ third_party_settings:
       label: 'Informations du devis'
     group_informations_administrativ:
       children:
+        - field_nouveau_client
         - field_7_nom_client
         - field_8_adresse_postale
         - field_9_telephone
@@ -150,8 +160,6 @@ third_party_settings:
         - field_categorie_
         - field_secteur
         - field_sous_secteur
-        - field_type_client
-        - field_nouveau_client
         - field_sieret
       parent_name: group_tabs_dso
       weight: 21
@@ -188,9 +196,9 @@ third_party_settings:
       label: 'Contact technique'
     group_informations_commerciales:
       children:
-        - field_besoin
+        - field_infos_com_besoin
+        - field_infos_com_besoin_rema
         - field_concurrent_sur_cette_oppor
-        - field_fournisseur_s_actuel_s_
       parent_name: group_tabs_dso
       weight: 24
       format_type: tab
@@ -240,7 +248,7 @@ third_party_settings:
         - group_information
         - group_transport
       parent_name: group_tabs_dso
-      weight: 26
+      weight: 27
       format_type: tab
       format_settings:
         id: ''
@@ -277,11 +285,11 @@ third_party_settings:
       label: 'Énergies disponibles'
     group_mode_de_controle_demande_p:
       children:
-        - field_controle_de_conformite
-        - field_demande_de_fat_suivant_spe
         - field_date_desiree_controle
+        - field_controle_de_conformite_sui
+        - field_demande_de_fat_suivant_spe
         - field_demande_de_cem_electromagn
-        - field_demande_certification_ext
+        - field_demande_certification_e
       parent_name: group_environnement_machine
       weight: 60
       format_type: tab
@@ -354,7 +362,7 @@ third_party_settings:
         - field_materiels_imposes
         - group_impression
       parent_name: group_tabs_dso
-      weight: 27
+      weight: 28
       format_type: tab
       format_settings:
         id: ''
@@ -379,7 +387,7 @@ third_party_settings:
       children:
         - field_remarques_contraintes
       parent_name: group_tabs_dso
-      weight: 28
+      weight: 29
       format_type: tab
       format_settings:
         id: ''
@@ -403,7 +411,7 @@ third_party_settings:
       children:
         - field_description_etiquette
       parent_name: ''
-      weight: 4
+      weight: 3
       format_type: details
       format_settings:
         id: ''
@@ -415,7 +423,7 @@ third_party_settings:
       children:
         - field_emballage
       parent_name: ''
-      weight: 6
+      weight: 4
       format_type: details
       format_settings:
         id: ''
@@ -434,7 +442,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_11_pays:
-    weight: 13
+    weight: 23
     label: above
     settings:
       link_to_entity: false
@@ -443,7 +451,7 @@ content:
     region: content
   field_2_date_creation_fiche_:
     weight: 78
-    label: above
+    label: inline
     settings:
       format_type: medium
       timezone_override: ''
@@ -452,7 +460,7 @@ content:
     region: content
   field_3_date_premiere_c:
     weight: 79
-    label: above
+    label: inline
     settings:
       format_type: medium
       timezone_override: ''
@@ -461,7 +469,7 @@ content:
     region: content
   field_4_reponse_souhaitee:
     weight: 80
-    label: above
+    label: inline
     settings:
       format_type: medium
       timezone_override: ''
@@ -470,7 +478,7 @@ content:
     region: content
   field_5_date_envoie_offre:
     weight: 81
-    label: above
+    label: inline
     settings:
       format_type: medium
       timezone_override: ''
@@ -479,7 +487,7 @@ content:
     region: content
   field_6_date_livraison_souhaite:
     weight: 82
-    label: above
+    label: inline
     settings:
       format_type: medium
       timezone_override: ''
@@ -487,7 +495,7 @@ content:
     type: datetime_default
     region: content
   field_7_nom_client:
-    weight: 9
+    weight: 19
     label: above
     settings:
       link_to_entity: false
@@ -495,7 +503,7 @@ content:
     type: string
     region: content
   field_8_adresse_postale:
-    weight: 10
+    weight: 20
     label: above
     settings:
       link_to_entity: false
@@ -503,7 +511,7 @@ content:
     type: string
     region: content
   field_9_telephone:
-    weight: 11
+    weight: 21
     label: above
     settings:
       link_to_entity: false
@@ -553,7 +561,7 @@ content:
     region: content
   field_autre_nom_commercial:
     weight: 77
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -568,22 +576,13 @@ content:
     type: string
     region: content
   field_autre_type:
-    weight: 201
+    weight: 5
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_besoin:
-    type: entity_reference_revisions_entity_view
-    weight: 21
-    region: content
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
   field_cadence_souhaitee_pdts_h_:
     weight: 52
     label: above
@@ -594,7 +593,7 @@ content:
     type: number_integer
     region: content
   field_categorie_:
-    weight: 14
+    weight: 24
     label: above
     settings:
       link_to_entity: false
@@ -633,7 +632,7 @@ content:
     region: content
   field_concurrent_sur_cette_oppor:
     type: entity_reference_revisions_entity_view
-    weight: 22
+    weight: 208
     region: content
     label: above
     settings:
@@ -658,8 +657,8 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-  field_controle_de_conformite:
-    weight: 20
+  field_controle_de_conformite_sui:
+    weight: 23
     label: above
     settings:
       format: default
@@ -687,8 +686,8 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_demande_certification_ext:
-    weight: 24
+  field_demande_certification_e:
+    weight: 26
     label: above
     settings:
       format: default
@@ -698,7 +697,7 @@ content:
     type: boolean
     region: content
   field_demande_de_cem_electromagn:
-    weight: 23
+    weight: 25
     label: above
     settings:
       format: default
@@ -718,7 +717,7 @@ content:
     type: boolean
     region: content
   field_demande_de_fat_suivant_spe:
-    weight: 21
+    weight: 24
     label: above
     settings:
       format: default
@@ -790,6 +789,13 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
+  field_environnement_concurentiel:
+    weight: 213
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
   field_espace_disponible_au_sol_m:
     weight: 56
     label: above
@@ -802,22 +808,21 @@ content:
     type: number_decimal
     region: content
   field_fax:
-    weight: 12
+    weight: 22
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_fournisseur_s_actuel_s_:
-    type: entity_reference_revisions_entity_view
-    weight: 23
-    region: content
+  field_fournisseur_actuel_:
+    weight: 209
     label: above
     settings:
-      view_mode: default
-      link: ''
+      link_to_entity: false
     third_party_settings: {  }
+    type: string
+    region: content
   field_hauteur_de_convoyeur_mm_:
     weight: 55
     label: above
@@ -826,6 +831,14 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
+    region: content
+  field_implantations_des_sites_en:
+    weight: 212
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_impression:
     type: entity_reference_revisions_entity_view
@@ -844,6 +857,21 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
+  field_infos_com_besoin:
+    weight: 206
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_infos_com_besoin_rema:
+    weight: 207
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_installation_chez_le_clien:
     weight: 25
@@ -892,7 +920,7 @@ content:
     type: list_default
     weight: 76
     region: content
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
   field_nombre_de_jours:
@@ -912,6 +940,13 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
+    region: content
+  field_nombre_et_type_potentiel_d:
+    weight: 210
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
     region: content
   field_nouveau_client:
     weight: 18
@@ -971,9 +1006,16 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
+  field_remarques_demande_devis:
+    weight: 26
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
   field_secteur:
     type: list_default
-    weight: 15
+    weight: 25
     region: content
     label: above
     settings: {  }
@@ -989,7 +1031,15 @@ content:
     type: boolean
     region: content
   field_sieret:
-    weight: 19
+    weight: 27
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_site_de_production:
+    weight: 211
     label: above
     settings:
       link_to_entity: false
@@ -1005,7 +1055,7 @@ content:
     type: string
     region: content
   field_sous_secteur:
-    weight: 16
+    weight: 26
     label: above
     settings:
       link_to_entity: false
@@ -1083,6 +1133,8 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_word_docx: true
   field_asservissement: true
+  field_besoin: true
+  field_fournisseur_s_actuel_s_: true
   field_nom_client: true
   field_objet: true
   field_type_client_test: true

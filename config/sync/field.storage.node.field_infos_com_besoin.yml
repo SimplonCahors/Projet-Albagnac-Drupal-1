@@ -1,0 +1,27 @@
+uuid: 55b69a05-6151-4f8a-9cdb-a63d9cf9ceb5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_infos_com_besoin
+field_name: field_infos_com_besoin
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Nouvel équipement'
+      label: 'Nouvel équipement'
+    -
+      value: 'Remplacement matériel existant'
+      label: 'Remplacement matériel existant'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,11 +1,11 @@
-uuid: 417840a9-a5f6-4cc7-b329-4db1784379a4
+uuid: a9678fce-6f50-4792-b144-cbde7bc2029c
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-id: node.field_controle_de_conformite
-field_name: field_controle_de_conformite
+id: node.field_controle_de_conformite_sui
+field_name: field_controle_de_conformite_sui
 entity_type: node
 type: boolean
 settings: {  }

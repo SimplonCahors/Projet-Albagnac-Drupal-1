@@ -1,0 +1,19 @@
+uuid: eaa69119-07f2-4555-9d61-c0205a24ce77
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_remarques_demande_devis
+    - node.type.dso
+id: node.dso.field_remarques_demande_devis
+field_name: field_remarques_demande_devis
+entity_type: node
+bundle: dso
+label: Remarques
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
