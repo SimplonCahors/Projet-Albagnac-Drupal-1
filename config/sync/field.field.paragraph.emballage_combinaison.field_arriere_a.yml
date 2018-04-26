@@ -1,0 +1,19 @@
+uuid: 1b38d32a-9ff2-48d0-b32d-309099dfd552
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_arriere_a
+    - paragraphs.paragraphs_type.emballage_combinaison
+id: paragraph.emballage_combinaison.field_arriere_a
+field_name: field_arriere_a
+entity_type: paragraph
+bundle: emballage_combinaison
+label: 'Arrière (Ar)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

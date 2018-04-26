@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.dso.field_autre_milieu
     - field.field.node.dso.field_autre_nom_commercial
     - field.field.node.dso.field_autre_transfert_aval
+    - field.field.node.dso.field_autre_type
     - field.field.node.dso.field_besoin
     - field.field.node.dso.field_cadence_souhaitee_pdts_h_
     - field.field.node.dso.field_categorie_
@@ -83,18 +84,356 @@ dependencies:
     - datetime
     - entity_print
     - entity_reference_revisions
+    - field_group
     - options
     - user
 third_party_settings:
   entity_print:
     pdf_label: 'Télécharger en PDF'
+  field_group:
+    group_tabs_dso:
+      children:
+        - group_informations_du_devis
+        - group_informations_administrativ
+        - group_contact_commercial
+        - group_contact_technique
+        - group_informations_commerciales
+        - group_emballage_et_etiquettes
+        - group_environnement_machine
+        - group_materiels_imposes_impressi
+        - group_remarques_contraintes_even
+      parent_name: group_demande_de_devis
+      weight: 20
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: tabs_dso
+    group_demande_de_devis:
+      children:
+        - group_tabs_dso
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        label: 'Demande de Devis'
+        id: ''
+        classes: ''
+        open: false
+      label: 'Demande de Devis'
+    group_informations_du_devis:
+      children:
+        - field_no
+        - field_autre_nom_commercial
+        - field_2_date_creation_fiche_
+        - field_3_date_premiere_c
+        - field_4_reponse_souhaitee
+        - field_5_date_envoie_offre
+        - field_6_date_livraison_souhaite
+      parent_name: group_tabs_dso
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'Informations du devis'
+    group_informations_administrativ:
+      children:
+        - field_7_nom_client
+        - field_8_adresse_postale
+        - field_9_telephone
+        - field_fax
+        - field_11_pays
+        - field_categorie_
+        - field_secteur
+        - field_sous_secteur
+        - field_type_client
+        - field_sieret
+      parent_name: group_tabs_dso
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'Informations administratives du demandeur'
+    group_contact_commercial:
+      children:
+        - field_contact_commercial
+      parent_name: group_tabs_dso
+      weight: 22
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'Contact commercial'
+    group_contact_technique:
+      children:
+        - field_contact_technique
+      parent_name: group_tabs_dso
+      weight: 23
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'Contact technique'
+    group_informations_commerciales:
+      children:
+        - field_besoin
+        - field_concurrent_sur_cette_oppor
+        - field_fournisseur_s_actuel_s_
+      parent_name: group_tabs_dso
+      weight: 24
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'Informations commerciales'
+    group_emballage_et_etiquettes:
+      children:
+        - field_emballages_etiquettes
+      parent_name: group_tabs_dso
+      weight: 25
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'Emballage et étiquettes'
+    group_environnement_machine:
+      children:
+        - field_type_de_machine_amont
+        - field_type_de_machine_aval
+        - field_type_de_convoyage_amont
+        - field_type_de_convoyage_aval
+        - field_transfert_amont
+        - field_autre
+        - field_transfert_aval
+        - field_autre_transfert_aval
+        - field_arrivee_produits_amont
+        - field_autre_arrivee_produits
+        - field_sortie_produits_aval
+        - field_sens_de_la_machine
+        - field_cadence_souhaitee_pdts_h_
+        - field_milieu
+        - field_autre_milieu
+        - field_hauteur_de_convoyeur_mm_
+        - field_espace_disponible_au_sol_m
+        - field_temperature_local_travail
+        - group_asservissement
+        - group_energies_disponibles
+        - group_mode_de_controle_demande_p
+        - group_installation_et_mise_en_ro
+        - group_formation
+        - group_information
+        - group_transport
+      parent_name: group_tabs_dso
+      weight: 26
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'Environnement Machine'
+    group_asservissement:
+      children:
+        - field_communication_machine_amon
+        - field_communication_machine_aval
+        - field_coupure_sur_bourrage
+        - field_descriptif_asservissement
+      parent_name: group_environnement_machine
+      weight: 58
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: Asservissement
+    group_energies_disponibles:
+      children:
+        - field_energies
+      parent_name: group_environnement_machine
+      weight: 59
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'Énergies disponibles'
+    group_mode_de_controle_demande_p:
+      children:
+        - field_controle_de_conformite
+        - field_demande_de_fat_suivant_spe
+        - field_date_desiree_controle
+        - field_demande_de_cem_electromagn
+        - field_demande_certification_ext
+      parent_name: group_environnement_machine
+      weight: 60
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'Mode de contrôle demandé par le client'
+    group_installation_et_mise_en_ro:
+      children:
+        - field_installation_chez_le_clien
+        - field_plan_de_prevention_pour_in
+        - field_mise_en_route_de_la_machin
+        - field_demande_de_certification_e
+      parent_name: group_environnement_machine
+      weight: 61
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'Installation et mise en route'
+    group_formation:
+      children:
+        - field_sur_machine
+        - field_en_salle
+        - field_nombre_de_jours
+        - field_nombre_de_personnes
+      parent_name: group_environnement_machine
+      weight: 62
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: Formation
+    group_information:
+      children:
+        - field_papier
+        - field_quantite
+        - field_cd
+        - field_numerique
+        - field_langue
+      parent_name: group_environnement_machine
+      weight: 63
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: Information
+    group_transport:
+      children:
+        - field_a_la_charge_de_
+      parent_name: group_environnement_machine
+      weight: 64
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: Transport
+    group_materiels_imposes_impressi:
+      children:
+        - field_materiels_imposes
+        - group_impression
+      parent_name: group_tabs_dso
+      weight: 27
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'Matériels Imposés, Impression'
+    group_impression:
+      children:
+        - field_impression_etiquette
+        - field_impression
+      parent_name: group_materiels_imposes_impressi
+      weight: 15
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: Impression
+    group_remarques_contraintes_even:
+      children:
+        - field_remarques_contraintes
+      parent_name: group_tabs_dso
+      weight: 28
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'Remarques / contraintes éventuelles'
+    group_emballage:
+      children:
+        - field_des
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: Emballage
+    group_etiquettes:
+      children:
+        - field_description_etiquette
+      parent_name: ''
+      weight: 4
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: Etiquettes
+    group_combinais:
+      children:
+        - field_emballage
+      parent_name: ''
+      weight: 6
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: Combinaison
 id: node.dso.default
 targetEntityType: node
 bundle: dso
 mode: default
 content:
+  entity_print_view_pdf:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_11_pays:
-    weight: 124
+    weight: 13
     label: above
     settings:
       link_to_entity: false
@@ -102,7 +441,7 @@ content:
     type: string
     region: content
   field_2_date_creation_fiche_:
-    weight: 114
+    weight: 78
     label: above
     settings:
       format_type: medium
@@ -111,7 +450,7 @@ content:
     type: datetime_default
     region: content
   field_3_date_premiere_c:
-    weight: 115
+    weight: 79
     label: above
     settings:
       format_type: medium
@@ -120,7 +459,7 @@ content:
     type: datetime_default
     region: content
   field_4_reponse_souhaitee:
-    weight: 118
+    weight: 80
     label: above
     settings:
       format_type: medium
@@ -129,7 +468,7 @@ content:
     type: datetime_default
     region: content
   field_5_date_envoie_offre:
-    weight: 117
+    weight: 81
     label: above
     settings:
       format_type: medium
@@ -138,7 +477,7 @@ content:
     type: datetime_default
     region: content
   field_6_date_livraison_souhaite:
-    weight: 119
+    weight: 82
     label: above
     settings:
       format_type: medium
@@ -147,7 +486,7 @@ content:
     type: datetime_default
     region: content
   field_7_nom_client:
-    weight: 120
+    weight: 9
     label: above
     settings:
       link_to_entity: false
@@ -155,7 +494,7 @@ content:
     type: string
     region: content
   field_8_adresse_postale:
-    weight: 121
+    weight: 10
     label: above
     settings:
       link_to_entity: false
@@ -163,7 +502,7 @@ content:
     type: string
     region: content
   field_9_telephone:
-    weight: 122
+    weight: 11
     label: above
     settings:
       link_to_entity: false
@@ -171,7 +510,7 @@ content:
     type: string
     region: content
   field_a_la_charge_de_:
-    weight: 172
+    weight: 38
     label: above
     settings:
       format: default
@@ -181,23 +520,14 @@ content:
     type: boolean
     region: content
   field_arrivee_produits_amont:
-    weight: 182
+    weight: 48
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
-  field_asservissement:
-    type: entity_reference_revisions_entity_view
-    weight: 145
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: content
   field_autre:
-    weight: 179
+    weight: 45
     label: above
     settings:
       link_to_entity: false
@@ -205,7 +535,7 @@ content:
     type: string
     region: content
   field_autre_arrivee_produits:
-    weight: 183
+    weight: 49
     label: above
     settings:
       link_to_entity: false
@@ -213,7 +543,7 @@ content:
     type: string
     region: content
   field_autre_milieu:
-    weight: 188
+    weight: 54
     label: above
     settings:
       link_to_entity: false
@@ -221,7 +551,7 @@ content:
     type: string
     region: content
   field_autre_nom_commercial:
-    weight: 197
+    weight: 77
     label: above
     settings:
       link_to_entity: false
@@ -229,15 +559,32 @@ content:
     type: string
     region: content
   field_autre_transfert_aval:
-    weight: 181
+    weight: 47
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
+  field_autre_type:
+    weight: 201
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_besoin:
+    type: entity_reference_revisions_entity_view
+    weight: 21
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
   field_cadence_souhaitee_pdts_h_:
-    weight: 186
+    weight: 52
     label: above
     settings:
       thousand_separator: ''
@@ -246,7 +593,7 @@ content:
     type: number_integer
     region: content
   field_categorie_:
-    weight: 125
+    weight: 14
     label: above
     settings:
       link_to_entity: false
@@ -254,7 +601,7 @@ content:
     type: string
     region: content
   field_cd:
-    weight: 169
+    weight: 35
     label: above
     settings:
       format: default
@@ -264,7 +611,7 @@ content:
     type: boolean
     region: content
   field_communication_machine_amon:
-    weight: 193
+    weight: 58
     label: above
     settings:
       format: default
@@ -274,7 +621,7 @@ content:
     type: boolean
     region: content
   field_communication_machine_aval:
-    weight: 194
+    weight: 59
     label: above
     settings:
       format: default
@@ -283,8 +630,35 @@ content:
     third_party_settings: {  }
     type: boolean
     region: content
+  field_concurrent_sur_cette_oppor:
+    type: entity_reference_revisions_entity_view
+    weight: 22
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_contact_commercial:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_contact_technique:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
   field_controle_de_conformite:
-    weight: 154
+    weight: 20
     label: above
     settings:
       format: default
@@ -294,7 +668,7 @@ content:
     type: boolean
     region: content
   field_coupure_sur_bourrage:
-    weight: 195
+    weight: 60
     label: above
     settings:
       format: default
@@ -304,7 +678,7 @@ content:
     type: boolean
     region: content
   field_date_desiree_controle:
-    weight: 158
+    weight: 22
     label: above
     settings:
       format_type: medium
@@ -313,7 +687,7 @@ content:
     type: datetime_default
     region: content
   field_demande_certification_ext:
-    weight: 156
+    weight: 24
     label: above
     settings:
       format: default
@@ -323,7 +697,7 @@ content:
     type: boolean
     region: content
   field_demande_de_cem_electromagn:
-    weight: 155
+    weight: 23
     label: above
     settings:
       format: default
@@ -333,7 +707,7 @@ content:
     type: boolean
     region: content
   field_demande_de_certification_e:
-    weight: 162
+    weight: 28
     label: above
     settings:
       format: default
@@ -343,7 +717,7 @@ content:
     type: boolean
     region: content
   field_demande_de_fat_suivant_spe:
-    weight: 157
+    weight: 21
     label: above
     settings:
       format: default
@@ -354,7 +728,7 @@ content:
     region: content
   field_des:
     type: entity_reference_revisions_entity_view
-    weight: 173
+    weight: 3
     label: above
     settings:
       view_mode: default
@@ -362,7 +736,7 @@ content:
     third_party_settings: {  }
     region: content
   field_descriptif_asservissement:
-    weight: 196
+    weight: 61
     label: above
     settings:
       link_to_entity: false
@@ -371,7 +745,7 @@ content:
     region: content
   field_description_etiquette:
     type: entity_reference_revisions_entity_view
-    weight: 198
+    weight: 5
     label: above
     settings:
       view_mode: default
@@ -380,7 +754,7 @@ content:
     region: content
   field_emballage:
     type: entity_reference_revisions_entity_view
-    weight: 200
+    weight: 7
     label: above
     settings:
       view_mode: default
@@ -389,7 +763,7 @@ content:
     region: content
   field_emballages_etiquettes:
     type: entity_reference_revisions_entity_view
-    weight: 147
+    weight: 13
     label: above
     settings:
       view_mode: default
@@ -397,7 +771,7 @@ content:
     third_party_settings: {  }
     region: content
   field_en_salle:
-    weight: 164
+    weight: 30
     label: above
     settings:
       format: default
@@ -408,7 +782,7 @@ content:
     region: content
   field_energies:
     type: entity_reference_revisions_entity_view
-    weight: 153
+    weight: 19
     label: above
     settings:
       view_mode: default
@@ -416,7 +790,7 @@ content:
     third_party_settings: {  }
     region: content
   field_espace_disponible_au_sol_m:
-    weight: 192
+    weight: 56
     label: above
     settings:
       thousand_separator: ''
@@ -427,15 +801,24 @@ content:
     type: number_decimal
     region: content
   field_fax:
-    weight: 129
+    weight: 12
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
+  field_fournisseur_s_actuel_s_:
+    type: entity_reference_revisions_entity_view
+    weight: 23
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
   field_hauteur_de_convoyeur_mm_:
-    weight: 189
+    weight: 55
     label: above
     settings:
       thousand_separator: ''
@@ -445,7 +828,7 @@ content:
     region: content
   field_impression:
     type: entity_reference_revisions_entity_view
-    weight: 149
+    weight: 17
     label: above
     settings:
       view_mode: default
@@ -454,7 +837,7 @@ content:
     region: content
   field_impression_etiquette:
     type: entity_reference_revisions_entity_view
-    weight: 150
+    weight: 16
     label: above
     settings:
       view_mode: default
@@ -462,7 +845,7 @@ content:
     third_party_settings: {  }
     region: content
   field_installation_chez_le_clien:
-    weight: 159
+    weight: 25
     label: above
     settings:
       format: default
@@ -472,7 +855,7 @@ content:
     type: boolean
     region: content
   field_langue:
-    weight: 171
+    weight: 37
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -480,7 +863,7 @@ content:
     region: content
   field_materiels_imposes:
     type: entity_reference_revisions_entity_view
-    weight: 148
+    weight: 14
     label: above
     settings:
       view_mode: default
@@ -488,14 +871,14 @@ content:
     third_party_settings: {  }
     region: content
   field_milieu:
-    weight: 187
+    weight: 53
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_mise_en_route_de_la_machin:
-    weight: 161
+    weight: 27
     label: above
     settings:
       format: default
@@ -504,16 +887,15 @@ content:
     third_party_settings: {  }
     type: boolean
     region: content
-  field_nom_client:
-    weight: 103
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
+  field_no:
+    type: list_default
+    weight: 76
     region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_nombre_de_jours:
-    weight: 165
+    weight: 31
     label: above
     settings:
       thousand_separator: ''
@@ -522,7 +904,7 @@ content:
     type: number_integer
     region: content
   field_nombre_de_personnes:
-    weight: 166
+    weight: 32
     label: above
     settings:
       thousand_separator: ''
@@ -531,7 +913,7 @@ content:
     type: number_integer
     region: content
   field_numerique:
-    weight: 170
+    weight: 36
     label: above
     settings:
       format: default
@@ -540,16 +922,8 @@ content:
     third_party_settings: {  }
     type: boolean
     region: content
-  field_objet:
-    weight: 152
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_papier:
-    weight: 167
+    weight: 33
     label: above
     settings:
       format: default
@@ -559,7 +933,7 @@ content:
     type: boolean
     region: content
   field_plan_de_prevention_pour_in:
-    weight: 160
+    weight: 26
     label: above
     settings:
       format: default
@@ -569,7 +943,7 @@ content:
     type: boolean
     region: content
   field_quantite:
-    weight: 168
+    weight: 34
     label: above
     settings:
       thousand_separator: ''
@@ -579,15 +953,22 @@ content:
     region: content
   field_remarques_contraintes:
     type: entity_reference_revisions_entity_view
-    weight: 151
+    weight: 17
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     region: content
+  field_secteur:
+    type: list_default
+    weight: 15
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_sens_de_la_machine:
-    weight: 185
+    weight: 51
     label: above
     settings:
       format: default
@@ -597,7 +978,7 @@ content:
     type: boolean
     region: content
   field_sieret:
-    weight: 131
+    weight: 18
     label: above
     settings:
       link_to_entity: false
@@ -605,7 +986,7 @@ content:
     type: string
     region: content
   field_sortie_produits_aval:
-    weight: 184
+    weight: 50
     label: above
     settings:
       link_to_entity: false
@@ -613,7 +994,7 @@ content:
     type: string
     region: content
   field_sous_secteur:
-    weight: 128
+    weight: 16
     label: above
     settings:
       link_to_entity: false
@@ -621,7 +1002,7 @@ content:
     type: string
     region: content
   field_sur_machine:
-    weight: 163
+    weight: 29
     label: above
     settings:
       format: default
@@ -631,7 +1012,7 @@ content:
     type: boolean
     region: content
   field_temperature_local_travail:
-    weight: 191
+    weight: 57
     label: above
     settings:
       thousand_separator: ''
@@ -642,28 +1023,28 @@ content:
     type: number_decimal
     region: content
   field_transfert_amont:
-    weight: 178
+    weight: 44
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_transfert_aval:
-    weight: 180
+    weight: 46
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_type_client:
-    weight: 146
+    weight: 17
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_type_de_convoyage_amont:
-    weight: 176
+    weight: 42
     label: above
     settings:
       link_to_entity: false
@@ -671,7 +1052,7 @@ content:
     type: string
     region: content
   field_type_de_convoyage_aval:
-    weight: 177
+    weight: 43
     label: above
     settings:
       link_to_entity: false
@@ -679,7 +1060,7 @@ content:
     type: string
     region: content
   field_type_de_machine_amont:
-    weight: 174
+    weight: 40
     label: above
     settings:
       link_to_entity: false
@@ -687,28 +1068,19 @@ content:
     type: string
     region: content
   field_type_de_machine_aval:
-    weight: 175
+    weight: 41
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  links:
-    weight: 100
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   entity_print_view_epub: true
-  entity_print_view_pdf: true
   entity_print_view_word_docx: true
-  field_besoin: true
-  field_concurrent_sur_cette_oppor: true
-  field_contact_commercial: true
-  field_contact_technique: true
-  field_fournisseur_s_actuel_s_: true
-  field_no: true
-  field_secteur: true
+  field_asservissement: true
+  field_nom_client: true
+  field_objet: true
   field_type_client_test: true
   langcode: true
+  links: true

@@ -1,0 +1,21 @@
+uuid: 1f015b27-879f-4318-bb26-d542944f4cfe
+langcode: fr
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_cote_gauche_cg_
+field_name: field_cote_gauche_cg_
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

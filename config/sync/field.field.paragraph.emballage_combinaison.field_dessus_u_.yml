@@ -1,0 +1,19 @@
+uuid: e70a2ece-15ba-45f5-b22f-c78a41cc600b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_dessus_u_
+    - paragraphs.paragraphs_type.emballage_combinaison
+id: paragraph.emballage_combinaison.field_dessus_u_
+field_name: field_dessus_u_
+entity_type: paragraph
+bundle: emballage_combinaison
+label: 'DessUs (U)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

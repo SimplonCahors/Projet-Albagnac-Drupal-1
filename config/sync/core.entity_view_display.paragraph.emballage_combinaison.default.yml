@@ -3,6 +3,13 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.paragraph.emballage_combinaison.field_arriere_a
+    - field.field.paragraph.emballage_combinaison.field_avant_av_
+    - field.field.paragraph.emballage_combinaison.field_cote_droit_cd_
+    - field.field.paragraph.emballage_combinaison.field_cote_gauche_cg_
+    - field.field.paragraph.emballage_combinaison.field_cylindrique_cy_
+    - field.field.paragraph.emballage_combinaison.field_dessous_o_
+    - field.field.paragraph.emballage_combinaison.field_dessus_u_
     - field.field.paragraph.emballage_combinaison.field_details_pdts_h
     - field.field.paragraph.emballage_combinaison.field_photo_combinaison
     - field.field.paragraph.emballage_combinaison.field_type_combinaison
@@ -15,6 +22,62 @@ targetEntityType: paragraph
 bundle: emballage_combinaison
 mode: default
 content:
+  field_arriere_a:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_avant_av_:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cote_droit_cd_:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cote_gauche_cg_:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cylindrique_cy_:
+    weight: 9
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dessous_o_:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dessus_u_:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_details_pdts_h:
     weight: 2
     label: above
