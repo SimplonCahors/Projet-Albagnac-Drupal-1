@@ -1,0 +1,19 @@
+uuid: 53a0a138-b2fa-486c-9dda-4c7bf335c364
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_site_de_production
+    - node.type.dso
+id: node.dso.field_site_de_production
+field_name: field_site_de_production
+entity_type: node
+bundle: dso
+label: 'Site de production'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

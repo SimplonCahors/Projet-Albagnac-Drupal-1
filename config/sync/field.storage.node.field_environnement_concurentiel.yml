@@ -1,14 +1,15 @@
-uuid: 664d1610-84e9-4d88-a921-9350f8e1d902
+uuid: ad24d436-15ea-4ded-9091-3bf671ca1dc4
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-id: node.field_demande_de_cem_electromagn
-field_name: field_demande_de_cem_electromagn
+id: node.field_environnement_concurentiel
+field_name: field_environnement_concurentiel
 entity_type: node
-type: boolean
-settings: {  }
+type: string_long
+settings:
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1

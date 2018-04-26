@@ -1,4 +1,4 @@
-uuid: aa7f9c95-0eb8-4604-a37a-087e6b92ecde
+uuid: ed89cea9-d702-448a-b582-01e81565165c
 langcode: fr
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: node.dso.field_demande_de_cem_electromagn
 field_name: field_demande_de_cem_electromagn
 entity_type: node
 bundle: dso
-label: 'Demande de CEM (électromagnétisme)'
+label: 'Demande de CEM (Electromagnétisme)'
 description: ''
 required: false
 translatable: false
@@ -18,6 +18,6 @@ default_value:
     value: 0
 default_value_callback: ''
 settings:
-  on_label: OUI
-  off_label: NON
+  on_label: Oui
+  off_label: Non
 field_type: boolean

@@ -1,0 +1,21 @@
+uuid: d1cfe98b-677a-4a2e-a7aa-ee5e95ff646b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_infos_com_besoin
+    - node.type.dso
+  module:
+    - options
+id: node.dso.field_infos_com_besoin
+field_name: field_infos_com_besoin
+entity_type: node
+bundle: dso
+label: Besoin
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

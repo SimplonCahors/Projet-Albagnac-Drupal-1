@@ -31,10 +31,10 @@ dependencies:
     - field.field.node.dso.field_concurrent_sur_cette_oppor
     - field.field.node.dso.field_contact_commercial
     - field.field.node.dso.field_contact_technique
-    - field.field.node.dso.field_controle_de_conformite
+    - field.field.node.dso.field_controle_de_conformite_sui
     - field.field.node.dso.field_coupure_bourrage
     - field.field.node.dso.field_date_desiree_controle
-    - field.field.node.dso.field_demande_certification_ext
+    - field.field.node.dso.field_demande_certification_e
     - field.field.node.dso.field_demande_de_cem_electromagn
     - field.field.node.dso.field_demande_de_certification_e
     - field.field.node.dso.field_demande_de_fat_suivant_spe
@@ -727,38 +727,14 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
-  field_controle_de_conformite:
-    weight: 21
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_date_desiree_controle:
     weight: 23
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_demande_certification_ext:
-    weight: 25
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
-  field_demande_de_cem_electromagn:
-    weight: 24
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_demande_de_certification_e:
     weight: 75
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
-  field_demande_de_fat_suivant_spe:
-    weight: 22
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -1113,7 +1089,11 @@ hidden:
   field_autre_type: true
   field_com_avec_machine_am: true
   field_com_avec_machine_av: true
+  field_controle_de_conformite_sui: true
   field_coupure_bourrage: true
+  field_demande_certification_e: true
+  field_demande_de_cem_electromagn: true
+  field_demande_de_fat_suivant_spe: true
   field_emballage: true
   field_liz_test: true
   field_nom_client: true
