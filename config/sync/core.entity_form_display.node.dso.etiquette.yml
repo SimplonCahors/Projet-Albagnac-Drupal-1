@@ -21,17 +21,18 @@ dependencies:
     - field.field.node.dso.field_autre_milieu
     - field.field.node.dso.field_autre_nom_commercial
     - field.field.node.dso.field_autre_transfert_aval
+    - field.field.node.dso.field_autre_type
     - field.field.node.dso.field_besoin
     - field.field.node.dso.field_cadence_souhaitee_pdts_h_
     - field.field.node.dso.field_categorie_
     - field.field.node.dso.field_cd
-    - field.field.node.dso.field_communication_machine_amon
-    - field.field.node.dso.field_communication_machine_aval
+    - field.field.node.dso.field_com_avec_machine_am
+    - field.field.node.dso.field_com_avec_machine_av
     - field.field.node.dso.field_concurrent_sur_cette_oppor
     - field.field.node.dso.field_contact_commercial
     - field.field.node.dso.field_contact_technique
     - field.field.node.dso.field_controle_de_conformite
-    - field.field.node.dso.field_coupure_sur_bourrage
+    - field.field.node.dso.field_coupure_bourrage
     - field.field.node.dso.field_date_desiree_controle
     - field.field.node.dso.field_demande_certification_ext
     - field.field.node.dso.field_demande_de_cem_electromagn
@@ -40,6 +41,7 @@ dependencies:
     - field.field.node.dso.field_des
     - field.field.node.dso.field_descriptif_asservissement
     - field.field.node.dso.field_description_etiquette
+    - field.field.node.dso.field_emballage
     - field.field.node.dso.field_emballages_etiquettes
     - field.field.node.dso.field_en_salle
     - field.field.node.dso.field_energies
@@ -58,6 +60,7 @@ dependencies:
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nombre_de_jours
     - field.field.node.dso.field_nombre_de_personnes
+    - field.field.node.dso.field_nouveau_client
     - field.field.node.dso.field_numerique
     - field.field.node.dso.field_objet
     - field.field.node.dso.field_papier
@@ -73,7 +76,6 @@ dependencies:
     - field.field.node.dso.field_temperature_local_travail
     - field.field.node.dso.field_transfert_amont
     - field.field.node.dso.field_transfert_aval
-    - field.field.node.dso.field_type_client
     - field.field.node.dso.field_type_de_convoyage_amont
     - field.field.node.dso.field_type_de_convoyage_aval
     - field.field.node.dso.field_type_de_machine_amont
@@ -689,18 +691,6 @@ content:
     third_party_settings: {  }
     type: options_buttons
     region: content
-  field_communication_machine_amon:
-    weight: 112
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
-  field_communication_machine_aval:
-    weight: 113
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_concurrent_sur_cette_oppor:
     type: entity_reference_paragraphs
     weight: 25
@@ -739,12 +729,6 @@ content:
     third_party_settings: {  }
   field_controle_de_conformite:
     weight: 21
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
-  field_coupure_sur_bourrage:
-    weight: 114
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -1068,12 +1052,6 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  field_type_client:
-    weight: 44
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_type_de_convoyage_amont:
     weight: 88
     settings:
@@ -1132,9 +1110,14 @@ content:
     third_party_settings: {  }
 hidden:
   field_asservissement: true
+  field_autre_type: true
+  field_com_avec_machine_am: true
+  field_com_avec_machine_av: true
+  field_coupure_bourrage: true
   field_emballage: true
   field_liz_test: true
   field_nom_client: true
+  field_nouveau_client: true
   field_objet: true
   field_type_client_test: true
   langcode: true

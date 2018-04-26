@@ -25,13 +25,13 @@ dependencies:
     - field.field.node.dso.field_cadence_souhaitee_pdts_h_
     - field.field.node.dso.field_categorie_
     - field.field.node.dso.field_cd
-    - field.field.node.dso.field_communication_machine_amon
-    - field.field.node.dso.field_communication_machine_aval
+    - field.field.node.dso.field_com_avec_machine_am
+    - field.field.node.dso.field_com_avec_machine_av
     - field.field.node.dso.field_concurrent_sur_cette_oppor
     - field.field.node.dso.field_contact_commercial
     - field.field.node.dso.field_contact_technique
     - field.field.node.dso.field_controle_de_conformite
-    - field.field.node.dso.field_coupure_sur_bourrage
+    - field.field.node.dso.field_coupure_bourrage
     - field.field.node.dso.field_date_desiree_controle
     - field.field.node.dso.field_demande_certification_ext
     - field.field.node.dso.field_demande_de_cem_electromagn
@@ -59,6 +59,7 @@ dependencies:
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nombre_de_jours
     - field.field.node.dso.field_nombre_de_personnes
+    - field.field.node.dso.field_nouveau_client
     - field.field.node.dso.field_numerique
     - field.field.node.dso.field_objet
     - field.field.node.dso.field_papier
@@ -74,7 +75,6 @@ dependencies:
     - field.field.node.dso.field_temperature_local_travail
     - field.field.node.dso.field_transfert_amont
     - field.field.node.dso.field_transfert_aval
-    - field.field.node.dso.field_type_client
     - field.field.node.dso.field_type_de_convoyage_amont
     - field.field.node.dso.field_type_de_convoyage_aval
     - field.field.node.dso.field_type_de_machine_amont
@@ -110,7 +110,7 @@ third_party_settings:
       format_type: tabs
       format_settings:
         label: tabs_dso
-        direction: horizontal
+        direction: vertical
         id: ''
         classes: ''
       label: tabs_dso
@@ -163,7 +163,7 @@ third_party_settings:
         - field_categorie_
         - field_secteur
         - field_sous_secteur
-        - field_type_client
+        - field_nouveau_client
         - field_sieret
         - group_contact_commercial
         - group_contact_technique
@@ -429,9 +429,9 @@ third_party_settings:
       label: 'Mode de contrôle demandé par le client'
     group_asservissement:
       children:
-        - field_communication_machine_amon
-        - field_communication_machine_aval
-        - field_coupure_sur_bourrage
+        - field_com_avec_machine_am
+        - field_com_avec_machine_av
+        - field_coupure_bourrage
         - field_descriptif_asservissement
       parent_name: group_environnement_machine
       weight: 104
@@ -487,7 +487,7 @@ content:
     type: datetime_default
     region: content
   field_6_date_livraison_souhaite:
-    weight: 20
+    weight: 21
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
@@ -659,7 +659,7 @@ content:
     type: string_textfield
     region: content
   field_autre_type:
-    weight: 119
+    weight: 5
     settings:
       size: 60
       placeholder: ''
@@ -699,17 +699,19 @@ content:
     third_party_settings: {  }
     type: options_buttons
     region: content
-  field_communication_machine_amon:
-    weight: 112
-    settings: {  }
+  field_com_avec_machine_am:
+    weight: 120
+    settings:
+      display_label: true
     third_party_settings: {  }
-    type: options_buttons
+    type: boolean_checkbox
     region: content
-  field_communication_machine_aval:
-    weight: 113
-    settings: {  }
+  field_com_avec_machine_av:
+    weight: 121
+    settings:
+      display_label: true
     third_party_settings: {  }
-    type: options_buttons
+    type: boolean_checkbox
     region: content
   field_concurrent_sur_cette_oppor:
     type: entity_reference_paragraphs
@@ -753,11 +755,12 @@ content:
     third_party_settings: {  }
     type: options_buttons
     region: content
-  field_coupure_sur_bourrage:
-    weight: 114
-    settings: {  }
+  field_coupure_bourrage:
+    weight: 122
+    settings:
+      display_label: true
     third_party_settings: {  }
-    type: options_buttons
+    type: boolean_checkbox
     region: content
   field_date_desiree_controle:
     weight: 23
@@ -802,7 +805,7 @@ content:
     third_party_settings: {  }
     region: content
   field_descriptif_asservissement:
-    weight: 115
+    weight: 123
     settings:
       size: 60
       placeholder: ''
@@ -985,6 +988,13 @@ content:
     third_party_settings: {  }
     type: number
     region: content
+  field_nouveau_client:
+    weight: 44
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_numerique:
     weight: 83
     settings: {  }
@@ -1024,7 +1034,7 @@ content:
     region: content
   field_secteur:
     type: options_select
-    weight: 42
+    weight: 41
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -1051,7 +1061,7 @@ content:
     type: string_textfield
     region: content
   field_sous_secteur:
-    weight: 43
+    weight: 42
     settings:
       size: 60
       placeholder: ''
@@ -1089,12 +1099,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: content
-  field_type_client:
-    weight: 44
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
     region: content
   field_type_de_convoyage_amont:
     weight: 88

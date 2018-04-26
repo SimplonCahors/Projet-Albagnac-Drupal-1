@@ -1,11 +1,11 @@
-uuid: 79b3ce66-614b-40e7-895f-065ca940c962
+uuid: 4ea7d14f-7325-4963-8c56-5db641f6fe12
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-id: node.field_coupure_sur_bourrage
-field_name: field_coupure_sur_bourrage
+id: node.field_com_avec_machine_av
+field_name: field_com_avec_machine_av
 entity_type: node
 type: boolean
 settings: {  }

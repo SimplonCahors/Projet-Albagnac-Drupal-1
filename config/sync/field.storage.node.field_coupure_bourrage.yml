@@ -1,11 +1,11 @@
-uuid: 5efacdbe-94b8-4f0f-9184-c8140271416f
+uuid: 65e8a80f-fe5b-4b4f-95fe-6efb8a57c8cc
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-id: node.field_communication_machine_aval
-field_name: field_communication_machine_aval
+id: node.field_coupure_bourrage
+field_name: field_coupure_bourrage
 entity_type: node
 type: boolean
 settings: {  }

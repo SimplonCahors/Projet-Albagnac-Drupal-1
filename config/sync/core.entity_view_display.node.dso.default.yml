@@ -25,13 +25,13 @@ dependencies:
     - field.field.node.dso.field_cadence_souhaitee_pdts_h_
     - field.field.node.dso.field_categorie_
     - field.field.node.dso.field_cd
-    - field.field.node.dso.field_communication_machine_amon
-    - field.field.node.dso.field_communication_machine_aval
+    - field.field.node.dso.field_com_avec_machine_am
+    - field.field.node.dso.field_com_avec_machine_av
     - field.field.node.dso.field_concurrent_sur_cette_oppor
     - field.field.node.dso.field_contact_commercial
     - field.field.node.dso.field_contact_technique
     - field.field.node.dso.field_controle_de_conformite
-    - field.field.node.dso.field_coupure_sur_bourrage
+    - field.field.node.dso.field_coupure_bourrage
     - field.field.node.dso.field_date_desiree_controle
     - field.field.node.dso.field_demande_certification_ext
     - field.field.node.dso.field_demande_de_cem_electromagn
@@ -59,6 +59,7 @@ dependencies:
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nombre_de_jours
     - field.field.node.dso.field_nombre_de_personnes
+    - field.field.node.dso.field_nouveau_client
     - field.field.node.dso.field_numerique
     - field.field.node.dso.field_objet
     - field.field.node.dso.field_papier
@@ -74,7 +75,6 @@ dependencies:
     - field.field.node.dso.field_temperature_local_travail
     - field.field.node.dso.field_transfert_amont
     - field.field.node.dso.field_transfert_aval
-    - field.field.node.dso.field_type_client
     - field.field.node.dso.field_type_de_convoyage_amont
     - field.field.node.dso.field_type_de_convoyage_aval
     - field.field.node.dso.field_type_de_machine_amont
@@ -151,6 +151,7 @@ third_party_settings:
         - field_secteur
         - field_sous_secteur
         - field_type_client
+        - field_nouveau_client
         - field_sieret
       parent_name: group_tabs_dso
       weight: 21
@@ -249,9 +250,9 @@ third_party_settings:
       label: 'Environnement Machine'
     group_asservissement:
       children:
-        - field_communication_machine_amon
-        - field_communication_machine_aval
-        - field_coupure_sur_bourrage
+        - field_com_avec_machine_am
+        - field_com_avec_machine_av
+        - field_coupure_bourrage
         - field_descriptif_asservissement
       parent_name: group_environnement_machine
       weight: 58
@@ -610,8 +611,8 @@ content:
     third_party_settings: {  }
     type: boolean
     region: content
-  field_communication_machine_amon:
-    weight: 58
+  field_com_avec_machine_am:
+    weight: 202
     label: above
     settings:
       format: default
@@ -620,8 +621,8 @@ content:
     third_party_settings: {  }
     type: boolean
     region: content
-  field_communication_machine_aval:
-    weight: 59
+  field_com_avec_machine_av:
+    weight: 203
     label: above
     settings:
       format: default
@@ -667,8 +668,8 @@ content:
     third_party_settings: {  }
     type: boolean
     region: content
-  field_coupure_sur_bourrage:
-    weight: 60
+  field_coupure_bourrage:
+    weight: 204
     label: above
     settings:
       format: default
@@ -736,7 +737,7 @@ content:
     third_party_settings: {  }
     region: content
   field_descriptif_asservissement:
-    weight: 61
+    weight: 205
     label: above
     settings:
       link_to_entity: false
@@ -912,6 +913,16 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
+  field_nouveau_client:
+    weight: 18
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
   field_numerique:
     weight: 36
     label: above
@@ -978,7 +989,7 @@ content:
     type: boolean
     region: content
   field_sieret:
-    weight: 18
+    weight: 19
     label: above
     settings:
       link_to_entity: false
@@ -1031,13 +1042,6 @@ content:
     region: content
   field_transfert_aval:
     weight: 46
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_type_client:
-    weight: 17
     label: above
     settings: {  }
     third_party_settings: {  }

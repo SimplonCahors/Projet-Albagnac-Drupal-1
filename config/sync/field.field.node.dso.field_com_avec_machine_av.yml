@@ -1,12 +1,12 @@
-uuid: be53a570-b44b-404c-9ae8-537e2a76f091
+uuid: 968c4c9c-24d8-4996-8e17-c44b75424b1d
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_communication_machine_aval
+    - field.storage.node.field_com_avec_machine_av
     - node.type.dso
-id: node.dso.field_communication_machine_aval
-field_name: field_communication_machine_aval
+id: node.dso.field_com_avec_machine_av
+field_name: field_com_avec_machine_av
 entity_type: node
 bundle: dso
 label: 'Communication avec machine aval'
@@ -18,6 +18,6 @@ default_value:
     value: 0
 default_value_callback: ''
 settings:
-  on_label: OUI
-  off_label: NON
+  on_label: Oui
+  off_label: Non
 field_type: boolean

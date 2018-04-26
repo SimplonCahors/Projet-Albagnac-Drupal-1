@@ -1,11 +1,11 @@
-uuid: 10759986-5987-4c6d-b981-4f0f322ca556
+uuid: 2b99fabd-de98-45d3-9346-c1703fc7b14d
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-id: node.field_communication_machine_amon
-field_name: field_communication_machine_amon
+id: node.field_com_avec_machine_am
+field_name: field_com_avec_machine_am
 entity_type: node
 type: boolean
 settings: {  }

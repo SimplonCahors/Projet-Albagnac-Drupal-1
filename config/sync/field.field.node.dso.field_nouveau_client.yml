@@ -1,0 +1,23 @@
+uuid: 373d83ff-201d-4818-8303-20e5b27e6e7c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nouveau_client
+    - node.type.dso
+id: node.dso.field_nouveau_client
+field_name: field_nouveau_client
+entity_type: node
+bundle: dso
+label: 'Nouveau client'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Oui
+  off_label: Non
+field_type: boolean
