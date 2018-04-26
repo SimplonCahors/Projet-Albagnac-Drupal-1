@@ -1,11 +1,11 @@
-uuid: c1056c89-a0c0-477f-b24f-3249a3249df2
+uuid: e6fa2fcd-6ffb-4263-90a1-cc56be31ac0c
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-id: node.field_plan_de_prevention_pour_in
-field_name: field_plan_de_prevention_pour_in
+id: node.field_plan_prevention_pour_in
+field_name: field_plan_prevention_pour_in
 entity_type: node
 type: boolean
 settings: {  }

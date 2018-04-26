@@ -72,7 +72,7 @@ dependencies:
     - field.field.node.dso.field_numerique
     - field.field.node.dso.field_objet
     - field.field.node.dso.field_papier
-    - field.field.node.dso.field_plan_de_prevention_pour_in
+    - field.field.node.dso.field_plan_prevention_pour_in
     - field.field.node.dso.field_quantite
     - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_remarques_demande_devis
@@ -223,7 +223,7 @@ third_party_settings:
         - group_installation_mise_en_route
         - group_formation
         - group_notice
-        - group_transport
+        - field_a_la_charge_de_
       parent_name: group_demande_dev
       weight: 21
       format_type: details
@@ -328,6 +328,7 @@ third_party_settings:
     group_installation_mise_en_route:
       children:
         - field_installation_chez_le_clien
+        - field_plan_prevention_pour_in
         - field_plan_de_prevention_pour_in
         - field_mise_en_route_de_la_machin
         - field_demande_de_certification_e
@@ -374,19 +375,6 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Notice
-    group_transport:
-      children:
-        - field_a_la_charge_de_
-      parent_name: group_environnement_machine
-      weight: 27
-      format_type: tab
-      format_settings:
-        id: ''
-        classes: ''
-        formatter: closed
-        description: ''
-        required_fields: true
-      label: Transport
     group_mode_de_controle_demande_p:
       children:
         - field_controle_de_conformite_sui
@@ -604,7 +592,7 @@ content:
     type: string_textfield
     region: content
   field_a_la_charge_de_:
-    weight: 85
+    weight: 27
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -847,10 +835,11 @@ content:
     type: boolean_checkbox
     region: content
   field_demande_de_certification_e:
-    weight: 75
-    settings: {  }
+    weight: 138
+    settings:
+      display_label: true
     third_party_settings: {  }
-    type: options_buttons
+    type: boolean_checkbox
     region: content
   field_demande_de_fat_suivant_spe:
     weight: 127
@@ -1042,10 +1031,11 @@ content:
     type: string_textfield
     region: content
   field_installation_chez_le_clien:
-    weight: 72
-    settings: {  }
+    weight: 134
+    settings:
+      display_label: true
     third_party_settings: {  }
-    type: options_buttons
+    type: boolean_checkbox
     region: content
   field_langue:
     weight: 84
@@ -1072,10 +1062,11 @@ content:
     type: options_select
     region: content
   field_mise_en_route_de_la_machin:
-    weight: 74
-    settings: {  }
+    weight: 137
+    settings:
+      display_label: true
     third_party_settings: {  }
-    type: options_buttons
+    type: boolean_checkbox
     region: content
   field_no:
     type: options_select
@@ -1132,11 +1123,12 @@ content:
     third_party_settings: {  }
     type: options_buttons
     region: content
-  field_plan_de_prevention_pour_in:
-    weight: 73
-    settings: {  }
+  field_plan_prevention_pour_in:
+    weight: 135
+    settings:
+      display_label: true
     third_party_settings: {  }
-    type: options_buttons
+    type: boolean_checkbox
     region: content
   field_quantite:
     weight: 81

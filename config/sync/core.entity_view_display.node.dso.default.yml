@@ -72,7 +72,7 @@ dependencies:
     - field.field.node.dso.field_numerique
     - field.field.node.dso.field_objet
     - field.field.node.dso.field_papier
-    - field.field.node.dso.field_plan_de_prevention_pour_in
+    - field.field.node.dso.field_plan_prevention_pour_in
     - field.field.node.dso.field_quantite
     - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_remarques_demande_devis
@@ -201,7 +201,12 @@ third_party_settings:
       children:
         - field_infos_com_besoin
         - field_infos_com_besoin_rema
-        - field_concurrent_sur_cette_oppor
+        - field_fournisseur_actuel_
+        - group_concurrent_sur_cette_oppor
+        - field_nombre_et_type_potentiel_d
+        - field_site_de_production
+        - field_implantations_des_sites_en
+        - field_environnement_concurentiel
       parent_name: group_tabs_dso
       weight: 24
       format_type: tab
@@ -305,7 +310,6 @@ third_party_settings:
     group_installation_et_mise_en_ro:
       children:
         - field_installation_chez_le_clien
-        - field_plan_de_prevention_pour_in
         - field_mise_en_route_de_la_machin
         - field_demande_de_certification_e
       parent_name: group_environnement_machine
@@ -434,6 +438,24 @@ third_party_settings:
         open: false
         required_fields: false
       label: Combinaison
+    group_concurrent_sur_cette_oppor:
+      children:
+        - field_infos_com_concu_nom_
+        - field_info_com_concu_type
+        - field_info_com_concu_remarques
+      parent_name: group_informations_commerciales
+      weight: 209
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: ''
+        element: div
+        show_label: true
+        label_element: h5
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Concurrent sur cette opportunité'
 id: node.dso.default
 targetEntityType: node
 bundle: dso
@@ -633,15 +655,6 @@ content:
     third_party_settings: {  }
     type: boolean
     region: content
-  field_concurrent_sur_cette_oppor:
-    type: entity_reference_revisions_entity_view
-    weight: 208
-    region: content
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
   field_contact_commercial:
     type: entity_reference_revisions_entity_view
     weight: 0
@@ -710,7 +723,7 @@ content:
     type: boolean
     region: content
   field_demande_de_certification_e:
-    weight: 28
+    weight: 221
     label: above
     settings:
       format: default
@@ -819,7 +832,7 @@ content:
     type: string
     region: content
   field_fournisseur_actuel_:
-    weight: 209
+    weight: 208
     label: above
     settings:
       link_to_entity: false
@@ -862,7 +875,7 @@ content:
     third_party_settings: {  }
     region: content
   field_info_com_concu_remarques:
-    weight: 216
+    weight: 212
     label: above
     settings:
       link_to_entity: false
@@ -870,7 +883,7 @@ content:
     type: string
     region: content
   field_info_com_concu_type:
-    weight: 215
+    weight: 211
     label: above
     settings:
       link_to_entity: false
@@ -893,7 +906,7 @@ content:
     type: string
     region: content
   field_infos_com_concu_nom_:
-    weight: 214
+    weight: 210
     label: above
     settings:
       link_to_entity: false
@@ -901,7 +914,7 @@ content:
     type: string
     region: content
   field_installation_chez_le_clien:
-    weight: 25
+    weight: 217
     label: above
     settings:
       format: default
@@ -934,7 +947,7 @@ content:
     type: list_default
     region: content
   field_mise_en_route_de_la_machin:
-    weight: 27
+    weight: 220
     label: above
     settings:
       format: default
@@ -1005,8 +1018,8 @@ content:
     third_party_settings: {  }
     type: boolean
     region: content
-  field_plan_de_prevention_pour_in:
-    weight: 26
+  field_plan_prevention_pour_in:
+    weight: 7
     label: above
     settings:
       format: default
@@ -1161,6 +1174,7 @@ hidden:
   entity_print_view_word_docx: true
   field_asservissement: true
   field_besoin: true
+  field_concurrent_sur_cette_oppor: true
   field_fournisseur_s_actuel_s_: true
   field_nom_client: true
   field_objet: true

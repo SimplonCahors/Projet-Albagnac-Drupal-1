@@ -36,7 +36,6 @@ dependencies:
     - field.field.node.dso.field_date_desiree_controle
     - field.field.node.dso.field_demande_certification_e
     - field.field.node.dso.field_demande_de_cem_electromagn
-    - field.field.node.dso.field_demande_de_certification_e
     - field.field.node.dso.field_demande_de_fat_suivant_spe
     - field.field.node.dso.field_des
     - field.field.node.dso.field_descriptif_asservissement
@@ -59,11 +58,9 @@ dependencies:
     - field.field.node.dso.field_infos_com_besoin
     - field.field.node.dso.field_infos_com_besoin_rema
     - field.field.node.dso.field_infos_com_concu_nom_
-    - field.field.node.dso.field_installation_chez_le_clien
     - field.field.node.dso.field_langue
     - field.field.node.dso.field_materiels_imposes
     - field.field.node.dso.field_milieu
-    - field.field.node.dso.field_mise_en_route_de_la_machin
     - field.field.node.dso.field_no
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nombre_de_jours
@@ -73,7 +70,6 @@ dependencies:
     - field.field.node.dso.field_numerique
     - field.field.node.dso.field_objet
     - field.field.node.dso.field_papier
-    - field.field.node.dso.field_plan_de_prevention_pour_in
     - field.field.node.dso.field_quantite
     - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_remarques_demande_devis
@@ -744,12 +740,6 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_demande_de_certification_e:
-    weight: 75
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_des:
     type: entity_reference_paragraphs
     weight: 22
@@ -870,12 +860,6 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
-  field_installation_chez_le_clien:
-    weight: 72
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_langue:
     weight: 84
     settings: {  }
@@ -899,12 +883,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: content
-  field_mise_en_route_de_la_machin:
-    weight: 74
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
     region: content
   field_no:
     type: options_select
@@ -942,12 +920,6 @@ content:
     region: content
   field_papier:
     weight: 80
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
-  field_plan_de_prevention_pour_in:
-    weight: 73
     settings: {  }
     third_party_settings: {  }
     type: options_buttons

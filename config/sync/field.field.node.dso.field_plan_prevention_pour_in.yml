@@ -1,15 +1,15 @@
-uuid: 9b184c0d-a299-4d8d-af86-20a1cf43edcf
+uuid: 57313ee0-f7fd-4de6-9d1d-9cad683e17ec
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_demande_de_certification_e
+    - field.storage.node.field_plan_prevention_pour_in
     - node.type.dso
-id: node.dso.field_demande_de_certification_e
-field_name: field_demande_de_certification_e
+id: node.dso.field_plan_prevention_pour_in
+field_name: field_plan_prevention_pour_in
 entity_type: node
 bundle: dso
-label: 'Demande de certification externe'
+label: 'Plan de prévention pour intervenir sur un site'
 description: ''
 required: false
 translatable: false

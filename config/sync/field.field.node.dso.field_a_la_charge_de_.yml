@@ -9,7 +9,7 @@ id: node.dso.field_a_la_charge_de_
 field_name: field_a_la_charge_de_
 entity_type: node
 bundle: dso
-label: 'À la charge de :'
+label: 'Transport à la charge de'
 description: ''
 required: false
 translatable: false
