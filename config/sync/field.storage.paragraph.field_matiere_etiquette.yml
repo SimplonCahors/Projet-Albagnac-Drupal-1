@@ -1,0 +1,27 @@
+uuid: d5b4b005-3757-4344-adbf-80fabf09a31c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_matiere_etiquette
+field_name: field_matiere_etiquette
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Opaque
+      label: Opaque
+    -
+      value: Transparente
+      label: Transparente
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

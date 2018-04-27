@@ -1076,9 +1076,11 @@ hidden:
   field_coupure_bourrage: true
   field_demande_certification_e: true
   field_demande_de_cem_electromagn: true
+  field_demande_de_certification_e: true
   field_demande_de_fat_suivant_spe: true
   field_emballage: true
   field_environnement_concurentiel: true
+  field_etiquette: true
   field_fournisseur_actuel_: true
   field_implantations_des_sites_en: true
   field_info_com_concu_remarques: true
@@ -1086,11 +1088,14 @@ hidden:
   field_infos_com_besoin: true
   field_infos_com_besoin_rema: true
   field_infos_com_concu_nom_: true
+  field_installation_chez_le_clien: true
   field_liz_test: true
+  field_mise_en_route_de_la_machin: true
   field_nom_client: true
   field_nombre_et_type_potentiel_d: true
   field_nouveau_client: true
   field_objet: true
+  field_plan_prevention_pour_in: true
   field_remarques_demande_devis: true
   field_site_de_production: true
   field_type_client_test: true
