@@ -491,6 +491,7 @@ display:
         type: normal
         title: 'Liste des DSO'
         menu_name: main
+        weight: -47
     cache_metadata:
       max-age: -1
       contexts:

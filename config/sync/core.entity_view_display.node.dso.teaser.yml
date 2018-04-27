@@ -145,7 +145,6 @@ hidden:
   field_energies: true
   field_environnement_concurentiel: true
   field_espace_disponible_au_sol_m: true
-  field_etiquette: true
   field_fax: true
   field_fournisseur_actuel_: true
   field_fournisseur_s_actuel_s_: true
@@ -158,7 +157,6 @@ hidden:
   field_infos_com_besoin: true
   field_infos_com_besoin_rema: true
   field_infos_com_concu_nom_: true
-  field_installation_chez_le_clien: true
   field_langue: true
   field_liz_test: true
   field_materiels_imposes: true
