@@ -135,6 +135,7 @@ hidden:
   field_date_desiree_controle: true
   field_demande_certification_e: true
   field_demande_de_cem_electromagn: true
+  field_demande_de_certification_e: true
   field_demande_de_fat_suivant_spe: true
   field_des: true
   field_descriptif_asservissement: true
@@ -163,6 +164,7 @@ hidden:
   field_liz_test: true
   field_materiels_imposes: true
   field_milieu: true
+  field_mise_en_route_de_la_machin: true
   field_no: true
   field_nom_client: true
   field_nombre_de_jours: true
@@ -176,6 +178,7 @@ hidden:
   field_placeholder: true
   field_placeholder2: true
   field_placeholder3: true
+  field_plan_prevention_pour_in: true
   field_quantite: true
   field_remarques_contraintes: true
   field_remarques_demande_devis: true
