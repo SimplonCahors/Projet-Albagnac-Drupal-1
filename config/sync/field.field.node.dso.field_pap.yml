@@ -1,15 +1,15 @@
-uuid: f6a84a49-e674-4f58-b851-92c2685a8498
+uuid: 16de8d98-4f9a-45f7-8150-bda7a318aff9
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_numerique
+    - field.storage.node.field_pap
     - node.type.dso
-id: node.dso.field_numerique
-field_name: field_numerique
+id: node.dso.field_pap
+field_name: field_pap
 entity_type: node
 bundle: dso
-label: Numérique
+label: Papier
 description: ''
 required: false
 translatable: false
@@ -18,6 +18,6 @@ default_value:
     value: 0
 default_value_callback: ''
 settings:
-  on_label: OUI
-  off_label: NON
+  on_label: Oui
+  off_label: Non
 field_type: boolean

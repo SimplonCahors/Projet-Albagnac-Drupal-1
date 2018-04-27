@@ -1,5 +1,3 @@
-console.log('bonjour')
-
 if(window.location.href.toString().includes('node/add/dso')) {
     
     document.querySelectorAll('.tabledrag-toggle-weight')
@@ -14,7 +12,12 @@ var isADV = document.querySelector('body').classList.contains('role-ad')
 
 if (isADV) {
 
-    document.querySelector('[href="/liste"]').style.display = "none";
+    var links = document.querySelectorAll('[href="/liste"]')
+    for (let i = 0; i < links.length; i++) {
+        const link = links[i];
+        if(link.innerHTML == "Mes DSO") link.style.display = "none";
+
+    }
 }
 
 if(!isADV) {

@@ -1,0 +1,23 @@
+uuid: 3f7418a7-8321-49c8-8819-f34c51b477d8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notice_cd
+    - node.type.dso
+id: node.dso.field_notice_cd
+field_name: field_notice_cd
+entity_type: node
+bundle: dso
+label: CD
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Oui
+  off_label: Non
+field_type: boolean

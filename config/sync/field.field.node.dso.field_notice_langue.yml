@@ -1,14 +1,14 @@
-uuid: ccdcd8a5-9aac-4977-a038-19d6812cc20f
+uuid: 175f8770-9bd2-48a7-b1c6-c35ff65d1d40
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_langue
+    - field.storage.node.field_notice_langue
     - node.type.dso
   module:
     - options
-id: node.dso.field_langue
-field_name: field_langue
+id: node.dso.field_notice_langue
+field_name: field_notice_langue
 entity_type: node
 bundle: dso
 label: Langue

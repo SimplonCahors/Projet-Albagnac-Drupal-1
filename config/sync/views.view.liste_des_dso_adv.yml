@@ -77,7 +77,11 @@ display:
       style:
         type: table
         options:
-          grouping: {  }
+          grouping:
+            -
+              field: uid
+              rendered: true
+              rendered_strip: false
           row_class: ''
           default_row_class: true
           override: true
@@ -87,11 +91,41 @@ display:
           description: ''
           columns:
             title: title
+            field_2_date_creation_fiche_: field_2_date_creation_fiche_
+            field_7_nom_client: field_7_nom_client
+            uid: uid
+            link_to_revision: link_to_revision
           info:
             title:
-              sortable: false
+              sortable: true
               default_sort_order: asc
               align: views-align-left
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_2_date_creation_fiche_:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_7_nom_client:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            uid:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            link_to_revision:
+              align: ''
               separator: ''
               empty_column: false
               responsive: ''
@@ -411,17 +445,6 @@ display:
           entity_type: node
           plugin_id: node_revision_link
       filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-          group: 1
         type:
           id: type
           table: node_field_data
@@ -431,6 +454,45 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+        field_valide_value:
+          id: field_valide_value
+          table: node__field_valide
+          field: field_valide_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: true
+          expose:
+            operator_id: ''
+            label: Validé
+            description: ''
+            use_operator: false
+            operator: field_valide_value_op
+            identifier: field_valide_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              ad: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: boolean
       sorts:
         created:
           id: created
@@ -473,6 +535,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - 'user.node_grants:view'
         - user.roles
@@ -497,6 +560,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - 'user.node_grants:view'
         - user.roles

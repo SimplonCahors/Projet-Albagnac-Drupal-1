@@ -1,15 +1,15 @@
-uuid: a506df77-f084-432d-8393-f657a9606bb4
+uuid: 677c6c1b-fdf8-4636-8063-019903363de0
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_papier
+    - field.storage.node.field_valide
     - node.type.dso
-id: node.dso.field_papier
-field_name: field_papier
+id: node.dso.field_valide
+field_name: field_valide
 entity_type: node
 bundle: dso
-label: Papier
+label: Validé
 description: ''
 required: false
 translatable: false
@@ -18,6 +18,6 @@ default_value:
     value: 0
 default_value_callback: ''
 settings:
-  on_label: OUI
-  off_label: NON
+  on_label: Oui
+  off_label: Non
 field_type: boolean
