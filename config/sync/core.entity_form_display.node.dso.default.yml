@@ -90,6 +90,7 @@ dependencies:
     - field.field.node.dso.field_type_de_convoyage_aval
     - field.field.node.dso.field_type_de_machine_amont
     - field.field.node.dso.field_type_de_machine_aval
+    - field.field.node.dso.field_valide
     - node.type.dso
   module:
     - datetime
@@ -117,7 +118,7 @@ third_party_settings:
         - group_details_te
         - group_etiquettes
       parent_name: ''
-      weight: 4
+      weight: 5
       format_type: tabs
       format_settings:
         label: tabs_dso
@@ -251,7 +252,7 @@ third_party_settings:
       children:
         - field_emballage
       parent_name: ''
-      weight: 5
+      weight: 6
       format_type: details
       format_settings:
         id: ''
@@ -1285,6 +1286,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_valide:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   status:
     type: boolean_checkbox

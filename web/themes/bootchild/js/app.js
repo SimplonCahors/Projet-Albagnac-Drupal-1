@@ -1,5 +1,3 @@
-console.log('bonjour')
-
 if(window.location.href.toString().includes('node/add/dso')) {
     
     document.querySelectorAll('.tabledrag-toggle-weight')

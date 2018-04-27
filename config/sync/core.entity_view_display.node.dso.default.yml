@@ -90,6 +90,7 @@ dependencies:
     - field.field.node.dso.field_type_de_convoyage_aval
     - field.field.node.dso.field_type_de_machine_amont
     - field.field.node.dso.field_type_de_machine_aval
+    - field.field.node.dso.field_valide
     - node.type.dso
   module:
     - datetime
@@ -1169,6 +1170,16 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_valide:
+    weight: 236
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
 hidden:
   entity_print_view_epub: true
