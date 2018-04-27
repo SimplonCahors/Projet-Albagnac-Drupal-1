@@ -357,7 +357,7 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: ''
+          value: '0'
           group: 1
           exposed: true
           expose:
@@ -367,7 +367,7 @@ display:
             use_operator: false
             operator: field_valide_value_op
             identifier: field_valide_value
-            required: true
+            required: false
             remember: false
             multiple: false
             remember_roles:

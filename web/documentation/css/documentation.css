@@ -1,6 +1,7 @@
 body {
-    text-align: center;
+    text-align: left;
     font-family: 'Roboto', sans-serif;
+    margin: 2% 12%;
 }
 h1 {
     margin-bottom: 50px;
