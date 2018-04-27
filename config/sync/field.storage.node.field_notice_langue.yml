@@ -1,12 +1,12 @@
-uuid: e5d22b2d-fb60-417d-8fe6-2541f095ec89
+uuid: 2ad30a70-a454-4016-a81c-4a0c5ece990c
 langcode: fr
 status: true
 dependencies:
   module:
     - node
     - options
-id: node.field_langue
-field_name: field_langue
+id: node.field_notice_langue
+field_name: field_notice_langue
 entity_type: node
 type: list_string
 settings:
@@ -21,8 +21,8 @@ settings:
       value: Chinois
       label: Chinois
     -
-      value: Espagnol
-      label: Espagnol
+      value: Espagnole
+      label: Espagnole
     -
       value: Français
       label: Français

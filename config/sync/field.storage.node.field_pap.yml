@@ -1,11 +1,11 @@
-uuid: fe34b53e-0fb4-4051-bb04-df5ad44de1e4
+uuid: 881198f0-6fb5-4f87-8f1f-33a875e6fa60
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-id: node.field_papier
-field_name: field_papier
+id: node.field_pap
+field_name: field_pap
 entity_type: node
 type: boolean
 settings: {  }

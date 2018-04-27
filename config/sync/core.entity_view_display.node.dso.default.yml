@@ -24,7 +24,6 @@ dependencies:
     - field.field.node.dso.field_besoin
     - field.field.node.dso.field_cadence_souhaitee_pdts_h_
     - field.field.node.dso.field_categorie_
-    - field.field.node.dso.field_cd
     - field.field.node.dso.field_com_avec_machine_am
     - field.field.node.dso.field_com_avec_machine_av
     - field.field.node.dso.field_concurrent_sur_cette_oppor
@@ -58,7 +57,6 @@ dependencies:
     - field.field.node.dso.field_infos_com_besoin_rema
     - field.field.node.dso.field_infos_com_concu_nom_
     - field.field.node.dso.field_installation_chez_le_clien
-    - field.field.node.dso.field_langue
     - field.field.node.dso.field_materiels_imposes
     - field.field.node.dso.field_milieu
     - field.field.node.dso.field_mise_en_route_de_la_machin
@@ -67,10 +65,12 @@ dependencies:
     - field.field.node.dso.field_nombre_de_jours
     - field.field.node.dso.field_nombre_de_personnes
     - field.field.node.dso.field_nombre_et_type_potentiel_d
+    - field.field.node.dso.field_notice_cd
+    - field.field.node.dso.field_notice_langue
+    - field.field.node.dso.field_notice_numerique
     - field.field.node.dso.field_nouveau_client
-    - field.field.node.dso.field_numerique
     - field.field.node.dso.field_objet
-    - field.field.node.dso.field_papier
+    - field.field.node.dso.field_pap
     - field.field.node.dso.field_plan_prevention_pour_in
     - field.field.node.dso.field_quantite
     - field.field.node.dso.field_remarques_contraintes
@@ -310,6 +310,7 @@ third_party_settings:
     group_installation_et_mise_en_ro:
       children:
         - field_installation_chez_le_clien
+        - field_plan_prevention_pour_in
         - field_mise_en_route_de_la_machin
         - field_demande_de_certification_e
       parent_name: group_environnement_machine
@@ -324,7 +325,7 @@ third_party_settings:
     group_formation:
       children:
         - field_sur_machine
-        - field_en_salle
+        - field_salle
         - field_nombre_de_jours
         - field_nombre_de_personnes
       parent_name: group_environnement_machine
@@ -338,11 +339,11 @@ third_party_settings:
       label: Formation
     group_information:
       children:
-        - field_papier
+        - field_pap
         - field_quantite
+        - field_langue
         - field_cd
         - field_numerique
-        - field_langue
       parent_name: group_environnement_machine
       weight: 63
       format_type: tab
@@ -625,16 +626,6 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_cd:
-    weight: 35
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
   field_com_avec_machine_am:
     weight: 202
     label: above
@@ -723,7 +714,7 @@ content:
     type: boolean
     region: content
   field_demande_de_certification_e:
-    weight: 221
+    weight: 220
     label: above
     settings:
       format: default
@@ -913,13 +904,6 @@ content:
     third_party_settings: {  }
     type: boolean
     region: content
-  field_langue:
-    weight: 37
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
   field_materiels_imposes:
     type: entity_reference_revisions_entity_view
     weight: 14
@@ -937,7 +921,7 @@ content:
     type: list_default
     region: content
   field_mise_en_route_de_la_machin:
-    weight: 220
+    weight: 219
     label: above
     settings:
       format: default
@@ -954,7 +938,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_nombre_de_jours:
-    weight: 31
+    weight: 228
     label: above
     settings:
       thousand_separator: ''
@@ -963,7 +947,7 @@ content:
     type: number_integer
     region: content
   field_nombre_de_personnes:
-    weight: 32
+    weight: 229
     label: above
     settings:
       thousand_separator: ''
@@ -978,6 +962,33 @@ content:
     third_party_settings: {  }
     type: basic_string
     region: content
+  field_notice_cd:
+    weight: 233
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_notice_langue:
+    weight: 235
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_notice_numerique:
+    weight: 234
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
   field_nouveau_client:
     weight: 18
     label: above
@@ -988,18 +999,8 @@ content:
     third_party_settings: {  }
     type: boolean
     region: content
-  field_numerique:
-    weight: 36
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
-  field_papier:
-    weight: 33
+  field_pap:
+    weight: 231
     label: above
     settings:
       format: default
@@ -1009,7 +1010,7 @@ content:
     type: boolean
     region: content
   field_plan_prevention_pour_in:
-    weight: 7
+    weight: 218
     label: above
     settings:
       format: default
@@ -1019,7 +1020,7 @@ content:
     type: boolean
     region: content
   field_quantite:
-    weight: 34
+    weight: 232
     label: above
     settings:
       thousand_separator: ''
@@ -1044,7 +1045,7 @@ content:
     type: basic_string
     region: content
   field_salle:
-    weight: 223
+    weight: 227
     label: above
     settings:
       format: default
@@ -1103,7 +1104,7 @@ content:
     type: string
     region: content
   field_sur_machine:
-    weight: 222
+    weight: 226
     label: above
     settings:
       format: default

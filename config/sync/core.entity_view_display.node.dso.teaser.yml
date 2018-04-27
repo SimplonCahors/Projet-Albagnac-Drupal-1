@@ -25,7 +25,6 @@ dependencies:
     - field.field.node.dso.field_besoin
     - field.field.node.dso.field_cadence_souhaitee_pdts_h_
     - field.field.node.dso.field_categorie_
-    - field.field.node.dso.field_cd
     - field.field.node.dso.field_com_avec_machine_am
     - field.field.node.dso.field_com_avec_machine_av
     - field.field.node.dso.field_concurrent_sur_cette_oppor
@@ -59,7 +58,6 @@ dependencies:
     - field.field.node.dso.field_infos_com_besoin_rema
     - field.field.node.dso.field_infos_com_concu_nom_
     - field.field.node.dso.field_installation_chez_le_clien
-    - field.field.node.dso.field_langue
     - field.field.node.dso.field_materiels_imposes
     - field.field.node.dso.field_milieu
     - field.field.node.dso.field_mise_en_route_de_la_machin
@@ -69,19 +67,20 @@ dependencies:
     - field.field.node.dso.field_nombre_de_personnes
     - field.field.node.dso.field_nombre_et_type_potentiel_d
     - field.field.node.dso.field_nouveau_client
-    - field.field.node.dso.field_numerique
     - field.field.node.dso.field_objet
-    - field.field.node.dso.field_papier
+    - field.field.node.dso.field_pap
     - field.field.node.dso.field_plan_prevention_pour_in
     - field.field.node.dso.field_quantite
     - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_remarques_demande_devis
+    - field.field.node.dso.field_salle
     - field.field.node.dso.field_secteur
     - field.field.node.dso.field_sens_de_la_machine
     - field.field.node.dso.field_sieret
     - field.field.node.dso.field_site_de_production
     - field.field.node.dso.field_sortie_produits_aval
     - field.field.node.dso.field_sous_secteur
+    - field.field.node.dso.field_sur_machine
     - field.field.node.dso.field_temperature_local_travail
     - field.field.node.dso.field_transfert_amont
     - field.field.node.dso.field_transfert_aval
@@ -126,7 +125,6 @@ hidden:
   field_besoin: true
   field_cadence_souhaitee_pdts_h_: true
   field_categorie_: true
-  field_cd: true
   field_com_avec_machine_am: true
   field_com_avec_machine_av: true
   field_concurrent_sur_cette_oppor: true
@@ -160,7 +158,6 @@ hidden:
   field_infos_com_besoin_rema: true
   field_infos_com_concu_nom_: true
   field_installation_chez_le_clien: true
-  field_langue: true
   field_liz_test: true
   field_materiels_imposes: true
   field_milieu: true
@@ -171,9 +168,8 @@ hidden:
   field_nombre_de_personnes: true
   field_nombre_et_type_potentiel_d: true
   field_nouveau_client: true
-  field_numerique: true
   field_objet: true
-  field_papier: true
+  field_pap: true
   field_placeh: true
   field_placeholder: true
   field_placeholder2: true
@@ -182,12 +178,14 @@ hidden:
   field_quantite: true
   field_remarques_contraintes: true
   field_remarques_demande_devis: true
+  field_salle: true
   field_secteur: true
   field_sens_de_la_machine: true
   field_sieret: true
   field_site_de_production: true
   field_sortie_produits_aval: true
   field_sous_secteur: true
+  field_sur_machine: true
   field_telephone_contact_com: true
   field_temperature_local_travail: true
   field_test: true
