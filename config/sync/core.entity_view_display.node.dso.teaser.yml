@@ -36,13 +36,13 @@ dependencies:
     - field.field.node.dso.field_date_desiree_controle
     - field.field.node.dso.field_demande_certification_e
     - field.field.node.dso.field_demande_de_cem_electromagn
+    - field.field.node.dso.field_demande_de_certification_e
     - field.field.node.dso.field_demande_de_fat_suivant_spe
     - field.field.node.dso.field_des
     - field.field.node.dso.field_descriptif_asservissement
     - field.field.node.dso.field_description_etiquette
     - field.field.node.dso.field_emballage
     - field.field.node.dso.field_emballages_etiquettes
-    - field.field.node.dso.field_en_salle
     - field.field.node.dso.field_energies
     - field.field.node.dso.field_environnement_concurentiel
     - field.field.node.dso.field_espace_disponible_au_sol_m
@@ -58,9 +58,11 @@ dependencies:
     - field.field.node.dso.field_infos_com_besoin
     - field.field.node.dso.field_infos_com_besoin_rema
     - field.field.node.dso.field_infos_com_concu_nom_
+    - field.field.node.dso.field_installation_chez_le_clien
     - field.field.node.dso.field_langue
     - field.field.node.dso.field_materiels_imposes
     - field.field.node.dso.field_milieu
+    - field.field.node.dso.field_mise_en_route_de_la_machin
     - field.field.node.dso.field_no
     - field.field.node.dso.field_nom_client
     - field.field.node.dso.field_nombre_de_jours
@@ -70,6 +72,7 @@ dependencies:
     - field.field.node.dso.field_numerique
     - field.field.node.dso.field_objet
     - field.field.node.dso.field_papier
+    - field.field.node.dso.field_plan_prevention_pour_in
     - field.field.node.dso.field_quantite
     - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_remarques_demande_devis
@@ -79,7 +82,6 @@ dependencies:
     - field.field.node.dso.field_site_de_production
     - field.field.node.dso.field_sortie_produits_aval
     - field.field.node.dso.field_sous_secteur
-    - field.field.node.dso.field_sur_machine
     - field.field.node.dso.field_temperature_local_travail
     - field.field.node.dso.field_transfert_amont
     - field.field.node.dso.field_transfert_aval
@@ -142,11 +144,9 @@ hidden:
   field_description_etiquette: true
   field_emballage: true
   field_emballages_etiquettes: true
-  field_en_salle: true
   field_energies: true
   field_environnement_concurentiel: true
   field_espace_disponible_au_sol_m: true
-  field_etiquette: true
   field_fax: true
   field_fournisseur_actuel_: true
   field_fournisseur_s_actuel_s_: true
@@ -188,7 +188,6 @@ hidden:
   field_site_de_production: true
   field_sortie_produits_aval: true
   field_sous_secteur: true
-  field_sur_machine: true
   field_telephone_contact_com: true
   field_temperature_local_travail: true
   field_test: true

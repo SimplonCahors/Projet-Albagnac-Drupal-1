@@ -1,11 +1,11 @@
-uuid: 591d0121-4317-4787-9dfa-be0075b9259a
+uuid: d30eab70-2fac-4d9b-add1-6683a4774a64
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-id: node.field_en_salle
-field_name: field_en_salle
+id: node.field_salle
+field_name: field_salle
 entity_type: node
 type: boolean
 settings: {  }

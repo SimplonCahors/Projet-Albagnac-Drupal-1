@@ -42,7 +42,6 @@ dependencies:
     - field.field.node.dso.field_description_etiquette
     - field.field.node.dso.field_emballage
     - field.field.node.dso.field_emballages_etiquettes
-    - field.field.node.dso.field_en_salle
     - field.field.node.dso.field_energies
     - field.field.node.dso.field_environnement_concurentiel
     - field.field.node.dso.field_espace_disponible_au_sol_m
@@ -76,6 +75,7 @@ dependencies:
     - field.field.node.dso.field_quantite
     - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_remarques_demande_devis
+    - field.field.node.dso.field_salle
     - field.field.node.dso.field_secteur
     - field.field.node.dso.field_sens_de_la_machine
     - field.field.node.dso.field_sieret
@@ -786,16 +786,6 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
-  field_en_salle:
-    weight: 30
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
   field_energies:
     type: entity_reference_revisions_entity_view
     weight: 19
@@ -1053,6 +1043,16 @@ content:
     third_party_settings: {  }
     type: basic_string
     region: content
+  field_salle:
+    weight: 223
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
   field_secteur:
     type: list_default
     weight: 25
@@ -1103,7 +1103,7 @@ content:
     type: string
     region: content
   field_sur_machine:
-    weight: 29
+    weight: 222
     label: above
     settings:
       format: default
@@ -1175,7 +1175,6 @@ hidden:
   field_asservissement: true
   field_besoin: true
   field_concurrent_sur_cette_oppor: true
-  field_etiquette: true
   field_fournisseur_s_actuel_s_: true
   field_nom_client: true
   field_objet: true

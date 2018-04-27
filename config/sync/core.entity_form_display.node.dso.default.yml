@@ -42,7 +42,6 @@ dependencies:
     - field.field.node.dso.field_description_etiquette
     - field.field.node.dso.field_emballage
     - field.field.node.dso.field_emballages_etiquettes
-    - field.field.node.dso.field_en_salle
     - field.field.node.dso.field_energies
     - field.field.node.dso.field_environnement_concurentiel
     - field.field.node.dso.field_espace_disponible_au_sol_m
@@ -76,6 +75,7 @@ dependencies:
     - field.field.node.dso.field_quantite
     - field.field.node.dso.field_remarques_contraintes
     - field.field.node.dso.field_remarques_demande_devis
+    - field.field.node.dso.field_salle
     - field.field.node.dso.field_secteur
     - field.field.node.dso.field_sens_de_la_machine
     - field.field.node.dso.field_sieret
@@ -329,7 +329,6 @@ third_party_settings:
       children:
         - field_installation_chez_le_clien
         - field_plan_prevention_pour_in
-        - field_plan_de_prevention_pour_in
         - field_mise_en_route_de_la_machin
         - field_demande_de_certification_e
       parent_name: group_environnement_machine
@@ -345,7 +344,7 @@ third_party_settings:
     group_formation:
       children:
         - field_sur_machine
-        - field_en_salle
+        - field_salle
         - field_nombre_de_jours
         - field_nombre_de_personnes
       parent_name: group_environnement_machine
@@ -904,12 +903,6 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
-  field_en_salle:
-    weight: 77
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_energies:
     type: entity_reference_paragraphs
     weight: 71
@@ -1083,14 +1076,14 @@ content:
     type: string_textfield
     region: content
   field_nombre_de_jours:
-    weight: 78
+    weight: 145
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_nombre_de_personnes:
-    weight: 79
+    weight: 146
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -1145,6 +1138,13 @@ content:
     third_party_settings: {  }
     type: string_textarea
     region: content
+  field_salle:
+    weight: 144
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_secteur:
     type: options_select
     weight: 51
@@ -1190,10 +1190,11 @@ content:
     type: string_textfield
     region: content
   field_sur_machine:
-    weight: 76
-    settings: {  }
+    weight: 143
+    settings:
+      display_label: true
     third_party_settings: {  }
-    type: options_buttons
+    type: boolean_checkbox
     region: content
   field_telephone_contact_tech:
     weight: 51
@@ -1281,7 +1282,6 @@ hidden:
   field_asservissement: true
   field_besoin: true
   field_concurrent_sur_cette_oppor: true
-  field_etiquette: true
   field_fournisseur_s_actuel_s_: true
   field_nom_client: true
   field_objet: true

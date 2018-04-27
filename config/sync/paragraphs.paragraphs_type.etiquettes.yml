@@ -1,9 +1,0 @@
-uuid: 510dc139-bb2b-4ea4-818f-54d829b90930
-langcode: fr
-status: true
-dependencies: {  }
-id: etiquettes
-label: Etiquettes
-icon_uuid: null
-description: ''
-behavior_plugins: {  }
