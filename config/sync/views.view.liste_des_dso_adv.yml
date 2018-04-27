@@ -486,12 +486,12 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: liste_adv
+      path: liste
       menu:
         type: normal
         title: 'Liste des DSO'
         menu_name: main
-        weight: -47
+        weight: -49
     cache_metadata:
       max-age: -1
       contexts:
